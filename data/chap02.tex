@@ -18,7 +18,7 @@
 
 假设存在一个哈密顿量$H(t)$，它使得系统的态的演化严格为$|\psi(t)\rangle=|n(t)\rangle e^{i \theta_{n}(t)} e^{i \gamma_{n}(t)}$，则根据薛定谔方程有
 \begin{equation}
-    i \hbar \PP{t} |\psi(t)\rangle= H(t) |\psi(t)\rangle
+    i \hbar \PP{}{t} |\psi(t)\rangle= H(t) |\psi(t)\rangle
     \label{eq2.2}
 \end{equation}
 
@@ -144,21 +144,57 @@
      H_{0}(\bm{\eta} ; L)=\frac{p^{2}}{2 m}+V_{\mathrm{box}}(q ; L)
         \label{eq2.18}
 \end{equation}
-其中$V_{\mathrm{box}}(q ; L)$代表一维盒子的势场$V_{\mathrm{box}}(q ; L) = \left\{\begin{array}{l} 0 ,\ q<L\\ \infty ,\ q \leq 0\ or\ q \geq L \end{array}\right.$在经典中这个粒子的运动是平凡的——以相同的速度在两堵墙之间做往返运动。
+其中$V_{\mathrm{box}}(q ; L)$代表一维盒子的势场$V_{\mathrm{box}}(q ; L) = \left\{\begin{array}{l} 0 ,\ q<L\\ \infty ,\ q \leq 0\ \text{or}\ q \geq L \end{array}\right.$在经典中这个粒子的运动是平凡的——以相同的速度在两堵墙之间做往返运动。
     
-哈密顿量的参数$L$随时间$t$变化，现在我们构造这个系统的\textbf{反绝热哈密顿量}。不难得出，矩形能壳的面积为$I=2 \hat{P} L$，对于$L$改变引起的矩形能壳的长和宽的微小改变$L \to L(1+\nu) ,\ 2 \hat{P} \to 2 \hat{P} (1-\nu)$，其中$\nu \equiv \delta L / L$。这两个能壳被一个线性放缩所联系
+哈密顿量的参数$L$随时间$t$变化，现在我们构造这个系统的\textbf{反绝热哈密顿量}。不难得出，矩形能壳的面积为$I=2 \hat{P} L$，由于矩形能壳的长的变化为$L \to L(1+\nu)$，为了维持矩形能壳的面积，在一阶精度下，可令其宽的微小改变为$2 \hat{P} \to 2 \hat{P} (1-\nu)$，其中$\nu \equiv \delta L / L$。于是，这两个能壳被一个线性放缩所联系
 \begin{equation}
     q \rightarrow q(1+\nu) \quad, \quad p \rightarrow p(1-\nu)
     \label{eq2.19}
 \end{equation}
+现在我们可以通过$(\nu q,\ -\nu p)  = \delta L \{ (q,\ p),\ \xi \}$（式\ref{eq2.15}）逆向解出生成元的表达式，于是我们可得一对这样的方程$\left\{ \begin{array}{l} q / L=\partial \xi / \partial p \\ p / L=\partial \xi / \partial q \end{array}\right.$。结合限制条件\ref{eq2.13b}，于是可令$\xi = q p / L$。再根据式\ref{eq2.19}，我们最终得到
+\begin{equation}
+    H(\bm{\eta}, t)=H_{0}(\bm{\eta} ; L)+\frac{\dot{L}}{L} q p \quad, \quad L=L(t)
+    \label{eq2.20}
+\end{equation}
+在这个时间依赖的哈密顿量之下，绝热不变量$i(q,\ p;\ L)=2 |p| L$是严格守恒的，不论函数$L(t)$的形式是怎样的。现在我们对于这个具体的例子，实实在在的构造出了\textbf{反绝热哈密顿量}，这说明其并不只是存在于形式化理论中，而是可以在实际中加以利用的。
 
-\begin{figure}[!htbp]
-    \begin{center}
-        \includegraphics[width=0.5\textwidth]{figures/p2.2.pdf}
-    \end{center}
-    \caption{在一维盒子中的粒子的能壳。该粒子的能壳是一个矩形，当盒子的长度发生极小的改变时，矩形能壳也发生相应的改变。但矩形的体积不变}
-    \label{p2.1}
-\end{figure}
+在构造出了经典的\textbf{反绝热哈密顿量}之后，我们也可以通过$\xi$的经典表达式来猜想量子力学中的\textbf{反绝热哈密顿量}，因为算符$p,\ q$是不对易的，一个自然的猜想是
+\begin{equation}
+    \xi(L) = \frac{q p + p q}{2 L}
+    \label{eq2.21}
+\end{equation}
+于是，再联系到已知的量子力学中\textbf{一维无限深势阱}的本征解，非常幸运的，我们发现选择的这个$\xi$满足式\ref{eq2.7}
+\begin{equation}
+    \left(1+\frac{1}{i \hbar} \delta L \xi \right) \sqrt{\frac{2}{L}} \sin \left(\frac{n \pi q}{L}\right)=\sqrt{\frac{2}{L+\delta L}} \sin \left(\frac{n \pi q}{L+\delta L}\right)
+    \label{eq2.22}
+\end{equation}
+其中的相位由于$A_{n}(L)=i\langle n | \partial_L  n\rangle = 0$而消失。于是可以立刻得到
+\begin{equation}
+    H(t)=-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial q^{2}}+V_{\mathrm{box}}(q ; L)+\frac{\dot{L}}{2 L} \frac{\hbar}{i}\left(q \frac{\partial}{\partial q}+\frac{\partial}{\partial q} q\right)
+    \label{eq2.23}
+\end{equation}
+这样，波函数
+\begin{equation}
+    \psi_n (q, t)=\sqrt{\frac{2}{L}} \sin \left(\frac{n \pi q}{L}\right) \exp \left(-\frac{i}{\hbar} \int_{0}^{t} \mathrm{~d} t^{\prime} \frac{n^{2} \pi^{2} \hbar^{2}}{2 m L^{2}}\right)
+    \label{eq2.24}
+\end{equation}
+将成为这个哈密顿量的精确解，不论$L(t)$的函数形式如何。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
