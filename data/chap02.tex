@@ -127,9 +127,6 @@
 
 现在，鉴于变换$\bm{\eta} \to \bm{\eta} + \delta  \bm{\lambda} \cdot \{\bm{\eta}, \boldsymbol{\xi}\}$将能壳$H_{0}(\bm{\eta} ; \boldsymbol{\lambda})$ 上的相点映射到了能壳 $ H_{0}(\bm{\eta} + \delta \bm{\eta} ; \boldsymbol{\lambda})$上，我们可以此为根据构造经典力学中的$\boldsymbol{\xi}(\bm{\eta}, \boldsymbol{\lambda})$，下面我们用例子进行说明
 
-\begin{itemize}
-    \item 一维盒子中的粒子
-\end{itemize}
 考虑一个一维的粒子，处在两堵刚性墙之间，刚性墙的位置为$q=0,L$，这个例子这对应于量子力学中的一维无限深势阱。其相空间的能壳如图\ref{p2.1}所示。
 \begin{figure}[!htbp]
     \begin{center}
@@ -146,7 +143,7 @@
 \end{equation}
 其中$V_{\mathrm{box}}(q ; L)$代表一维盒子的势场$V_{\mathrm{box}}(q ; L) = \left\{\begin{array}{l} 0 ,\ q<L\\ \infty ,\ q \leq 0\ \text{or}\ q \geq L \end{array}\right.$在经典中这个粒子的运动是平凡的——以相同的速度在两堵墙之间做往返运动。
     
-哈密顿量的参数$L$随时间$t$变化，现在我们构造这个系统的\textbf{反绝热哈密顿量}。不难得出，矩形能壳的面积为$I=2 \hat{P} L$，由于矩形能壳的长的变化为$L \to L(1+\nu)$，为了维持矩形能壳的面积，在一阶精度下，可令其宽的微小改变为$2 \hat{P} \to 2 \hat{P} (1-\nu)$，其中$\nu \equiv \delta L / L$。于是，这两个能壳被一个线性放缩所联系
+哈密顿量的参数$L$随时间$t$变化，现在我们构造这个系统的\textbf{反绝热哈密顿量}。不难得出，矩形能壳的面积为$I=2 \hat{P} L$，由于矩形能壳的长的变化为$L \to L(1+\nu)$，为了维持矩形能壳的面积，在一阶精度下，可令其宽的微小改变为$2 \hat{P} \to 2 \hat{P} (1-\nu)$，其中$\nu \equiv \delta L / L$。于是，这两个能壳被一个线性的尺度变换所联系
 \begin{equation}
     q \rightarrow q(1+\nu) \quad, \quad p \rightarrow p(1-\nu)
     \label{eq2.19}
@@ -168,17 +165,30 @@
     \left(1+\frac{1}{i \hbar} \delta L \xi \right) \sqrt{\frac{2}{L}} \sin \left(\frac{n \pi q}{L}\right)=\sqrt{\frac{2}{L+\delta L}} \sin \left(\frac{n \pi q}{L+\delta L}\right)
     \label{eq2.22}
 \end{equation}
-其中的相位由于$A_{n}(L)=i\langle n | \partial_L  n\rangle = 0$而消失。于是可以立刻得到
+这一点可以通过计算$\PP{}{L} \sqrt{\frac{2}{L}} \sin \left(\frac{n \pi q}{L}\right) \delta L = \frac{1}{i \hbar} \delta L \xi \sqrt{\frac{2}{L}} \sin \left(\frac{n \pi q}{L}\right)$得到验证。\ref{eq2.22}中的相位由于$A_{n}(L)=i\langle n | \partial_L  n\rangle = 0$而消失。于是可以立刻得到
 \begin{equation}
     H(t)=-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial q^{2}}+V_{\mathrm{box}}(q ; L)+\frac{\dot{L}}{2 L} \frac{\hbar}{i}\left(q \frac{\partial}{\partial q}+\frac{\partial}{\partial q} q\right)
     \label{eq2.23}
 \end{equation}
 这样，波函数
 \begin{equation}
-    \psi_n (q, t)=\sqrt{\frac{2}{L}} \sin \left(\frac{n \pi q}{L}\right) \exp \left(-\frac{i}{\hbar} \int_{0}^{t} \mathrm{~d} t^{\prime} \frac{n^{2} \pi^{2} \hbar^{2}}{2 m L^{2}}\right)
+    \psi (q, t)=\sqrt{\frac{2}{L}} \sin \left(\frac{n \pi q}{L}\right) \exp \left(-\frac{i}{\hbar} \int_{0}^{t} \mathrm{~d} t^{\prime} \frac{n^{2} \pi^{2} \hbar^{2}}{2 m L^{2}}\right)
     \label{eq2.24}
 \end{equation}
-将成为这个哈密顿量的精确解，不论$L(t)$的函数形式如何。
+将成为这个系统的精确解（初态为$\psi (q,\ 0) = \sqrt{\frac{2}{L}} \sin \left(\frac{n \pi q}{L}\right)$），不论$L(t)$的函数形式如何。
+
+式\ref{eq2.23}也可以更一般的写成
+\begin{equation}
+    \left(1+\frac{1}{i \hbar} \delta L \hat{\xi}\right) \psi(q)=\sqrt{\frac{1}{s}} \psi\left(\frac{q}{s}\right) \quad, \quad s=\frac{L+\delta L}{L}
+    \label{eq2.25}
+\end{equation}
+换句话说，算符$\exp (\delta L \xi / i \hbar)$对波函数$\psi(q)$进行了线性放大。（系数$\sqrt{\frac{1}{s}}$保证了波函数的归一化）自此我们也成功的通过构造的\textbf{经典反绝热哈密顿量}构造出了\textbf{量子反绝热哈密顿量}
+
+不难发现，我们的构造能够成功，很大程度上得益于能壳和本征态之间的\textbf{尺度变换}。相似的办法也能够应用于\textbf{偶次幂势场}
+\begin{equation}
+    H_{0}(\bm{\eta} ; L)=\frac{p^{2}}{2 m}+\epsilon\left(\frac{q}{L}\right)^{b}
+    \label{eq2.26}
+\end{equation}
 
 
 
