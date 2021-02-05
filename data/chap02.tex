@@ -196,27 +196,41 @@
 可以证明，对于相应的量子的情形，也是可以按照类似的方式构造其\textbf{量子反绝热哈密顿量}的。其中$\epsilon > 0$调节了能量尺度，而$b$是正偶数。同样的，我们先在经典中加以考虑，再推广到量子中。上述系统的\textbf{绝热不变量}为
 \begin{equation}
     \begin{split}
-        i(\bm{\eta};\ L) &= 4 \int_0^{L \left(\frac{H_0}{\epsilon}\right)^{1/b}} \sqrt{2 m \left[ H_0 -\epsilon \left(\frac{q}{L}\right)^b\right]} \, \M{d}q \\ 
+        i(\bm{\eta};\ L) &= 4 \int_0^{L \left(H_0 / \epsilon \right)^{1/b}} \sqrt{2 m \left[ H_0 -\epsilon \left(q/{L}\right)^b\right]} \, \M{d}q \\ 
         &= \sqrt{8 \pi m} \epsilon^{-1 / b} \frac{\Gamma\left(1+\frac{1}{b}\right)}{\Gamma\left(\frac{3}{2}+\frac{1}{b}\right)} L H_0^{\frac{1}{2 \mu}}\\
         &= c L H_0^{\frac{1}{2 \mu}}
     \end{split}
     \label{eq2.27}
 \end{equation}
 其中，$\mu \equiv \frac{b}{b+2} ,\ c \equiv \sqrt{8 \pi m} \epsilon^{-1 / b} \frac{\Gamma\left(1+\frac{1}{b}\right)}{\Gamma\left(\frac{3}{2}+\frac{1}{b}\right)}$
-同样的，含时参数$L \to L + \delta L$的变化，通过一个线性变换引起了能壳的变化。为了看到这一点，我们考虑$i(q,\ p;\ L)$的变化$\delta i(q,\ p;\ L) = \PP{i}{q} \delta q + \PP{i}{p} \delta p + \PP{i}{L} \delta L \equiv 0$，为了使恒等式成立，可以假设$\delta q = x q \frac{\delta}{L},\ \delta p = - y p \frac{\delta}{L}$，可以得到
+同样的，含时参数$L \to L + \delta L$的变化，通过一个线性变换引起了能壳的变化。为了看到这一点，我们考虑$i(q,\ p;\ L)$的变化$\delta i(q,\ p;\ L) = \PP{i}{q} \delta q + \PP{i}{p} \delta p + \PP{i}{L} \delta L \equiv 0$，为了使恒等式成立，可以假设$\delta q = x q \frac{\delta L}{L},\ \delta p = - y p \frac{\delta L}{L}$，可以得到
 \begin{equation}
-    \frac{c}{2 \mu H_0} \left[ (\mu - y) \frac{p^2}{m} + (2 \mu +b + b x) \epsilon \left( \frac{q}{L} \right)^b \right] \delta L \equiv 0
+    \frac{c}{2 \mu H_0} \left[ (\mu - y) \frac{p^2}{m} + (2 \mu - b + b x) \epsilon \left( \frac{q}{L} \right)^b \right] \delta L \equiv 0
     \label{eq2.28}
 \end{equation}
-可以得到$x=y=\mu$，可见，能壳的变换依然可以由式\ref{eq2.19}进行描述，只不过现在$\nu = \mu \delta L / L$，同理我们可以得到新的哈密顿量
+要使上式成立，必须有$x=y=\mu$，可见，能壳的变换依然可以由式\ref{eq2.19}进行描述，只不过现在$\nu = \mu \delta L / L$，同理我们可以得到新的哈密顿量
 \begin{equation}
     H(\bm{\eta}, t)=H_{0}(\bm{\eta} ; L)+\mu \frac{\dot{L}}{L} q p
     \label{eq2.28}
 \end{equation}
+在这个哈密顿量下，$i(\bm{\eta};\ L) = c L H_0^{\frac{1}{2 \mu}}$将成为一个严格的守恒量。在量子力学中，本征态将满足\R{（不甚理解）}
+\begin{equation}
+    \phi_{n}(q ; L)=\sqrt{\frac{1}{L^{\mu}}} \phi_{n}\left(\frac{q}{L^{\mu}} ; 1\right)
+    \label{eq2.29}
+\end{equation}
+在新的哈密顿量
+\begin{equation}
+    H(t)=H_{0}(L)+\frac{b}{b+2} \frac{\dot{L}}{2 L} \frac{\hbar}{i}\left(q \frac{\partial}{\partial q}+\frac{\partial}{\partial q} q\right)
+    \label{eq2.29}
+\end{equation}
+之下。这结果对任意$b \in \{ 2,\ 4,\ 6,\ \cdots\}$都是成立对的。特别的，$b=2$和$b \to \infty$对应于\textbf{一维谐振子}和\textbf{一维无限深势阱}的情况。不过，对于\textbf{一维谐振子}的情况，Muga等人使用升降算子$a,\ a^{\dagger}$结合式\ref{eq2.3}的办法更为简单地得到了相同的结果。
 
-
-
-
+对于一般的一维势场，生成元应该满足
+\begin{equation}
+    \boldsymbol{\xi}\left(\bm{\eta}_{b} ; \boldsymbol{\lambda}\right)-\boldsymbol{\xi}\left(\bm{\eta}_{a} ; \boldsymbol{\lambda}\right)=\int_{a}^{b} \mathrm{~d} t \nabla \tilde{H}_{0}(\bm{\eta}(t) ; \boldsymbol{\lambda})
+    \label{eq2.30}
+\end{equation}
+其中相点$\bm{\eta}_{a},\ \bm{\eta}_{b}$在同一能壳上，$\bm{\eta}(t)$是相点从$\bm{\eta}_{a}$演化到$\bm{\eta}_{b}$的相轨迹。式\ref{eq2.30}可以结合式\ref{eq2.13a}和$(\mathrm{d} / \mathrm{d} t) \boldsymbol{\xi}(\bm{\eta}(t) ; \boldsymbol{\lambda})=\left\{\boldsymbol{\xi}, H_{0}\right\}$而得到。
 
 
 
