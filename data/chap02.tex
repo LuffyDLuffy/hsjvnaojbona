@@ -23,12 +23,13 @@
 \end{equation}
 
 将\ref{eq2.1}代入\ref{eq2.2}，整理得$ E_{n}+ i \hbar \left( | \partial_{t} n \rangle -\langle n | \partial_t n \rangle\right)|n\rangle=H| n\rangle$，于是可得
-\begin{align}
-    \nonumber H(t)&=H_{0}(t)+i \hbar \sum_{m}\left(\left|\partial_{t} m\right\rangle\left\langle m\left|-\left\langle m \mid \partial_{t} m\right\rangle\right| m\right\rangle\langle m|\right) \\
-    &\equiv H_0 + H_1
-    \label{eq2.3} 
-\end{align}
-
+\begin{equation}
+    \begin{split}
+        H(t)&=H_{0}(t)+i \hbar \sum_{m}\left(\left|\partial_{t} m\right\rangle\left\langle m\left|-\left\langle m \mid \partial_{t} m\right\rangle\right| m\right\rangle\langle m|\right) \\
+        &\equiv H_0 + H_1
+    \end{split}
+    \label{eq2.3}
+\end{equation}
 于是一个以$H (t)$作为哈密顿量的系统，若其初态为$H_0 (t)$的本征态$| n(0) \rangle$，那么不论$H (t)$随时间的变化快慢与否，在$t$时刻，系统的状态依然是$H_0 (t)$的本征态，只是两者有一个相位差。于是我们实现了在有限时间内的本征态之间的转化。这其中的关键在于我们引进了一个\textbf{反绝热哈密顿量}$H_1 (t)$，根据\ref{eq2.3}，我们已经在形式上得到了$H_1 (t)$。现在我们考虑对于具体的$H_0 (t)$，如何得到$H_1 (t)$的具体表达式。\cite{Jarzynski2013}
 
 让$H_0$通过一系列参数$\bm{\lambda}(t)=\left( \lambda_1 (t) , \lambda_1 (t) , \lambda_1 (t) , \cdot , \lambda_{N} (t) \right)$依赖于时间$t$。同时，$H_0 (\bm{\lambda})$的本征值、本征态为$E_n (\bm{\lambda}), | n (\bm{\lambda}) \rangle$，根据复合函数的微分法则，式\ref{eq2.4}可以写为
@@ -109,12 +110,15 @@
   \label{eq2.15}
 \end{equation}
 于是，由式\ref{eq2.14}和\ref{eq2.15}可得
-\begin{align}
-    &i(\bm{\eta}+\delta \bm{\eta} ; \boldsymbol{\lambda}+\delta \boldsymbol{\lambda})-i(\bm{\eta} ; \boldsymbol{\lambda}) \\
-    =&\frac{\partial i}{\partial \bm{\eta}} \delta \bm{\eta}+\boldsymbol{\nabla} i \cdot \delta \boldsymbol{\lambda} \\
-    =&(\{i, \boldsymbol{\xi}\}+\nabla i) \cdot \delta \boldsymbol{\lambda}=0
+\begin{equation}
+    \begin{split}
+        &i(\bm{\eta}+\delta \bm{\eta} ; \boldsymbol{\lambda}+\delta \boldsymbol{\lambda})-i(\bm{\eta} ; \boldsymbol{\lambda}) \\
+        =&\frac{\partial i}{\partial \bm{\eta}} \delta \bm{\eta}+\boldsymbol{\nabla} i \cdot \delta \boldsymbol{\lambda} \\
+        =&(\{i, \boldsymbol{\xi}\}+\nabla i) \cdot \delta \boldsymbol{\lambda}\\
+        =&0
+    \end{split}
     \label{eq2.16}
-\end{align}
+\end{equation}
 这说明，变换$\bm{\eta} \to \bm{\eta} + \delta  \bm{\lambda} \cdot \{\bm{\eta}, \boldsymbol{\xi}\}$将能壳$H_{0}(\bm{\eta} ; \boldsymbol{\lambda})$上的一个相点映射到能壳$H_{0}(\bm{\eta} + \delta \bm{\eta} ; \boldsymbol{\lambda})$上的一个点，而二者包围着相同的相体积。
 
 可见，类似于量子中的情形，只要给经典的系统施加一个反绝热的哈密顿量$\dot{\boldsymbol{\lambda}} \cdot \boldsymbol{\xi}(\bm{\eta}, \boldsymbol{\lambda}(t))$。那么此系统的$I(E, \boldsymbol{\lambda}) \equiv \int \mathrm{d} \bm{\eta} \theta\left[E-H_{0}(z ; \boldsymbol{\lambda})\right]$将严格保持不变，不论$H_0 $随时间的变化快慢与否。这个新的哈密顿量为\R{（文献\cite{Jarzynski2013} page eq16直接计算了$\DD{}{t} i (\bm{\eta}; \bm{\lambda})$，但其中的推理过程未能理解）}
@@ -143,7 +147,7 @@
 \end{equation}
 其中$V_{\mathrm{box}}(q ; L)$代表一维盒子的势场$V_{\mathrm{box}}(q ; L) = \left\{\begin{array}{l} 0 ,\ q<L\\ \infty ,\ q \leq 0\ \text{or}\ q \geq L \end{array}\right.$在经典中这个粒子的运动是平凡的——以相同的速度在两堵墙之间做往返运动。
     
-哈密顿量的参数$L$随时间$t$变化，现在我们构造这个系统的\textbf{反绝热哈密顿量}。不难得出，矩形能壳的面积为$I=2 \hat{P} L$，由于矩形能壳的长的变化为$L \to L(1+\nu)$，为了维持矩形能壳的面积，在一阶精度下，可令其宽的微小改变为$2 \hat{P} \to 2 \hat{P} (1-\nu)$，其中$\nu \equiv \delta L / L$。于是，这两个能壳被一个线性的尺度变换所联系
+哈密顿量的参数$L$随时间$t$变化，现在我们构造这个系统的\textbf{反绝热哈密顿量}。不难得出，矩形能壳的面积为$I=2 \bar{p} L$，由于矩形能壳的长的变化为$L \to L(1+\nu)$，为了维持矩形能壳的面积，在一阶精度下，可令其宽的微小改变为$2 \bar{p} \to 2 \bar{p} (1-\nu)$，其中$\nu \equiv \delta L / L$。于是，这两个能壳被一个线性的尺度变换所联系
 \begin{equation}
     q \rightarrow q(1+\nu) \quad, \quad p \rightarrow p(1-\nu)
     \label{eq2.19}
@@ -184,13 +188,31 @@
 \end{equation}
 换句话说，算符$\exp (\delta L \xi / i \hbar)$对波函数$\psi(q)$进行了线性放大。（系数$\sqrt{\frac{1}{s}}$保证了波函数的归一化）自此我们也成功的通过构造的\textbf{经典反绝热哈密顿量}构造出了\textbf{量子反绝热哈密顿量}
 
-不难发现，我们的构造能够成功，很大程度上得益于能壳和本征态之间的\textbf{尺度变换}。相似的办法也能够应用于\textbf{偶次幂势场}
+不难发现，我们的构造能够成功，很大程度上得益于能壳和本征态之间的\textbf{尺度变换}关系能够成立。相似的办法也能够应用于\textbf{偶次幂势场}，则经典哈密顿量为
 \begin{equation}
     H_{0}(\bm{\eta} ; L)=\frac{p^{2}}{2 m}+\epsilon\left(\frac{q}{L}\right)^{b}
     \label{eq2.26}
 \end{equation}
-
-
+可以证明，对于相应的量子的情形，也是可以按照类似的方式构造其\textbf{量子反绝热哈密顿量}的。其中$\epsilon > 0$调节了能量尺度，而$b$是正偶数。同样的，我们先在经典中加以考虑，再推广到量子中。上述系统的\textbf{绝热不变量}为
+\begin{equation}
+    \begin{split}
+        i(\bm{\eta};\ L) &= 4 \int_0^{L \left(\frac{H_0}{\epsilon}\right)^{1/b}} \sqrt{2 m \left[ H_0 -\epsilon \left(\frac{q}{L}\right)^b\right]} \, \M{d}q \\ 
+        &= \sqrt{8 \pi m} \epsilon^{-1 / b} \frac{\Gamma\left(1+\frac{1}{b}\right)}{\Gamma\left(\frac{3}{2}+\frac{1}{b}\right)} L H_0^{\frac{1}{2 \mu}}\\
+        &= c L H_0^{\frac{1}{2 \mu}}
+    \end{split}
+    \label{eq2.27}
+\end{equation}
+其中，$\mu \equiv \frac{b}{b+2} ,\ c \equiv \sqrt{8 \pi m} \epsilon^{-1 / b} \frac{\Gamma\left(1+\frac{1}{b}\right)}{\Gamma\left(\frac{3}{2}+\frac{1}{b}\right)}$
+同样的，含时参数$L \to L + \delta L$的变化，通过一个线性变换引起了能壳的变化。为了看到这一点，我们考虑$i(q,\ p;\ L)$的变化$\delta i(q,\ p;\ L) = \PP{i}{q} \delta q + \PP{i}{p} \delta p + \PP{i}{L} \delta L \equiv 0$，为了使恒等式成立，可以假设$\delta q = x q \frac{\delta}{L},\ \delta p = - y p \frac{\delta}{L}$，可以得到
+\begin{equation}
+    \frac{c}{2 \mu H_0} \left[ (\mu - y) \frac{p^2}{m} + (2 \mu +b + b x) \epsilon \left( \frac{q}{L} \right)^b \right] \delta L \equiv 0
+    \label{eq2.28}
+\end{equation}
+可以得到$x=y=\mu$，可见，能壳的变换依然可以由式\ref{eq2.19}进行描述，只不过现在$\nu = \mu \delta L / L$，同理我们可以得到新的哈密顿量
+\begin{equation}
+    H(\bm{\eta}, t)=H_{0}(\bm{\eta} ; L)+\mu \frac{\dot{L}}{L} q p
+    \label{eq2.28}
+\end{equation}
 
 
 
