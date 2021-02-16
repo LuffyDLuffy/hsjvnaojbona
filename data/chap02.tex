@@ -6,10 +6,10 @@
 \section{绝热捷径}
 
 
-\qquad 在有限时间热力学中，一个非常重要的议题是如何实现不同平衡态的相互转换。因为\textbf{有限时间}的限制使得我们不能够使用准静态的方法，而绝热捷径\cite{Chen2010}提供了这样一种可以在有限时间内实现平衡态转化的策略。这个策略是由 Demirplak and Rice \cite{Demirplak2003}和 Berry \cite{Berry2009} 独立发展出来的。\R{（两篇文章相隔太久，很奇怪，出自\cite{Jarzynski2013}）}在这个策略发展处以后的很长一段时间内，它引起了一大批研究者的关注。下面我们回顾一下绝热捷径是怎么实现的。
+\qquad 在有限时间热力学中，一个非常重要的议题是如何实现不同平衡态的相互转换。因为\textbf{有限时间}的限制使得我们不能够使用准静态的方法，而绝热捷径\cite{Chen2010}提供了这样一种可以在有限时间内实现平衡态转化的策略。这个策略是由 Demirplak and Rice \cite{Demirplak2003}和 Berry \cite{Berry2009} 独立发展出来的。在这个策略提出以后的很长一段时间里，它引起了一大批研究者的关注。下面我们回顾一下绝热捷径是怎么实现的。
 
 
-\subsection{绝热捷径的提出}
+\subsection{绝热捷径的实现}
 
 
 \qquad 考虑量子力学中的绝热定理\cite{Griffiths2018}：如果一个系统的哈密顿量$H_0(t)$随时间变化很缓慢，即$\tau_\mathrm{e} \gg \tau_\mathrm{i}$，其中$\tau_\mathrm{e}, \tau_\mathrm{i}$分别表示环境的特征时间和系统的内部特征时间。那么如果系统在时间$t=0$处于$H_0 (0)$的本征态,即系统的初态$| \psi(0) \rangle = | n(0) \rangle$，绝热定理告诉我们系统在$t$时刻会处于$H_0 (t)$的对应于瞬时本征态$| n(0) \rangle$，并且
@@ -55,7 +55,7 @@
     i \hbar|\delta \psi\rangle=\delta \boldsymbol{\lambda} \cdot \boldsymbol{\xi}|\psi\rangle
     \label{eq2.6}
 \end{equation}
-这样，在一阶近似下，$H_0 (\bm{\lambda})$的本征态$|n(\bm{\lambda})\rangle$的变换为\R{（有一点不懂，额外的相位怎么出来的\cite{Jarzynski2013}）}
+这样，在一阶近似下，$H_0 (\bm{\lambda})$的本征态$|n(\bm{\lambda})\rangle$的变换为
 \begin{equation}
     |n(\boldsymbol{\lambda})\rangle \rightarrow\left(1+\frac{1}{i \hbar} \delta \boldsymbol{\lambda} \cdot \hat{\boldsymbol{\xi}}\right)|n(\boldsymbol{\lambda})\rangle=e^{i \delta \boldsymbol{\lambda} \cdot \boldsymbol{A}_{n}}|n(\boldsymbol{\lambda}+\delta \boldsymbol{\lambda})\rangle
     \label{eq2.7}
@@ -240,10 +240,10 @@
 \end{equation}
 其中相点$\bm{\eta}_{a},\ \bm{\eta}_{b}$在同一能壳上，$\bm{\eta}(t)$是相点从$\bm{\eta}_{a}$演化到$\bm{\eta}_{b}$的相轨迹。式\eqref{eq2.30}可以结合式\eqref{eq2.13a}和$(\mathrm{d} / \mathrm{d} t) \boldsymbol{\xi}(\bm{\eta}(t) ; \boldsymbol{\lambda})=\left\{\boldsymbol{\xi}, H_{0}\right\}$而得到。
 
-如果我们考虑相空间中复杂一点的能壳，它们不是简单闭合的环。比如如果势$V(q;\ \bm{\lambda})$是双阱势，那么参数$\bm{\lambda}$的变化将改变能壳的拓扑结构——从单环变成双环或相反。这时$i$的绝热不变性将被破坏。\cite{Tennyson1986,Cary1986,Hannay1986}
+如果我们考虑相空间中复杂一点的能壳，它们不是简单闭合的环。比如如果势$V(q;\ \bm{\lambda})$是双阱势，而参数$\bm{\lambda}$的变化可以改变能壳的拓扑结构——从单环变成双环或相反。这时$i$的绝热不变性将被破坏。\cite{Tennyson1986,Cary1986,Hannay1986}
 
 对于自由度$f \geq 2$的经典系统，如果$H_0$是\textbf{完全可积的}\cite{LiuChuan2019}，我们就有可能能够重复
-式\eqref{eq2.10}-\eqref{eq2.17}对\textbf{作用量-角度变量}的分析，每一个生成$\bm{\xi}_i$元对应一对\textbf{作用量-角度变量}。另一个情形下，如果$H_0$是各态历经的，那么式$\eqref{eq2.13a}$的解的存在将意味着能壳$H_0 (\bm{\eta};\ \bm{\lambda})$可以被\textbf{正则变换}到$H_0 (\bm{\eta};\ \bm{\lambda}+\delta \bm{\lambda} )$。\cite{Jarzynski1995}虽然对于$f \geq 2$的系统，这一条件通常并不能满足，但一旦满足，$\bm{\xi}$就简单的是这个变换的生成元，无耗散的驱动就可以由$H_0 + \dot{\boldsymbol{\lambda}} \cdot \boldsymbol{\xi}$实现。
+式\eqref{eq2.10}-\eqref{eq2.17}对\textbf{作用量-角度变量}的分析，每一个生成$\bm{\xi}_i$元对应一对\textbf{作用量-角度变量}。\R{（可加一脚注）}另一个情形下，如果$H_0$是各态历经的，那么式$\eqref{eq2.13a}$的解的存在将意味着能壳$H_0 (\bm{\eta};\ \bm{\lambda})$可以被\textbf{正则变换}到$H_0 (\bm{\eta};\ \bm{\lambda}+\delta \bm{\lambda} )$。\cite{Jarzynski1995}虽然对于$f \geq 2$的系统，这一条件通常并不能满足，但一旦满足，$\bm{\xi}$就简单的是这个变换的生成元，无耗散的驱动就可以由$H_0 + \dot{\boldsymbol{\lambda}} \cdot \boldsymbol{\xi}$实现。
 
 上述的方法除了可以应用在量子和经典动力学之外，相似的方法也可以应用于统计力学，用于估算自由能的变化。其中反绝热的\textbf{度规缩放}\cite{Miller2000}或者\textbf{场流}\cite{Vaikuntanathan2008}被构造出来，用于减少或者消除对有限时间过程中数字模拟的不可逆性。
 
@@ -256,9 +256,7 @@
     \end{split}
     \label{eq2.31}
 \end{equation}
-在时间$t_i < t \leq t_f$内，参数由$\lambda_{i} \equiv \lambda(t_i)$变为$\lambda_{f} \equiv \lambda(t_f)$。我们要求$\dot{\lambda}\left(t_{i}\right)=\dot{\lambda}\left(t_{f}\right)=0$，这样才有$H\left(t_{f}\right)=H_0 \left(t_{f}\right),\ H\left(t_{f}\right)=H_0 \left(t_{f}\right)$，\R{（不特别清楚，大概是为了使初态和末态保持一致？）}除此之外，$\lambda (t)$依赖于时间$t$的形式有很大的任意性。
-
-运动方程为
+在时间$t_i < t \leq t_f$内，参数由$\lambda_{i} \equiv \lambda(t_i)$变为$\lambda_{f} \equiv \lambda(t_f)$。我们要求$\dot{\lambda}\left(t_{i}\right)=\dot{\lambda}\left(t_{f}\right)=0$，这样才有$H\left(t_{f}\right)=H_0 \left(t_{f}\right),\ H\left(t_{f}\right)=H_0 \left(t_{f}\right)$，除此之外，$\lambda (t)$依赖于时间$t$的形式有很大的任意性。运动方程为
 \begin{equation}
     \left\{\begin{array}{l}
         \dot{q}=\frac{\partial H}{\partial p}=\frac{p}{m}+\frac{\lambda(t)}{2 \lambda(t)} q \\
@@ -278,7 +276,7 @@
     \rho_{f}=\rho_{i}=\frac{\beta_{i} }{2 \pi \lambda_{i}} \exp \left[-\beta_{i} H\left(t_{i}\right)\right]
     \label{eq2.33}
 \end{equation}
-接着我们找到末态的有效温度，使得末态的分布函数\eqref{eq2.33}可以被表达成正则分布的样子
+接着我们寻找末态的有效温度，使得末态的分布函数\eqref{eq2.33}可以被表达成正则分布的样子
 \begin{equation}
     \rho_{f}=\frac{\beta_{f} }{2 \pi \lambda_{f}} \exp \left[-\beta_{f} H\left(t_{f}\right)\right]
     \label{eq2.34}
@@ -303,17 +301,44 @@
 \end{equation}
 这说明，如果系统的初态等效温度为$\left( k_\M{B} \beta_i\right)^{-1}$的正则态，那么在系统经历绝热捷径之后，我们可以把系统的末态视为等效温度为$\left( k_\M{B} \beta_f\right)^{-1}$的正则态。而且，初态和末态的等效温度满足\eqref{eq2.40}。
 
-这样，通过绝热捷径，在时间$t_i \sim t_f$内，我们实现了终于微观正则态之间的转换。
-
-
-
-
-
-
-
+这样，通过绝热捷径，在有限时间时间$t_i \sim t_f$内，我们实现了微观正则态之间的转换。
 
 
 \section{等温捷径}
     
+\qquad 上一节我们介绍了绝热捷径，它可以在有限时间内实现\textbf{正则平衡态}之间的转化。又由于这个过程中，系统和外界没有热交换故而称之为\textbf{绝热捷径}。那么类比于经典中的绝热过程和等温过程，我自然难免思考是否会存在对应的\textbf{等温捷径}。类似的，我们希望它可以在有限时间内实现两个等温平衡态间的转化。如果可以成功，我们还可以进一步思考由\textbf{绝热捷径}和\textbf{等温捷径}构成的有限时间类卡诺循环的功率与效率等问题。
+
+Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲度系数进行调节，是系统比自然驰豫过程快一百倍达到了平衡态。Le Cunuder等人\cite{LeCunuder2016}实现了微观谐振子平衡态的快速转化。不过这些方法都只能限制于布朗粒子系统，我们需要在一般情况也能适用的办法。于是，李耿等人\cite{Li2016}发展出了等温捷径的概念。很类似于绝热捷径，李耿等人为一个初始处于平衡态的系统施加了一个辅助势场（类似于绝热捷径中的反绝热哈密顿量），它使得这个和恒温热浴接触的系统的演化处于原哈密顿量的瞬时平衡态。通过对辅助势场的调节，可以使得系统的初末状态都是原哈密顿量的平衡态，就此实现了等温情况下平衡态间的转化。
+
+\subsection{绝热捷径的实现}
+
+考虑一个和温度为$T$的热浴接触的系统，如果系统的哈密段量$H_0 \left(\bm{\eta},\ \lambda\left( t \right) \right)$依赖于时间。分布函数$\rho (\bm{\eta},\ t)$的时间演化由下式决定
+\begin{equation}
+    \frac{\partial \rho(\bm{\eta}, t)}{\partial t}=L_{0}(\bm{\eta}, \lambda(t)) \rho(\bm{\eta}, t)
+    \label{eq2.41}
+\end{equation}
+其中$L_{0}(\bm{\eta}, \lambda(t))$是演化算符，我们将讨论的框架限制在这样一种情况下：对于固定的参数$\lambda$，系统处于这样一种平衡态之中，它的分布函数满足$\rho_{\mathrm{eq}} \propto e^{-\beta H_{0}(\Gamma, \lambda)}$，其中$\beta= \frac{1}{k_{\M{B}} T}$。现在给系统引入一个辅助势$U_1 (\bm{\eta},\ t)$，哈密顿量成为$H(\bm{\eta}, t)=H_{0}(\bm{\eta}, \lambda(t))+U_{1}(\bm{\eta}, t)$，演化方程\eqref{eq2.41}成为
+\begin{equation}
+    \frac{\partial \rho(\bm{\eta}, t)}{\partial t}=L_{0}(\bm{\eta}, \lambda(t)) \rho(\bm{\eta}, t)+L_{1}(\bm{\eta}, t) \rho(\bm{\eta}, t)
+    \label{eq2.42}
+\end{equation}
+其中$L_{1}(\bm{\eta}, t$代表与辅助势对应的算符。我们要求辅助势可以使得系统在任何时候都处于原哈密段量的瞬时平衡态中，分布函数为
+\begin{equation}
+    \rho(\bm{\eta}, t)=\rho_{\mathrm{ieq}}(\bm{\eta}, \lambda(t)) \equiv e^{\beta\left[F(\lambda(t))-H_{0}(\bm{\eta}, \lambda(t))\right]}
+    \label{eq2.43}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
