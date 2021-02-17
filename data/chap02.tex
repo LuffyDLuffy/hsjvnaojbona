@@ -153,21 +153,21 @@
      H_{0}(\bm{\eta} ; \lambda)=\frac{p^{2}}{2 m}+V_{\mathrm{box}}(q ; \lambda)
         \label{eq2.18}
 \end{equation}
-其中$V_{\mathrm{box}}(q ; \lambda)$代表一维盒子的势场$V_{\mathrm{box}}(q ; \lambda) = \left\{\begin{array}{l} 0 ,\ q<\lambda\\ \infty ,\ q \leq 0\ \text{or}\ q \geq \lambda \end{array}\right.$在经典中这个粒子的运动是平凡的——以相同的速度在两堵墙之间做往返运动。
+其中$V_{\mathrm{box}}(q ; \lambda)$代表一维盒子的势场$V_{\mathrm{box}}(q ; \lambda) = \left\{\begin{array}{l} 0 , q<\lambda\\ \infty , q \leq 0\ \text{or}\ q \geq \lambda \end{array}\right.$在经典中这个粒子的运动是平凡的——以相同的速度在两堵墙之间做往返运动。
     
 哈密顿量的参数$\lambda$随时间$t$变化，现在我们构造这个系统的\textbf{反绝热哈密顿量}。不难得出，矩形能壳的面积为$I=2 \bar{p} \lambda$，由于矩形能壳的长的变化为$\lambda \to \lambda(1+\nu)$，为了维持矩形能壳的面积，在一阶精度下，可令其宽的微小改变为$2 \bar{p} \to 2 \bar{p} (1-\nu)$，其中$\nu \equiv \delta \lambda / \lambda$。于是，这两个能壳被一个线性的尺度变换所联系
 \begin{equation}
     q \rightarrow q(1+\nu) \quad, \quad p \rightarrow p(1-\nu)
     \label{eq2.19}
 \end{equation}
-现在我们可以通过$(\nu q,\ -\nu p)  = \delta \lambda \{ (q,\ p),\ \xi \}$（式\eqref{eq2.15}）逆向解出生成元的表达式，于是我们可得一对这样的方程$\left\{ \begin{array}{l} q / \lambda=\partial \xi / \partial p \\ p / \lambda=\partial \xi / \partial q \end{array}\right.$。结合限制条件\eqref{eq2.13b}，于是可令$\xi = q p / \lambda$。再根据式\eqref{eq2.19}，我们最终得到
+现在我们可以通过$(\nu q, -\nu p)  = \delta \lambda \{ (q, p), \xi \}$（式\eqref{eq2.15}）逆向解出生成元的表达式，于是我们可得一对这样的方程$\left\{ \begin{array}{l} q / \lambda=\partial \xi / \partial p \\ p / \lambda=\partial \xi / \partial q \end{array}\right.$。结合限制条件\eqref{eq2.13b}，于是可令$\xi = q p / \lambda$。再根据式\eqref{eq2.19}，我们最终得到
 \begin{equation}
     H(\bm{\eta}, t)=H_{0}(\bm{\eta} ; \lambda)+\frac{\dot{\lambda}}{\lambda} q p \quad, \quad \lambda=\lambda(t)
     \label{eq2.20}
 \end{equation}
-在这个时间依赖的哈密顿量之下，绝热不变量$i(q,\ p;\ \lambda)=2 |p| \lambda$是严格守恒的，不论函数$\lambda(t)$的形式是怎样的。现在我们对于这个具体的例子，实实在在的构造出了\textbf{反绝热哈密顿量}，这说明其并不只是存在于形式化理论中，而是可以在实际中加以利用的。
+在这个时间依赖的哈密顿量之下，绝热不变量$i(q, p;\ \lambda)=2 |p| \lambda$是严格守恒的，不论函数$\lambda(t)$的形式是怎样的。现在我们对于这个具体的例子，实实在在的构造出了\textbf{反绝热哈密顿量}，这说明其并不只是存在于形式化理论中，而是可以在实际中加以利用的。
 
-在构造出了经典的\textbf{反绝热哈密顿量}之后，我们也可以通过$\xi$的经典表达式来猜想量子力学中的\textbf{反绝热哈密顿量}，因为算符$p,\ q$是不对易的，一个自然的猜想是
+在构造出了经典的\textbf{反绝热哈密顿量}之后，我们也可以通过$\xi$的经典表达式来猜想量子力学中的\textbf{反绝热哈密顿量}，因为算符$p, q$是不对易的，一个自然的猜想是
 \begin{equation}
     \xi(\lambda) = \frac{q p + p q}{2 \lambda}
     \label{eq2.21}
@@ -187,7 +187,7 @@
     \psi (q, t)=\sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right) \exp \left(-\frac{i}{\hbar} \int_{0}^{t} \mathrm{~d} t^{\prime} \frac{n^{2} \pi^{2} \hbar^{2}}{2 m \lambda^{2}}\right)
     \label{eq2.24}
 \end{equation}
-将成为这个系统的精确解（初态为$\psi (q,\ 0) = \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right)$），不论$\lambda(t)$的函数形式如何。
+将成为这个系统的精确解（初态为$\psi (q, 0) = \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right)$），不论$\lambda(t)$的函数形式如何。
 
 式\eqref{eq2.23}也可以更一般的写成
 \begin{equation}
@@ -210,8 +210,8 @@
     \end{split}
     \label{eq2.27}
 \end{equation}
-其中，$\mu \equiv \frac{b}{b+2} ,\ c \equiv \sqrt{8 \pi m} \epsilon^{-1 / b} \frac{\Gamma\left(1+\frac{1}{b}\right)}{\Gamma\left(\frac{3}{2}+\frac{1}{b}\right)}$
-同样的，含时参数$\lambda \to \lambda + \delta \lambda$的变化，通过一个线性变换引起了能壳的变化。为了看到这一点，我们考虑$i(q,\ p;\ \lambda)$的变化$\delta i(q,\ p;\ \lambda) = \PP{i}{q} \delta q + \PP{i}{p} \delta p + \PP{i}{\lambda} \delta \lambda \equiv 0$，为了使恒等式成立，可以假设$\delta q = x q \frac{\delta \lambda}{\lambda},\ \delta p = - y p \frac{\delta \lambda}{\lambda}$，可以得到
+其中，$\mu \equiv \frac{b}{b+2} , c \equiv \sqrt{8 \pi m} \epsilon^{-1 / b} \frac{\Gamma\left(1+\frac{1}{b}\right)}{\Gamma\left(\frac{3}{2}+\frac{1}{b}\right)}$
+同样的，含时参数$\lambda \to \lambda + \delta \lambda$的变化，通过一个线性变换引起了能壳的变化。为了看到这一点，我们考虑$i(q, p;\ \lambda)$的变化$\delta i(q, p;\ \lambda) = \PP{i}{q} \delta q + \PP{i}{p} \delta p + \PP{i}{\lambda} \delta \lambda \equiv 0$，为了使恒等式成立，可以假设$\delta q = x q \frac{\delta \lambda}{\lambda}, \delta p = - y p \frac{\delta \lambda}{\lambda}$，可以得到
 \begin{equation}
     \frac{c}{2 \mu H_0} \left[ (\mu - y) \frac{p^2}{m} + (2 \mu - b + b x) \epsilon \left( \frac{q}{\lambda} \right)^b \right] \delta \lambda \equiv 0
     \label{eq2.28}
@@ -231,14 +231,14 @@
     H(t)=H_{0}(\lambda)+\frac{b}{b+2} \frac{\dot{\lambda}}{2 \lambda} \frac{\hbar}{i}\left(q \frac{\partial}{\partial q}+\frac{\partial}{\partial q} q\right)
     \label{eq2.29.5}
 \end{equation}
-之下。这结果对任意$b \in \{ 2,\ 4,\ 6,\ \cdots\}$都是成立对的。特别的，$b=2$和$b \to \infty$对应于\textbf{一维谐振子}和\textbf{一维无限深势阱}的情况。不过，对于\textbf{一维谐振子}的情况，Muga等人使用升降算子$a,\ a^{\dagger}$结合式\eqref{eq2.3}的办法更为简单地得到了相同的结果。\cite{Muga2010}
+之下。这结果对任意$b \in \{ 2, 4, 6, \cdots\}$都是成立对的。特别的，$b=2$和$b \to \infty$对应于\textbf{一维谐振子}和\textbf{一维无限深势阱}的情况。不过，对于\textbf{一维谐振子}的情况，Muga等人使用升降算子$a, a^{\dagger}$结合式\eqref{eq2.3}的办法更为简单地得到了相同的结果。\cite{Muga2010}
 
 对于一般的一维势场，生成元应该满足
 \begin{equation}
     \boldsymbol{\xi}\left(\bm{\eta}_{b} ; \boldsymbol{\lambda}\right)-\boldsymbol{\xi}\left(\bm{\eta}_{a} ; \boldsymbol{\lambda}\right)=\int_{a}^{b} \mathrm{~d} t \nabla \tilde{H}_{0}(\bm{\eta}(t) ; \boldsymbol{\lambda})
     \label{eq2.30}
 \end{equation}
-其中相点$\bm{\eta}_{a},\ \bm{\eta}_{b}$在同一能壳上，$\bm{\eta}(t)$是相点从$\bm{\eta}_{a}$演化到$\bm{\eta}_{b}$的相轨迹。式\eqref{eq2.30}可以结合式\eqref{eq2.13a}和$(\mathrm{d} / \mathrm{d} t) \boldsymbol{\xi}(\bm{\eta}(t) ; \boldsymbol{\lambda})=\left\{\boldsymbol{\xi}, H_{0}\right\}$而得到。
+其中相点$\bm{\eta}_{a}, \bm{\eta}_{b}$在同一能壳上，$\bm{\eta}(t)$是相点从$\bm{\eta}_{a}$演化到$\bm{\eta}_{b}$的相轨迹。式\eqref{eq2.30}可以结合式\eqref{eq2.13a}和$(\mathrm{d} / \mathrm{d} t) \boldsymbol{\xi}(\bm{\eta}(t) ; \boldsymbol{\lambda})=\left\{\boldsymbol{\xi}, H_{0}\right\}$而得到。
 
 如果我们考虑相空间中复杂一点的能壳，它们不是简单闭合的环。比如如果势$V(q;\ \bm{\lambda})$是双阱势，而参数$\bm{\lambda}$的变化可以改变能壳的拓扑结构——从单环变成双环或相反。这时$i$的绝热不变性将被破坏。\cite{Tennyson1986,Cary1986,Hannay1986}
 
@@ -256,7 +256,7 @@
     \end{split}
     \label{eq2.31}
 \end{equation}
-在时间$t_i < t \leq t_f$内，参数由$\lambda_{i} \equiv \lambda(t_i)$变为$\lambda_{f} \equiv \lambda(t_f)$。我们要求$\dot{\lambda}\left(t_{i}\right)=\dot{\lambda}\left(t_{f}\right)=0$，这样才有$H\left(t_{f}\right)=H_0 \left(t_{f}\right),\ H\left(t_{f}\right)=H_0 \left(t_{f}\right)$，除此之外，$\lambda (t)$依赖于时间$t$的形式有很大的任意性。运动方程为
+在时间$t_i < t \leq t_f$内，参数由$\lambda_{i} \equiv \lambda(t_i)$变为$\lambda_{f} \equiv \lambda(t_f)$。我们要求$\dot{\lambda}\left(t_{i}\right)=\dot{\lambda}\left(t_{f}\right)=0$，这样才有$H\left(t_{f}\right)=H_0 \left(t_{f}\right), H\left(t_{f}\right)=H_0 \left(t_{f}\right)$，除此之外，$\lambda (t)$依赖于时间$t$的形式有很大的任意性。运动方程为
 \begin{equation}
     \left\{\begin{array}{l}
         \dot{q}=\frac{\partial H}{\partial p}=\frac{p}{m}+\frac{\lambda(t)}{2 \lambda(t)} q \\
@@ -271,7 +271,7 @@
     \rho_{i}=\frac{\beta_{i}}{2 \pi \lambda_{i}} \exp \left[-\beta_{i} H_0 \left(t_{i}\right)\right]
     \label{eq2.32}
 \end{equation}
-其中$(q_i,\ p_i)$代表初始时的相点，根据\textbf{刘维尔定理}，当系统不和外界任何热浴接触时，分布函数沿着相轨应当是不变的。所以，末态的分布函数应当为
+其中$(q_i, p_i)$代表初始时的相点，根据\textbf{刘维尔定理}，当系统不和外界任何热浴接触时，分布函数沿着相轨应当是不变的。所以，末态的分布函数应当为
 \begin{equation}
     \rho_{f}=\rho_{i}=\frac{\beta_{i} }{2 \pi \lambda_{i}} \exp \left[-\beta_{i} H\left(t_{i}\right)\right]
     \label{eq2.33}
@@ -281,7 +281,7 @@
     \rho_{f}=\frac{\beta_{f} }{2 \pi \lambda_{f}} \exp \left[-\beta_{f} H\left(t_{f}\right)\right]
     \label{eq2.34}
 \end{equation}
-其中$(q_f,\ p_f)$是末态的相点。计算$H_0 (t)$对时间的导数得
+其中$(q_f, p_f)$是末态的相点。计算$H_0 (t)$对时间的导数得
 \begin{equation}
     \begin{split}
         \DD{H_0 (t)}{t} =& \frac{p}{m}\dot{p} + 2 \epsilon \frac{q}{\lambda^2}\dot{q} - 2 \epsilon \frac{q^2}{\lambda^2} \dot{\lambda}\\
@@ -312,12 +312,12 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 
 \subsection{绝热捷径的实现}
 
-\qquad 考虑一个和温度为$T$的热浴接触的系统，如果系统的哈密段量$H_0 \left(\bm{\eta},\ \lambda\left( t \right) \right)$依赖于时间。分布函数$\rho (\bm{\eta},\ t)$的时间演化由下式决定
+\qquad 考虑一个和温度为$T$的热浴接触的系统，如果系统的哈密段量$H_0 \left(\bm{\eta}, \lambda\left( t \right) \right)$依赖于时间。分布函数$\rho (\bm{\eta}, t)$的时间演化由下式决定
 \begin{equation}
     \frac{\partial \rho(\bm{\eta}, t)}{\partial t}=L_{0}(\bm{\eta}, \lambda(t)) \rho(\bm{\eta}, t)
     \label{eq2.41}
 \end{equation}
-其中$L_{0}(\bm{\eta}, \lambda(t))$是演化算符，我们将讨论的框架限制在这样一种情况下：对于固定的参数$\lambda$，系统处于这样一种平衡态之中，它的分布函数满足$\rho_{\mathrm{eq}} \propto e^{-\beta H_{0}(\Gamma, \lambda)}$，其中$\beta= \frac{1}{k_{\M{B}} T}$。现在给系统引入一个辅助势$U_1 (\bm{\eta},\ t)$，哈密顿量成为$H(\bm{\eta}, t)=H_{0}(\bm{\eta}, \lambda(t))+U_{1}(\bm{\eta}, t)$，演化方程\eqref{eq2.41}成为
+其中$L_{0}(\bm{\eta}, \lambda(t))$是演化算符，我们将讨论的框架限制在这样一种情况下：对于固定的参数$\lambda$，系统处于这样一种平衡态之中，它的分布函数满足$\rho_{\mathrm{eq}} \propto e^{-\beta H_{0}(\bm{\eta}, \lambda)}$，其中$\beta= \frac{1}{k_{\M{B}} T}$。现在给系统引入一个辅助势$U_1 (\bm{\eta}, t)$，哈密顿量成为$H(\bm{\eta}, t)=H_{0}(\bm{\eta}, \lambda(t))+U_{1}(\bm{\eta}, t)$，演化方程\eqref{eq2.41}成为
 \begin{equation}
     \frac{\partial \rho(\bm{\eta}, t)}{\partial t}=L_{0}(\bm{\eta}, \lambda(t)) \rho(\bm{\eta}, t)+L_{1}(\bm{\eta}, t) \rho(\bm{\eta}, t)
     \label{eq2.42}
@@ -327,23 +327,48 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
     \rho(\bm{\eta}, t)=\rho_{\mathrm{ieq}}(\bm{\eta}, \lambda(t)) \equiv e^{\beta\left[F(\lambda(t))-H_{0}(\bm{\eta}, \lambda(t))\right]}
     \label{eq2.43}
 \end{equation}
-其中，$F(\lambda) \equiv-\beta^{-1} \ln \left[\int e^{-\beta H_{0}(\Gamma, \lambda)} d \Gamma\right]$是原系统在给定参数$\lambda$时，在平衡态下的自由能。\eqref{eq2.43}的积分是对整个相空间的。如果我们限制辅助势$U_1 (\Gamma ,\ t)$在驱动过程的初末时刻都为零，即分布函数在初末时刻都对应于哈密顿量$H(\Gamma \, t)$，那么我们就实现了有限时间内的等温平衡态的转化。
+其中，$F(\lambda) \equiv-\beta^{-1} \ln \left[\int e^{-\beta H_{0}(\bm{\eta}, \lambda)} d \bm{\eta}\right]$是原系统在给定参数$\lambda$时，在平衡态下的自由能。\eqref{eq2.43}的积分是对整个相空间的。如果我们限制辅助势$U_1 (\bm{\eta} , t)$在驱动过程的初末时刻都为零，即分布函数在初末时刻都对应于哈密顿量$H(\bm{\eta} \, t)$，那么我们就实现了有限时间内的等温平衡态的转化。
 
 上面的这种方法看上去很类似于Vaikuntanathan和Jarzynski提出的出的\textbf{护送自由能模拟(escorted free-energy simulations)}。\cite{Vaikuntanathan2008}通过在系统中引入恰当的人工场流和巧妙的功的定义，这个方法可以生成相轨迹，沿着这些相轨迹做的功等于系统自由能的改变。而等温捷径的方法致力于为等温情况下有限时间内平衡态的转化提供统一的理论框架。也不用额外引入功的定义，可以依旧采用随机热力学中轨道功的定义。\cite{Seifert2012,Sekimoto2010}
 
 \subsection{等温捷径应用于过阻尼布朗粒子}
 
-
-
-
-
-
-
-
-
-
-
-
+\qquad 考虑在势场$U_0 (q, \lambda(t))$中的一维布朗粒子，在过阻尼的情形下忽略其惯性的影响。为系统引入一个辅助势$U_1 (q,t)$，那么现在粒子的势场为
+\begin{equation}
+    U (q,t) = U_0 (q, \lambda(t)) + U_1 (q,t)
+    \label{eq2.44}
+\end{equation}
+布朗粒子的分布函数$\rho (q, t)$的演化由\textbf{福克-普朗克方程(Fokker-Planck equation)}\cite{Gardiner}决定
+\begin{equation}
+    \frac{\partial \rho}{\partial t}=\frac{1}{\gamma} \frac{\partial}{\partial q}\left[\frac{\partial\left(U_{0}+U_{1}\right)}{\partial q} \rho+\frac{1}{\beta} \frac{\partial \rho}{\partial q}\right]
+    \label{eq2.45}
+\end{equation}
+其中$\gamma$是粒子与液体间的黏滞系数。鉴于我们的假设——系统时刻处在$H_0 (\bm{\eta}, \lambda(t))$瞬时平衡态下，则系统的分布函数为
+\begin{equation}
+    \rho(q, t)=\rho_{\mathrm{ieq}}(q, \lambda(t)) \equiv e^{\beta\left[F(\lambda(t))-U_{0}(q, \lambda(t))\right]}
+    \label{eq2.46}
+\end{equation}
+其中，$F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} e^{-\beta U_{0}(q, \lambda)} \M{d} q \right]$将式\eqref{eq2.46}代入福克-普朗克方程\eqref{eq2.45}，可以得到$U_1 (q,t)$需要满足的方程：
+\begin{equation}
+    \frac{1}{\gamma \beta} \frac{\partial^{2} U_{1}}{\partial q^{2}}-\frac{1}{\gamma} \frac{\partial U_{0}}{\partial q} \frac{\partial U_{1}}{\partial q}=\left(\frac{\M{d} F}{\M{d} \lambda}-\frac{\partial U_{0}}{\partial \lambda}\right) \dot{\lambda}
+    \label{eq2.47}
+\end{equation}
+可以令$ U_{1}(q, t)$取如下形式
+\begin{equation}
+    U_{1}(q, t)=\dot{\lambda}(t) f(q, \lambda(t))
+    \label{eq2.48}
+\end{equation}
+将上式\eqref{eq2.48}代入式\eqref{eq2.47}可得
+\begin{equation}
+    \frac{1}{\gamma \beta} \frac{\partial^{2} f}{\partial q^{2}}-\frac{1}{\gamma} \frac{\partial U_{0}}{\partial q} \frac{\partial f}{\partial q}=\frac{d F}{d \lambda}-\frac{\partial U_{0}}{\partial \lambda}
+    \label{eq2.49}
+\end{equation}
+非常有趣的是式\eqref{eq2.46}是方程\eqref{eq2.49}的积分因子，于是不难求得方程\eqref{eq2.49}的形式解。再结合假设\eqref{eq2.48}，得到
+\begin{equation}
+    U_{1}(q, t)=\gamma \beta \dot{\lambda}(t) \int \M{d} q \frac{\int \M{d} q h(q, \lambda(t))}{\rho_{\mathrm{ieq}}(q, \lambda(t))}
+    \label{eq2.50}
+\end{equation}
+其中$h(q, \lambda) \equiv\left[\frac{\M{d} F(\lambda)}{\M{d} \lambda}-\frac{\partial U_{0}(q, \lambda)}{\partial \lambda}\right] \rho_{\mathrm{ieq}}(q, \lambda)$
 
 
 
