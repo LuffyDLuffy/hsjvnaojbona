@@ -310,7 +310,7 @@
 
 Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲度系数进行调节，是系统比自然驰豫过程快一百倍达到了平衡态。Le Cunuder等人\cite{LeCunuder2016}实现了微观谐振子平衡态的快速转化。不过这些方法都只能限制于布朗粒子系统，我们需要在一般情况也能适用的办法。于是，李耿等人\cite{Li2016}发展出了等温捷径的概念。很类似于绝热捷径，李耿等人为一个初始处于平衡态的系统施加了一个辅助势场（类似于绝热捷径中的反绝热哈密顿量），它使得这个和恒温热浴接触的系统的演化处于原哈密顿量的瞬时平衡态。通过对辅助势场的调节，可以使得系统的初末状态都是原哈密顿量的平衡态，就此实现了等温情况下平衡态间的转化。
 
-\subsection{绝热捷径的实现}
+\subsection{等温捷径的实现}
 
 
 \qquad 考虑一个和温度为$T$的热浴接触的系统，如果系统的哈密段量$H_0 \left(\bm{\eta}, \lambda\left( t \right) \right)$依赖于时间。分布函数$\rho (\bm{\eta}, t)$的时间演化由下式决定
@@ -385,49 +385,64 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 \end{equation}
 其中$k$代表了谐振子势的强度，$\lambda(t)$是外力。将上式\eqref{eq2.52}代入式\eqref{eq2.50}就得到了辅助势的形式
 \begin{equation}
-    U_{1}(x, t)=-\frac{\gamma \dot{\lambda}(t)}{k} x
+    U_{1}(q, t)=-\frac{\gamma \dot{\lambda}(t)}{k} q
     \label{eq2.53}
 \end{equation}
 再来看一个例子：依赖于时间的谐振子势场中的布朗粒子，势场为
 \begin{equation}
-    U_{0}(x, \lambda(t))=\frac{1}{2} \lambda(t) x^{2}
+    U_{0}(q, \lambda(t))=\frac{1}{2} \lambda(t) q^{2}
     \label{eq2.54}
 \end{equation}
 同样的，根据式\eqref{eq2.50}可得辅助势为
 \begin{equation}
-    U_{1}(x, t)=\frac{\gamma \dot{\lambda}(t)}{4 \lambda(t)} x^{2}
+    U_{1}(q, t)=\frac{\gamma \dot{\lambda}(t)}{4 \lambda(t)} q^{2}
     \label{eq2.55}
 \end{equation}
-\eqref{eq2.55}和Martínez等人得到的结果\cite{Martinez2016}是等价的。并且，他们的结果意味着对于势场$U_0 (q, \lambda(t))= \lambda(t) x^{n} / 2 \quad (n=2,4,6\cdots)$都可以找到辅助势的解析解$U_{1}(x, t)=\gamma \dot{\lambda} x^{2} /(2 n \lambda)$。除此之外，也可以找到另一类势场$U_{0}(x, \lambda(t))=u(x-\lambda(t))$的辅助势，这是一个随时间平移的势场，相应的辅助势为$U_{1}(x, t)=-\gamma \dot{\lambda} x$\cite{Li2016}。福克-普朗克-克拉马斯方程只能描述势场不依赖于动量$p$时分布函数$\rho (x,p,t)$的时间演化。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+式\eqref{eq2.55}和Martínez等人得到的结果\cite{Martinez2016}是等价的。并且，他们的结果意味着对于势场$U_0 (q, \lambda(t))= \lambda(t) q^{n} / 2 \quad (n=2,4,6\cdots)$都可以找到辅助势的解析解$U_{1}(q, t)=\gamma \dot{\lambda} q^{2} /(2 n \lambda)$。除此之外，也可以找到另一类势场$U_{0}(q, \lambda(t))=u(q-\lambda(t))$的辅助势\cite{Li2016}，这是一个随时间平移的势场，相应的辅助势为$U_{1}(q, t)=-\gamma \dot{\lambda} q$。
 
 
 \subsection{等温捷径应用于欠阻尼布朗粒子}
 \qquad 在欠阻尼情况下，布朗粒子的惯性的影响不能忽略，我们假设辅助势$U_1$是粒子的坐标$q$和动能$p$的函数\footnote{严格说来，这个时候$U_1 (q,p)$ 应该叫做辅助哈密顿量。}。则总哈密顿量为
 \begin{equation}
-    H(x, p, t)=H_{0}(x, p, \lambda(t))+U_{1}(x, p, t)
-    \label{eq2.44}
+    H(q, p, t)=H_{0}(q, p, \lambda(t))+U_{1}(q, p, t)
+    \label{eq2.56}
 \end{equation}
-其中$H_{0}(x, p, \lambda(t))=\frac{p^{2}}{2 m}+U_{0}(x, \lambda(t))$
+其中$H_{0}(q, p, \lambda(t))=p^{2}/{2 m}+U_{0}(q, \lambda(t))$。但是通常的福克-普朗克-克拉马斯方程只能描述势场不依赖于动量$p$时分布函数$\rho (q,p,t)$的时间演化。通过刘维尔方程，李耿\cite{Li2016}得到了势能含有动量$p$的福克-普朗克-克拉马斯方程如下
+\begin{equation}
+        \frac{\partial \rho}{\partial t}=-\frac{\partial}{\partial q}(p \rho)+\frac{\partial}{\partial p}\left(\gamma p \rho+\rho \frac{\partial U_{0}}{\partial q}\right)+\frac{\gamma}{\beta} \frac{\partial^{2} \rho}{\partial p^{2}} -\frac{\partial U_{1}}{\partial p} \frac{\partial \rho}{\partial q}+\frac{\partial U_{1}}{\partial q} \frac{\partial \rho}{\partial p}+\gamma \frac{\partial}{\partial p}\left(\rho \frac{\partial U_{1}}{\partial p}\right)
+    \label{eq2.57}
+\end{equation}
+原系统瞬时平衡态的分布函数为
+\begin{equation}
+    H(q, p, t)=H_{0}(q, p, \lambda(t))+U_{1}(q, p, t)
+    \label{eq2.58}
+\end{equation}
+其中$F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} \M{d} q \int_{-\infty}^{+\infty} \M{d} p e^{-\beta H_{0}(q, p, \lambda)}\right]$
+同理，将上式\eqref{eq2.58}代入方程\eqref{eq2.57}，得到
+\begin{equation}
+    \frac{\gamma}{\beta} \frac{\partial^{2} U_{1}}{\partial p^{2}}-\gamma p \frac{\partial U_{1}}{\partial p}+\frac{\partial U_{0}}{\partial q} \frac{\partial U_{1}}{\partial p}-p \frac{\partial U_{1}}{\partial q}=\left(\frac{d F}{d \lambda}-\frac{\partial U_{0}}{\partial \lambda}\right) \dot{\lambda}
+    \label{eq2.59}
+\end{equation}
+假设$U_{1}(q, p, t)=\dot{\lambda}(t) f(q, p, \lambda(t))$，可以得到关于$f$的偏微分方程
+\begin{equation}
+    \frac{\gamma}{\beta} \frac{\partial^{2} f}{\partial p^{2}}-\gamma p \frac{\partial f}{\partial p}+\frac{\partial U_{0}}{\partial q} \frac{\partial f}{\partial p}-p \frac{\partial f}{\partial q}=\frac{d F}{d \lambda}-\frac{\partial U_{0}}{\partial \lambda}
+    \label{eq2.60}
+\end{equation}
+不同于欠阻尼的情况，除了一些特殊情况，我们无法为上面这个方程\eqref{eq2.60}找到解析解。
 
+和欠阻尼的情况一样，依然考虑两个特殊的势场\eqref{eq2.52}和\eqref{eq2.52}。可以求得相应的辅助势为
+\begin{equation}
+    U_{1}(q, p, t)=\frac{\dot{\lambda}(t)}{k}(p-\gamma q)
+    \label{eq2.61}
+\end{equation}
+和
+\begin{equation}
+    U_{1}(q, p, t)=\frac{\dot{\lambda}(t)}{4 \gamma \lambda(t)}\left[(p-\gamma q)^{2}+\lambda(t) q^{2}\right]
+    \label{eq2.62}
+\end{equation}
+类似于过阻尼的情形，在欠阻尼的情形下我们也可以为两类势场的辅助势找到解析解\cite{Li2016}，势场$U_0 (q, \lambda(t))= \lambda(t) q^{n} / 2 \quad (n=2,4,6\cdots) ,\ U_{0}(q, \lambda(t))=u(q-\lambda(t))$的辅助势分别为$U_{1}(x, p, t)\dot{\lambda}\left[(p-\gamma x)^{2}+\lambda(t) x^{n}\right] / 2 n \gamma \lambda ,\ U_{1}(x, p, t)=\dot{\lambda}(p-\gamma x)$。
 
+由Le Cunuder和他的合作者\cite{LeCunuder2016}所做的实验说明了辅助势\eqref{eq2.61}是能够在实验上实现的。
 
 
 

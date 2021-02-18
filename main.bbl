@@ -175,9 +175,11 @@ Sekimoto K.
 \newblock {Stochastic energetics}: volume 799\allowbreak[M].
 \newblock Berlin Heidelberg: Springer, 2010
 
-\bibitem[Gardiner()]{Gardiner}
+\bibitem[Gardiner(2004)]{Gardiner}
 Gardiner C~W.
-\newblock {Handbook LIKale Methods}\allowbreak[M].
-\newblock Berlin Heidelberg: Springer
+\newblock {Handbook of Stochastic Methods for Physics, Chemistry and the
+  Natural Sciences}\allowbreak[M].
+\newblock Third ed.
+\newblock Berlin Heidelberg: Springer, 2004
 
 \end{thebibliography}
