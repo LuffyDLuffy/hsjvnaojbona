@@ -1,0 +1,183 @@
+\begin{thebibliography}{28}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\href}[2]{\url{#2}}
+\providecommand{\doi}[1]{DOI: \href{https://doi.org/#1}{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+
+\bibitem[赵凯华\ 等(2005)赵凯华 and 罗蔚茵]{2005}
+赵凯华, 罗蔚茵.
+\newblock {新概念物理教程：热学}\allowbreak[M].
+\newblock 北京: 高等教育出版社, 2005
+
+\bibitem[Curzon\ et~al.(1975)Curzon and Ahlborn]{Curzon1975}
+Curzon F~L, Ahlborn B.
+\newblock {Efficiency of a Carnot engine at maximum power
+  output}\allowbreak[J].
+\newblock American Journal of Physics, 1975.
+
+\bibitem[Schmiedl\ et~al.(2008)Schmiedl and Seifert]{Schmiedl2008}
+Schmiedl T, Seifert U.
+\newblock {Efficiency at maximum power: An analytically solvable model for
+  stochastic heat engines}\allowbreak[J].
+\newblock EPL, 2008.
+
+\bibitem[Tu(2008)]{Tu2008}
+Tu Z~C.
+\newblock {Efficiency at maximum power of Feynman's ratchet as a heat
+  engine}\allowbreak[J].
+\newblock Journal of Physics A: Mathematical and Theoretical, 2008.
+
+\bibitem[Tu(2020)]{Tu2020}
+Tu Z~C.
+\newblock {Abstract models for heat engines}\allowbreak[J].
+\newblock Frontiers of Physics, 2020, 16\penalty0 (3): 33202.
+
+\bibitem[{Del Campo}\ et~al.(2014){Del Campo}, Goold, and
+  Paternostro]{DelCampo2014}
+{Del Campo} A, Goold J, Paternostro M.
+\newblock {More bang for your buck: Super-adiabatic quantum
+  engines}\allowbreak[J].
+\newblock Scientific Reports, 2014, 4: 1-6.
+
+\bibitem[Deng\ et~al.(2013)Deng, Wang, Liu, H{\"{a}}nggi, and Gong]{Deng2013}
+Deng J, Wang Q~H, Liu Z, et~al.
+\newblock {Boosting work characteristics and overall heat-engine performance
+  via shortcuts to adiabaticity: Quantum and classical systems}\allowbreak[J].
+\newblock Physical Review E - Statistical, Nonlinear, and Soft Matter Physics,
+  2013, 88\penalty0 (6): 1-8.
+
+\bibitem[Tu(2014)]{Tu2013}
+Tu Z~C.
+\newblock {Stochastic heat engine with the consideration of inertial effects
+  and shortcuts to adiabaticity}\allowbreak[J].
+\newblock Physical Review E - Statistical, Nonlinear, and Soft Matter Physics,
+  2014, 89\penalty0 (5): 1-9.
+
+\bibitem[Li\ et~al.(2017)Li, Quan, and Tu]{Li2016}
+Li G, Quan H~T, Tu Z~C.
+\newblock {Shortcuts to isothermality and nonequilibrium work
+  relations}\allowbreak[J].
+\newblock Physical Review E, 2017, 96\penalty0 (1): 1-11.
+
+\bibitem[Chen\ et~al.(2010)Chen, Ruschhaupt, Schmidt, {Del Campo},
+  Gu{\'{e}}ry-Odelin, and Muga]{Chen2010}
+Chen X, Ruschhaupt A, Schmidt S, et~al.
+\newblock {Fast optimal frictionless atom cooling in harmonic traps: Shortcut
+  to adiabaticity}\allowbreak[J].
+\newblock Physical Review Letters, 2010, 104\penalty0 (6): 1-4.
+
+\bibitem[Demirplak\ et~al.(2003)Demirplak and Rice]{Demirplak2003}
+Demirplak M, Rice S~A.
+\newblock {Adiabatic population transfer with control fields}\allowbreak[J].
+\newblock Journal of Physical Chemistry A, 2003, 107\penalty0 (46): 9937-9945.
+
+\bibitem[Berry(2009)]{Berry2009}
+Berry M~V.
+\newblock {Transitionless quantum driving}\allowbreak[J].
+\newblock Journal of Physics A: Mathematical and Theoretical, 2009, 42\penalty0
+  (36): 1-9.
+
+\bibitem[Griffiths\ et~al.(2018)Griffiths and Schroeter]{Griffiths2018}
+Griffiths D~J, Schroeter D~F.
+\newblock {Introduction to Quantum Mechanics}\allowbreak[M].
+\newblock Cambridge University Press, 2018: 546-550
+
+\bibitem[Jarzynski(2013)]{Jarzynski2013}
+Jarzynski C.
+\newblock {Generating shortcuts to adiabaticity in quantum and classical
+  dynamics}\allowbreak[J].
+\newblock Physical Review A - Atomic, Molecular, and Optical Physics, 2013,
+  88\penalty0 (4): 1-5.
+
+\bibitem[刘川(2019)]{LiuChuan2019}
+刘川.
+\newblock 理 论 力 学\allowbreak[M].
+\newblock 北京: 北京大学出版社, 2019
+
+\bibitem[Jarzynski(1995)]{Jarzynski1995}
+Jarzynski C.
+\newblock {Geometric phases and anholonomy for a class of chaotic classical
+  systems}\allowbreak[J].
+\newblock Physical Review Letters, 1995, 74\penalty0 (10): 1732-1735.
+
+\bibitem[H.戈德斯坦(1986)]{H.1986}
+H.戈德斯坦.
+\newblock 经典力学\allowbreak[M].
+\newblock 第二版.
+\newblock 北京: 科学出版社, 1986: 480-483
+
+\bibitem[Muga\ et~al.(2010)Muga, Chen, Ib{\'{a}}̃ez, Lizuain, and
+  Ruschhaupt]{Muga2010}
+Muga J~G, Chen X, Ib{\'{a}}̃ez S, et~al.
+\newblock {Transitionless quantum drivings for the harmonic
+  oscillator}\allowbreak[J].
+\newblock Journal of Physics B: Atomic, Molecular and Optical Physics, 2010,
+  43\penalty0 (8).
+
+\bibitem[Tennyson\ et~al.(1986)Tennyson, Cary, and Escande]{Tennyson1986}
+Tennyson J~L, Cary J~R, Escande D~F.
+\newblock {Change of the adiabatic invariant due to separatrix
+  crossing}\allowbreak[J].
+\newblock Physical Review Letters, 1986, 56\penalty0 (20): 2117-2120.
+
+\bibitem[Cary\ et~al.(1986)Cary, Escande, and Tennyson]{Cary1986}
+Cary J~R, Escande D~F, Tennyson J~L.
+\newblock {Adiabatic-invariant change due to separatrix
+  crossing}\allowbreak[J].
+\newblock Physical Review A, 1986, 34\penalty0 (5): 4256-4275.
+
+\bibitem[Hannay(1986)]{Hannay1986}
+Hannay J~H.
+\newblock {Accuracy loss of action invariance in adiabatic change of a
+  one-freedom hamiltonian}\allowbreak[J].
+\newblock Journal of Physics A: Mathematical and General, 1986, 19\penalty0
+  (17): L1067-L1072.
+
+\bibitem[Miller\ et~al.(2000)Miller and Reinhardt]{Miller2000}
+Miller M~A, Reinhardt W~P.
+\newblock {Efficient free energy calculations by variationally optimized metric
+  scaling: Concepts and applications to the volume dependence of cluster free
+  energies and to solid-solid phase transitions}\allowbreak[J].
+\newblock Journal of Chemical Physics, 2000, 113\penalty0 (17): 7035-7046.
+
+\bibitem[Vaikuntanathan\ et~al.(2008)Vaikuntanathan and
+  Jarzynski]{Vaikuntanathan2008}
+Vaikuntanathan S, Jarzynski C.
+\newblock {Escorted free energy simulations: Improving convergence by reducing
+  dissipation}\allowbreak[J].
+\newblock Physical Review Letters, 2008, 100\penalty0 (19): 8-11.
+
+\bibitem[Mart{\'{i}}nez\ et~al.(2016)Mart{\'{i}}nez, Petrosyan,
+  Gu{\'{e}}ry-Odelin, Trizac, and Ciliberto]{Martinez2016}
+Mart{\'{i}}nez I~A, Petrosyan A, Gu{\'{e}}ry-Odelin D, et~al.
+\newblock {Engineered swift equilibration of a Brownian
+  particle}\allowbreak[J].
+\newblock Nature Physics, 2016, 12\penalty0 (9): 843-846.
+
+\bibitem[{Le Cunuder}\ et~al.(2016){Le Cunuder}, Mart{\'{i}}nez, Petrosyan,
+  Gu{\'{e}}ry-Odelin, Trizac, and Ciliberto]{LeCunuder2016}
+{Le Cunuder} A, Mart{\'{i}}nez I~A, Petrosyan A, et~al.
+\newblock {Fast equilibrium switch of a micro mechanical
+  oscillator}\allowbreak[J/OL].
+\newblock Applied Physics Letters, 2016, 109\penalty0 (11).
+\newblock \url{http://dx.doi.org/10.1063/1.4962825}.
+
+\bibitem[Seifert(2012)]{Seifert2012}
+Seifert U.
+\newblock {Stochastic thermodynamics, fluctuation theorems and molecular
+  machines}\allowbreak[J].
+\newblock Reports on Progress in Physics, 2012, 75\penalty0 (12).
+
+\bibitem[Sekimoto(2010)]{Sekimoto2010}
+Sekimoto K.
+\newblock {Stochastic energetics}: volume 799\allowbreak[M].
+\newblock Berlin Heidelberg: Springer, 2010
+
+\bibitem[Gardiner()]{Gardiner}
+Gardiner C~W.
+\newblock {Handbook LIKale Methods}\allowbreak[M].
+\newblock Berlin Heidelberg: Springer
+
+\end{thebibliography}

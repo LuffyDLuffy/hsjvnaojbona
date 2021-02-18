@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: data/chap01.aux
+A level-1 auxiliary file: data/chap02.aux
+The style file: bnuthesis-numeric.bst
+A level-1 auxiliary file: data/ack.aux
+A level-1 auxiliary file: data/resume.aux
+Database file #1: ref/refs.bib
+Warning--I didn't find a database entry for "bnuthesis"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty year in Gardiner
+Warning--empty year in Gardiner
+Warning--empty year in Gardiner
+You've used 28 entries,
+            3363 wiz_defined-function locations,
+            984 strings with 10710 characters,
+and the built_in function-call counts, 161587 in all, are:
+= -- 16708
+> -- 16770
+< -- 16717
++ -- 5223
+- -- 158
+* -- 783
+:= -- 17288
+add.period$ -- 80
+call.type$ -- 28
+change.case$ -- 56
+chr.to.int$ -- 4750
+cite$ -- 31
+duplicate$ -- 562
+empty$ -- 1508
+format.name$ -- 297
+if$ -- 46993
+int.to.chr$ -- 1
+int.to.str$ -- 29
+missing$ -- 0
+newline$ -- 151
+num.names$ -- 84
+pop$ -- 6887
+preamble$ -- 1
+purify$ -- 28
+quote$ -- 0
+skip$ -- 19738
+stack$ -- 0
+substring$ -- 5338
+swap$ -- 59
+text.length$ -- 209
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 378
+warning$ -- 3
+while$ -- 299
+width$ -- 0
+write$ -- 430
+(There were 4 warnings)
