@@ -3,6 +3,7 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: data/chap01.aux
 A level-1 auxiliary file: data/chap02.aux
+A level-1 auxiliary file: data/chap03.aux
 The style file: bnuthesis-numeric.bst
 A level-1 auxiliary file: data/ack.aux
 A level-1 auxiliary file: data/resume.aux
@@ -11,7 +12,7 @@ Warning--I didn't find a database entry for "bnuthesis"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 You've used 30 entries,
             3363 wiz_defined-function locations,
-            999 strings with 11117 characters,
+            1000 strings with 11132 characters,
 and the built_in function-call counts, 176301 in all, are:
 = -- 18256
 > -- 18288
