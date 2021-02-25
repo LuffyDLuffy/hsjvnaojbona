@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -192,5 +192,36 @@ Deffner S, Jarzynski C, del Campo A.
 {Del Campo} A.
 \newblock {Shortcuts to adiabaticity by counterdiabatic driving}\allowbreak[J].
 \newblock Physical Review Letters, 2013, 111\penalty0 (10): 1-5.
+
+\bibitem[Jarzynski(1997)]{Jarzynski1997}
+Jarzynski C.
+\newblock {Nonequilibrium equality for free energy differences}\allowbreak[J].
+\newblock Physical Review Letters, 1997, 78\penalty0 (14): 2690-2693.
+
+\bibitem[Sekimoto(1997)]{Sekimoto_1997}
+Sekimoto K.
+\newblock Kinetic characterization of heat bath and the energetics of thermal
+  ratchet models\allowbreak[J/OL].
+\newblock Journal of the Physical Society of Japan, 1997, 66\penalty0 (5):
+  1234-1237.
+\newblock \url{https://doi.org/10.1143%2Fjpsj.66.1234}.
+
+\bibitem[Seifert(2005)]{Seifert2005}
+Seifert U.
+\newblock {Entropy production along a stochastic trajectory and an integral
+  fluctuation theorem}\allowbreak[J].
+\newblock Physical Review Letters, 2005, 95\penalty0 (4).
+
+\bibitem[Shizume(1995)]{Shizume1995}
+Shizume K.
+\newblock Heat generation required by information erasure\allowbreak[J/OL].
+\newblock Phys. Rev. E, 1995, 52: 3495-3499.
+\newblock \url{https://link.aps.org/doi/10.1103/PhysRevE.52.3495}.
+
+\bibitem[Bizarro\ et~al.(2011)Bizarro and Report]{Bizarro2011}
+Bizarro P~S, Report B.
+\newblock {Boltzmann ' s H theorem for systems with frictional dissipation}:
+  volume 032102\allowbreak[Z].
+\newblock 2011: 1-4.
 
 \end{thebibliography}

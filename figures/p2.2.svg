@@ -225,18 +225,8 @@
        id="path1364"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#0000ff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 12.694628,-13.368972 32.538377,-35.426949"
-       id="path1366"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#0000fe;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       d="M 12.694628,-3.2401371 32.538377,-10.104863"
-       id="path1368"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#0000ff;stroke-width:0.13;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1380)"
-       d="M 12.694628,-13.368972 22.616502,-24.61391"
+       style="fill:none;stroke:#0000ff;stroke-width:0.13;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1380)"
+       d="m 21.179732,-22.80087 2.303295,-2.560304"
        id="path1370"
        sodipodi:nodetypes="cc" />
     <path
@@ -245,8 +235,8 @@
        id="path1418"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#0000ff;stroke-width:0.13;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker1482);stroke-miterlimit:4;stroke-dasharray:1.04,1.04;stroke-dashoffset:0"
-       d="m 32.538377,-10.104863 -9.921875,3.4323628"
+       style="fill:none;stroke:#0000ff;stroke-width:0.13;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1482)"
+       d="m 26.526687,-8.0251853 -3.910185,1.3526851"
        id="path1472"
        sodipodi:nodetypes="cc" />
     <path

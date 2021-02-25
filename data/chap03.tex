@@ -1,4 +1,49 @@
 \chapter{绝热捷径与等温捷径构成的类卡诺循环热机}
+\section{绝热捷径与等温捷径中的能量学}
+\R{李耿博士毕业论文，第一章随机能量学可作为参考}
+
+考虑一个和温度为$T$的热浴接触的一维布朗粒子。它被施加一个依赖于时间的外势$U_0 (q,\lambda(t)) + U_1 (q,p,t)$，其中考虑到了在绝热捷径和等温捷径中我们施加的辅助势包含动量$U_1 (q,p,\lambda(t))$。粒子的哈密顿量为
+\begin{equation}
+    H=\frac{p^{2}}{2}+U_0 (q,\lambda(t)) + U_1 (q,p,t)
+    \label{eq3.1}
+\end{equation}
+哈密顿量的全微分为
+\begin{equation}
+    \M{d} H=\left(\dot{p} p+\dot{q} \frac{\partial U_0}{\partial q} +  \dot{p} \PP{U_1}{p} + \dot{q} \PP{U_1}{q}  \right) \M{d} t+\left(\dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right) \M{d} t
+    \label{eq3.2}
+\end{equation}
+这提示我们定义沿着相轨迹$(q(t), p(t))$的能量差\cite{Tu2013}
+\begin{equation}
+     \Delta e \equiv H\left(t_{f}\right)-H\left(t_{i}\right),
+     \label{eq3.3}
+\end{equation}
+输入功
+\begin{equation}
+    w \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)
+    \label{eq3.4}
+\end{equation}
+这也与传统的随机热力学对轨道功的定义相符合。\cite{Sekimoto2010,Jarzynski1997,Sekimoto_1997}。还有吸收的热量
+\begin{equation}
+    q \equiv \int_{t_{i}}^{t_{f}} \M{d} t\left(\dot{p} p+\dot{q} \frac{\partial U_0}{\partial q} +  \dot{p} \PP{U_1}{p} + \dot{q} \PP{U_1}{q}  \right).
+    \label{eq3.5}
+\end{equation}
+相轨连接了初时刻$t_i$对应的相点$(q_i , p_i )$和末时刻$t_f$对应的相点$(q_f , p_f )$。显然，对于每条相轨有
+\begin{equation}
+    \Delta e = w + q
+    \label{eq3.6}
+\end{equation}
+
+而系统的分布函数$\rho (q,p,t)$由推广的福克-普朗克-克拉马斯方程\eqref{eq2.57}决定。在知道了$\rho (q,p,t)$之后就可以计算以上式子\eqref{eq3.4}-\eqref{eq3.6}的系综平均，这和文献\cite{Seifert2005,Shizume1995,Bizarro2011}的步骤是类似的。
+\begin{equation}
+    \Delta E \equiv\langle\Delta e\rangle=\left.\int \M{d} q \int \M{d} p(H \rho)\right|_{t_{i}} ^{t_{f}} ,
+    \label{eq3.9}
+\end{equation}
+和
+\begin{equation}
+    W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} d t \int d x \int \M{d} p\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right).
+    \label{eq3.10}
+\end{equation}
+
 
 \section{类卡诺循环热机模型}
 
