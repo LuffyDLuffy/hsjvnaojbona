@@ -411,9 +411,13 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 \end{equation}
 其中$H_{0}(q, p, \lambda(t))=p^{2}/{2}+U_{0}(q, \lambda(t))$。\footnote{为了简便，令$m=1$，或者做变换$p=\frac{p}{\sqrt{m}}，以下皆是如此$}但是通常的福克-普朗克-克拉马斯方程只能描述势场不依赖于动量$p$时分布函数$\rho (q,p,t)$的时间演化。通过刘维尔方程，李耿\cite{Li2016}得到了势能含有动量$p$的福克-普朗克-克拉马斯方程如下
 \begin{equation}
-        \frac{\partial \rho}{\partial t}=-\frac{\partial}{\partial q}(p \rho)+\frac{\partial}{\partial p}\left(\gamma p \rho+\rho \frac{\partial U_{0}}{\partial q}\right)+\frac{\gamma}{\beta} \frac{\partial^{2} \rho}{\partial p^{2}} -\frac{\partial U_{1}}{\partial p} \frac{\partial \rho}{\partial q}+\frac{\partial U_{1}}{\partial q} \frac{\partial \rho}{\partial p}+\gamma \frac{\partial}{\partial p}\left(\rho \frac{\partial U_{1}}{\partial p}\right)
+    \begin{split}
+        &\PP{\rho}{t} + \nabla \cdot \bm{J} = 0, \\
+        &\bm{J} \equiv \rho \left( p + \PP{U}{p} \right) \hat{\bm{q}}-\rho\left(\gamma p+\frac{\partial U}{\partial q}+ \PP{U}{p} + \frac{\gamma}{\rho \beta} \frac{\partial \rho}{\partial p}\right) \hat{\bm{p}}
+    \end{split} 
     \label{eq2.57}
 \end{equation}
+注意到，我们令$U \equiv U_0 + U_1$，算符$\nabla \equiv \hat{\bm{q}} \partial / \partial x+\hat{\bm{p}} \partial / \partial p$，其中$\hat{\bm{q}}$和$\hat{\bm{p}}$是单位方向向量。
 原系统瞬时平衡态的分布函数为
 \begin{equation}
     \rho(x, p, t)=\rho_{\mathrm{ieq}}(x, p, \lambda(t)) \equiv e^{\beta\left[F(\lambda(t))-H_{0}(x, p, \lambda(t))\right]}

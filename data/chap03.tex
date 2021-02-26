@@ -2,7 +2,7 @@
 \section{绝热捷径与等温捷径中的能量学}
 \R{李耿博士毕业论文，第一章随机能量学可作为参考}
 
-考虑一个和温度为$T$的热浴接触的一维布朗粒子。它被施加一个依赖于时间的外势$U_0 (q,\lambda(t)) + U_1 (q,p,t)$，其中考虑到了在绝热捷径和等温捷径中我们施加的辅助势包含动量$U_1 (q,p,\lambda(t))$。粒子的哈密顿量为
+考虑一个和温度为$T$的热浴接触的一维布朗粒子。它被施加一个依赖于时间的外势$U(q,p,t) = U_0 (q,\lambda(t)) + U_1 (q,p,t)$，其中考虑到了在绝热捷径和等温捷径中我们施加的辅助势包含动量$p$。粒子的哈密顿量为
 \begin{equation}
     H=\frac{p^{2}}{2}+U_0 (q,\lambda(t)) + U_1 (q,p,t)
     \label{eq3.1}
@@ -24,7 +24,7 @@
 \end{equation}
 这也与传统的随机热力学对轨道功的定义相符合。\cite{Sekimoto2010,Jarzynski1997,Sekimoto_1997}。还有吸收的热量
 \begin{equation}
-    q \equiv \int_{t_{i}}^{t_{f}} \M{d} t\left(\dot{p} p+\dot{q} \frac{\partial U_0}{\partial q} +  \dot{p} \PP{U_1}{p} + \dot{q} \PP{U_1}{q}  \right).
+    q \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left(\dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \PP{U}{p}\right).
     \label{eq3.5}
 \end{equation}
 相轨连接了初时刻$t_i$对应的相点$(q_i , p_i )$和末时刻$t_f$对应的相点$(q_f , p_f )$。显然，对于每条相轨有
@@ -33,7 +33,7 @@
     \label{eq3.6}
 \end{equation}
 
-而系统的分布函数$\rho (q,p,t)$由推广的福克-普朗克-克拉马斯方程\eqref{eq2.57}决定。在知道了$\rho (q,p,t)$之后就可以计算以上式子\eqref{eq3.4}-\eqref{eq3.6}的系综平均，这和文献\cite{Seifert2005,Shizume1995,Bizarro2011}的步骤是类似的。
+而系统的分布函数$\rho (q,p,t)$由推广的福克-普朗克-克拉马斯方程\eqref{eq2.57}决定。在知道了$\rho (q,p,t)$之后就可以计算以上式子\eqref{eq3.4}-\eqref{eq3.6}的系综平均，这和文献\cite{Seifert2005,Shizume1995,Bizarro2011}的步骤是类似的。得到能量差和输入功的系综平均为
 \begin{equation}
     \Delta E \equiv\langle\Delta e\rangle=\left.\int \M{d} q \int \M{d} p(H \rho)\right|_{t_{i}} ^{t_{f}} ,
     \label{eq3.9}
@@ -43,6 +43,63 @@
     W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} d t \int d x \int \M{d} p\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right).
     \label{eq3.10}
 \end{equation}
+
+对于吸收的热的系综平均，由于存在$\dot{q}$和$\dot{p}$我们不好直接积分，需要做进一步的推导。系综平均为
+\begin{equation}
+    Q=\int_{t_i}^{t_f}\langle(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H\rangle \mathrm{d} t
+    \label{eq3.11}
+\end{equation}
+为了方便，上式\eqref{eq3.11}我们用了$(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H  = \dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \PP{U}{p}$。
+现在分两步对上式\eqref{eq3.11}进行平均。
+
+第一步，对系综中在$t$时刻经过$x$且动量为$p$的轨道进行平均\R{（不懂至以下）}，得到
+\begin{equation}
+    \langle\dot{x} \mid x, p, t\rangle=\frac{J_{x}}{\rho}, \quad\langle\dot{p} \mid x, p, t\rangle=\frac{J_{p}}{\rho}
+    \label{eq3.12}
+\end{equation}
+其中$J_x$，$J_P$代表式\eqref{eq2.57}所定义的流矢量$J$的$q$分量和$p$分量。
+
+第二步，利用分布函数$\rho(q,p,t)$对所有的$q$和$p$进行系综平均。于是，系统与热浴的热交换为
+\begin{equation}
+    Q=\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \int \mathrm{d} p(\bm{J} \cdot \nabla H)
+    \label{eq3.13}
+\end{equation}
+再将流矢量$J$的定义代入上式\eqref{eq3.13}，不难得到
+\begin{equation}
+    Q=-\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \int \mathrm{d} p\left[\gamma \rho\left(p+\frac{\partial U}{\partial p}\right)\left(p+\frac{\partial U}{\partial p}+\frac{1}{\beta \rho} \frac{\partial \rho}{\partial p}\right)\right]
+    \label{eq3.14}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \section{类卡诺循环热机模型}

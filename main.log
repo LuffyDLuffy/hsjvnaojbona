@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.4)  24 FEB 2021 16:23
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.4)  26 FEB 2021 09:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1346,11 +1346,11 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 6.07271pt on input line 57.
 File: figures/p2.2.pdf Graphic file (type pdf)
 <use figures/p2.2.pdf, page 2>
-)) [16] (./main.lof)
+) [16]) [17] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [17
+ [18
 
 
 
@@ -1359,7 +1359,7 @@ File: figures/p2.2.pdf Graphic file (type pdf)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [18
+ [19
 
 
 ] (./main.loe
@@ -1487,7 +1487,7 @@ Overfull \hbox (2.80638pt too wide) detected at line 33
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-31 
  []
 
-[19
+[20
 
 
 ]
@@ -1645,15 +1645,30 @@ Overfull \hbox (2.80638pt too wide) detected at line 64
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-62 
  []
 
-[20])
+[21]
+Overfull \hbox (2.80638pt too wide) detected at line 74
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-10 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 75
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-11 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 76
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-12 
+ []
+
+)
 \tf@loe=\write7
 \openout7 = `main.loe'.
 
- (./main.bbl [21]
+ (./main.bbl [22]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.53937pt on input line 1.
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
- [22
+ [23
 
 
 ]
@@ -1661,7 +1676,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.0pt on input line 165.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 7.0pt on input line 165.
-) [23]
+) [24]
 \openout2 = `data/ack.aux'.
 
  (./data/ack.tex
@@ -1671,9 +1686,9 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 11.
 
 
-Package natbib Warning: Citation `bnuthesis' on page 24 undefined on input line 11.
+Package natbib Warning: Citation `bnuthesis' on page 25 undefined on input line 11.
 
-) [24
+) [25
 
 
 
@@ -1686,32 +1701,32 @@ Package hyperref Info: bookmark level for unknown mpdef defaults to 0 on input l
 \c@currmpdefopctr=\count393
 \c@endmpdefopctr=\count394
 Package hyperref Info: bookmark level for unknown mpdefop defaults to 0 on input line 48.
-[25
+[26
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 (Font)              scaled to size 11.04124pt on input line 108.
- [26]
+ [27]
 File: figures/bnu-lib-logo.pdf Graphic file (type pdf)
 <use figures/bnu-lib-logo.pdf>
- [27]
+ [28]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sl' will be
 (Font)              scaled to size 12.045pt on input line 169.
- [28]
+ [29]
 附录 B
 File: figures/bnu-whole-logo.pdf Graphic file (type pdf)
 <use figures/bnu-whole-logo.pdf>
-[29
+[30
 
-] [30]
+] [31]
 附录 C
-) [31
+) [32
 
 ]
 \openout2 = `data/resume.aux'.
 
- (./data/resume.tex) [32
+ (./data/resume.tex) [33
 
 
 
@@ -1730,7 +1745,7 @@ File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 1>
 File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 1>
- [33
+ [34
 
 ]
 File: figures/scan-record.pdf Graphic file (type pdf)
@@ -1739,7 +1754,7 @@ File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 2>
 File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 2>
- [34]
+ [35]
 \tf@thm=\write8
 \openout8 = `main.thm'.
 
@@ -1760,12 +1775,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25303 strings out of 479418
- 509211 string characters out of 5881946
- 776914 words of memory out of 5000000
- 42297 multiletter control sequences out of 15000+600000
+ 25307 strings out of 479418
+ 509243 string characters out of 5881946
+ 777102 words of memory out of 5000000
+ 42301 multiletter control sequences out of 15000+600000
  677815 words of font info for 234 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  70i,19n,104p,2527b,720s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (41 pages).
+Output written on main.pdf (42 pages).
