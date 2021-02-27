@@ -1,8 +1,78 @@
 \chapter{绝热捷径与等温捷径构成的类卡诺循环热机}
-\section{绝热捷径与等温捷径中的能量学}
+\section{布朗粒子的能量学}
+\qquad 在正式开始讨论我们构建的热机之前，为了方便讨论热机的效率、熵变等问题，让我们先花一点时间讨论布朗粒子的能量学。
+\subsection{过阻尼布朗粒子的能量学}
 \R{李耿博士毕业论文，第一章随机能量学可作为参考}
 
-考虑一个和温度为$T$的热浴接触的一维布朗粒子。它被施加一个依赖于时间的外势$U(q,p,t) = U_0 (q,\lambda(t)) + U_1 (q,p,t)$，其中考虑到了在绝热捷径和等温捷径中我们施加的辅助势包含动量$p$。粒子的哈密顿量为
+考虑一个和温度为$T$的热浴接触的一维布朗粒子。它被施加一个依赖于时间的外势$U(q,p,t) = U_0 (q,\lambda(t)) + U_1 (q,t)$，其中考虑到了在绝热捷径和等温捷径中我们施加的辅助势$U_1$。在过阻尼情况下，粒子的惯性的影响可以忽略，哈密顿量为
+\begin{equation}
+    H=U_0 (q,\lambda(t)) + U_1 (q,p,t)
+    \label{eq31.1}
+\end{equation}
+哈密顿量的全微分为
+\begin{equation}
+    \M{d} H=\left(\dot{q} \frac{\partial U_0}{\partial q} + \dot{q} \PP{U_1}{q}  \right) \M{d} t+\left(\dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right) \M{d} t
+    \label{eq31.2}
+\end{equation}
+这提示我们定义沿着相轨迹$(q(t), p(t))$的能量差\cite{Tu2013}
+\begin{equation}
+     \Delta e \equiv H\left(t_{f}\right)-H\left(t_{i}\right),
+     \label{eq31.3}
+\end{equation}
+输入功
+\begin{equation}
+    w \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)
+    \label{eq31.4}
+\end{equation}
+这也与传统的随机热力学对轨道功的定义相符合。\cite{Sekimoto2010,Jarzynski1997,Sekimoto_1997}。还有吸收的热量
+\begin{equation}
+    q \equiv \int_{t_{i}}^{t_{f}} \M{d} t \dot{q} \frac{\partial U}{\partial q} .
+    \label{eq31.5}
+\end{equation}
+相轨连接了初时刻$t_i$对应的相点$(q_i , p_i )$和末时刻$t_f$对应的相点$(q_f , p_f )$。显然，对于每条相轨有
+\begin{equation}
+    \Delta e = w + q
+    \label{eq31.6}
+\end{equation}
+
+而系统的分布函数$\rho (q,p,t)$由的福克-普朗克-克拉马斯方程\eqref{eq2.45}决定,在知道了$\rho (q,p,t)$之后就可以计算以上式子\eqref{eq31.4}-\eqref{eq31.6}的系综平均，这和文献\cite{Seifert2005,Shizume1995,Bizarro2011}的步骤是类似的。得到能量差和输入功的系综平均为
+\begin{equation}
+    \Delta E \equiv\langle\Delta e\rangle=\left.\int \M{d} q \int (H \rho)\right|_{t_{i}} ^{t_{f}} ,
+    \label{eq31.7}
+\end{equation}
+和
+\begin{equation}
+    W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \left[\rho \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right) \right].
+    \label{eq31.8}
+\end{equation}
+
+对于吸收的热的系综平均，由于存在$\dot{q}$,我们不好直接积分，需要做进一步的推导。系综平均为
+\begin{equation}
+    Q=\int_{t_i}^{t_f}\left\langle\dot{q} \frac{\partial U}{\partial q} \right\rangle \mathrm{d} t
+    \label{eq31.9}
+\end{equation}
+现在分两步对上式\eqref{eq31.9}进行平均。
+
+第一步，对系综中在$t$时刻经过$q$的轨道进行平均\R{（不懂至以下）}，得到
+\begin{equation}
+    \langle\dot{x} \mid x, p, t\rangle=\frac{J}{\rho}
+    \label{eq31.10}
+\end{equation}
+其中$J$是式\eqref{eq2.45.5}所定义的流。
+
+第二步，利用分布函数$\rho(q,p,t)$对所有的$q$和$p$进行系综平均。于是，系统与热浴的热交换为
+\begin{equation}
+    \begin{split}
+        Q&=\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \left(J \frac{\partial U}{\partial q}\right)\\
+         &=\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \left[-\frac{1}{\gamma}  \frac{\partial U}{\partial q} \left(\frac{\partial U}{\partial q} \rho+\frac{1}{\beta} \frac{\partial \rho}{\partial q}\right) \right ]
+    \end{split}   
+    \label{eq31.11}
+\end{equation}
+
+% 现在我们将式\eqref{eq31.7},\eqref{eq31.8},\eqref{eq31.12}提到的计算能量差$\Delta E$、输入功$W$、吸收热$Q$的方法，应用于此模型中。对于过阻尼布朗粒子的等温捷径，注意到根据式\eqref{eq2.55}，$U=U_0 + U_1 = q^2/{2 \lambda(t)^2}  -{\gamma \dot{\lambda}(t)  q^{2}}/{2 \lambda(t)}$，而根据\eqref{eq2.46}的假设，$\rho(q, t)= \mathrm{e}^{\beta\left[F(\lambda(t))-q^2/{2 \lambda(t)^2}\right]},\ F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} e^{-\beta q^2/{2 \lambda(t)^2}} \M{d} q \right]$。不难得到，能量差
+
+\subsection{欠阻尼布朗粒子的能量学}
+\qquad 考虑一个和温度为$T$的热浴接触的一维布朗粒子。它被施加一个依赖于时间的外势$U(q,p,t) = U_0 (q,\lambda(t)) + U_1 (q,p,t)$，其中考虑到了在绝热捷径和等温捷径中我们施加的辅助势包含动量$p$。在欠阻尼情况下，粒子的惯性的影响不能忽略，哈密顿量为
 \begin{equation}
     H=\frac{p^{2}}{2}+U_0 (q,\lambda(t)) + U_1 (q,p,t)
     \label{eq3.1}
@@ -36,84 +106,66 @@
 而系统的分布函数$\rho (q,p,t)$由推广的福克-普朗克-克拉马斯方程\eqref{eq2.57}决定。在知道了$\rho (q,p,t)$之后就可以计算以上式子\eqref{eq3.4}-\eqref{eq3.6}的系综平均，这和文献\cite{Seifert2005,Shizume1995,Bizarro2011}的步骤是类似的。得到能量差和输入功的系综平均为
 \begin{equation}
     \Delta E \equiv\langle\Delta e\rangle=\left.\int \M{d} q \int \M{d} p(H \rho)\right|_{t_{i}} ^{t_{f}} ,
-    \label{eq3.9}
+    \label{eq3.7}
 \end{equation}
 和
 \begin{equation}
-    W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} d t \int d x \int \M{d} p\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right).
-    \label{eq3.10}
+    W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \int \M{d} p \left[ \rho\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)\right] .
+    \label{eq3.8}
 \end{equation}
 
 对于吸收的热的系综平均，由于存在$\dot{q}$和$\dot{p}$我们不好直接积分，需要做进一步的推导。系综平均为
 \begin{equation}
     Q=\int_{t_i}^{t_f}\langle(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H\rangle \mathrm{d} t
-    \label{eq3.11}
+    \label{eq3.9}
 \end{equation}
 为了方便，上式\eqref{eq3.11}我们用了$(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H  = \dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \PP{U}{p}$。
-现在分两步对上式\eqref{eq3.11}进行平均。
+现在分两步对上式\eqref{eq3.9}进行平均。
 
 第一步，对系综中在$t$时刻经过$x$且动量为$p$的轨道进行平均\R{（不懂至以下）}，得到
 \begin{equation}
     \langle\dot{x} \mid x, p, t\rangle=\frac{J_{x}}{\rho}, \quad\langle\dot{p} \mid x, p, t\rangle=\frac{J_{p}}{\rho}
-    \label{eq3.12}
+    \label{eq3.10}
 \end{equation}
 其中$J_x$，$J_P$代表式\eqref{eq2.57}所定义的流矢量$J$的$q$分量和$p$分量。
 
 第二步，利用分布函数$\rho(q,p,t)$对所有的$q$和$p$进行系综平均。于是，系统与热浴的热交换为
 \begin{equation}
     Q=\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \int \mathrm{d} p(\bm{J} \cdot \nabla H)
-    \label{eq3.13}
+    \label{eq3.11}
 \end{equation}
-再将流矢量$J$的定义代入上式\eqref{eq3.13}，不难得到
+再将流矢量$J$的定义代入上式\eqref{eq3.11}，不难得到
 \begin{equation}
     Q=-\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \int \mathrm{d} p\left[\gamma \rho\left(p+\frac{\partial U}{\partial p}\right)\left(p+\frac{\partial U}{\partial p}+\frac{1}{\beta \rho} \frac{\partial \rho}{\partial p}\right)\right]
-    \label{eq3.14}
+    \label{eq3.12}
 \end{equation}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \section{类卡诺循环热机模型}
-
-\qquad 现在我们考虑一个由绝热捷径与等温捷径构成的类卡诺循环热机，它通过驱动一个依赖于时间的谐振子势$U_{0}(q, \lambda(t))= q^{2}/{\lambda(t)}^2 $对外做功。如图所示，这个循环由如下四个过程组成。
-
+\qquad 考虑一个由绝热捷径与等温捷径构成的类卡诺循环热机，它通过由一个依赖于时间的谐振子势$U_{0}(q, \lambda(t))= q^{2}/2{\lambda(t)}^2 $，来驱动布朗粒子对外做功。如图\ref{p3.1}所示，这个循环由如下四个过程组成。
 \begin{figure}[!htbp]
     \centering
     \def\svgwidth{0.6\columnwidth}
-    \input{figures/p2.2.pdf_tex}
+    \input{figures/p3.1.pdf_tex}
     \caption{热力学循环过程。点线对应于式\eqref{eq2.40}，竖直虚线对应于等温。$0,1,2,3$代表循环中的四个状态，$A,B,C,D$代表四个过程。}
     \label{p3.1}
 \end{figure}
+下面我们分过阻尼布朗粒子和欠阻尼布朗粒子两种情况进行讨论
 
+\subsection{过阻尼布朗粒子构成的类卡诺循环热机}
+\qquad 为了下面讨论的方便，先利用式\eqref{eq31.7},\ \eqref{eq31.8},\ \eqref{eq31.11}计算能量差$\Delta E$、输入功$W$、吸收热$Q$的方法。对于过阻尼布朗粒子的等温捷径，注意到根据式\eqref{eq2.55}，$U=U_0 + U_1 = q^2/{2 \lambda(t)^2}  -{\gamma \dot{\lambda}(t)  q^{2}}/{2 \lambda(t)}$，又根据\eqref{eq2.46}的假设，$\rho(q, t)= \mathrm{e}^{\beta\left[F(\lambda(t))-q^2/{2 \lambda(t)^2}\right]},\ F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} \mathrm{e}^{-\beta q^2/{2 \lambda(t)^2}} \M{d} q \right]$。于是不难得到，
+能量差
+\begin{equation}
+    \begin{split}
+        \Delta E &=\left. \frac{1}{2} \beta^{-1} (1-\gamma \dot{\lambda} \lambda) \right|_{t_i}^{t_f}\\
+                 &=0 
+    \end{split}
+    \label{eq3.13}
+\end{equation}
+其中用到了对$\lambda(t)$的限制条件\eqref{eq2.51}。容易发现，和经典中理想气体的等温过程相似，粒子的能量没有变化。接下来计算输入功
+
+\begin{equation}
+    \label{eq3.14}
+\end{equation}
 
 \begin{center}
     {\bfseries A.等温膨胀}

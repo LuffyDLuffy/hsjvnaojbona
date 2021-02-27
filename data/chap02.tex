@@ -343,12 +343,16 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 \end{equation}
 布朗粒子的分布函数$\rho (q, t)$的演化由\textbf{福克-普朗克-克拉马斯方程(Fokker-Planck-Kramers equation)}\cite{Gardiner}决定
 \begin{equation}
-    \frac{\partial \rho}{\partial t}=\frac{1}{\gamma} \frac{\partial}{\partial q}\left[\frac{\partial\left(U_{0}+U_{1}\right)}{\partial q} \rho+\frac{1}{\beta} \frac{\partial \rho}{\partial q}\right]
+    \frac{\partial \rho}{\partial t} + \frac{\partial J}{\partial q}=0,
     \label{eq2.45}
+\end{equation}
+\begin{equation}
+    J=-\frac{1}{\gamma} \left(\frac{\partial U}{\partial q} \rho+\frac{1}{\beta} \frac{\partial \rho}{\partial q}\right)
+    \label{eq2.45.5}
 \end{equation}
 其中$\gamma$是粒子与液体间的黏滞系数。鉴于我们的假设——系统时刻处在$H_0 (\bm{\eta}, \lambda(t))$瞬时平衡态下，则系统的分布函数为
 \begin{equation}
-    \rho(q, t)=\rho_{\mathrm{ieq}}(q, \lambda(t)) \equiv e^{\beta\left[F(\lambda(t))-U_{0}(q, \lambda(t))\right]}
+    \rho(q, t)=\rho_{\mathrm{ieq}}(q, \lambda(t)) \equiv \mathrm{e}^{\beta\left[F(\lambda(t))-U_{0}(q, \lambda(t))\right]}
     \label{eq2.46}
 \end{equation}
 其中，$F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} e^{-\beta U_{0}(q, \lambda)} \M{d} q \right]$将式\eqref{eq2.46}代入福克-普朗克方程\eqref{eq2.45}，可以得到$U_1 (q,t)$需要满足的方程：
@@ -373,7 +377,7 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 \end{equation}
 其中$h(q, \lambda) \equiv\left[\frac{\M{d} F(\lambda)}{\M{d} \lambda}-\frac{\partial U_{0}(q, \lambda)}{\partial \lambda}\right] \rho_{\mathrm{ieq}}(q, \lambda)$。注意到，从分布函数的演化得到势能的想法，Martínez等人在\textbf{快速平衡(engineered swift equilibration)}的研究\cite{Martinez2016}中已经被应用过。不过，我们是从给定的势能$U_0 (q,\lambda(t))$得到辅助势，Martínez等人是从给定的分布函数得到辅助势。而且，Martínez等人的方法不能同时确定哈密顿量和自由能。
 
-考虑到我们对辅助势的$U(q,t)$限制条件——在驱动过程的初末时刻$t_i , t_f$要使得$U(q,t)=U_0 (q,t)$，于是我们引入边界条件
+考虑到我们对辅助势的$U(q,t)$限制条件——在驱动过程的初末时刻$t_i , t_f$要使得$U(q,t)=U_0 (q,t)$，于是我们引入限制条件
 \begin{equation}
     \dot{\lambda}(t_i)=\dot{\lambda}(t_f)=0
     \label{eq2.51}
@@ -392,7 +396,7 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 \end{equation}
 再来看一个例子：依赖于时间的谐振子势场中的布朗粒子，势场为
 \begin{equation}
-    U_{0}(q, \lambda(t))=\frac{1}{2} {\left[ \frac{q}{ \lambda(t)} \right]}^{2}
+    U_{0}(q, \lambda(t))=\frac{q^2}{2 \lambda(t)^2}
     \label{eq2.54}
 \end{equation}
 同样的，根据式\eqref{eq2.50}可得辅助势为
@@ -411,11 +415,13 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 \end{equation}
 其中$H_{0}(q, p, \lambda(t))=p^{2}/{2}+U_{0}(q, \lambda(t))$。\footnote{为了简便，令$m=1$，或者做变换$p=\frac{p}{\sqrt{m}}，以下皆是如此$}但是通常的福克-普朗克-克拉马斯方程只能描述势场不依赖于动量$p$时分布函数$\rho (q,p,t)$的时间演化。通过刘维尔方程，李耿\cite{Li2016}得到了势能含有动量$p$的福克-普朗克-克拉马斯方程如下
 \begin{equation}
-    \begin{split}
-        &\PP{\rho}{t} + \nabla \cdot \bm{J} = 0, \\
-        &\bm{J} \equiv \rho \left( p + \PP{U}{p} \right) \hat{\bm{q}}-\rho\left(\gamma p+\frac{\partial U}{\partial q}+ \PP{U}{p} + \frac{\gamma}{\rho \beta} \frac{\partial \rho}{\partial p}\right) \hat{\bm{p}}
-    \end{split} 
+        \PP{\rho}{t} + \nabla \cdot \bm{J} = 0
     \label{eq2.57}
+\end{equation}
+其中
+\begin{equation}
+    \bm{J} \equiv \rho \left( p + \PP{U}{p} \right) \hat{\bm{q}}-\rho\left(\gamma p+\frac{\partial U}{\partial q}+ \PP{U}{p} + \frac{\gamma}{\rho \beta} \frac{\partial \rho}{\partial p}\right) \hat{\bm{p}}
+\label{eq2.57.5}
 \end{equation}
 注意到，我们令$U \equiv U_0 + U_1$，算符$\nabla \equiv \hat{\bm{q}} \partial / \partial x+\hat{\bm{p}} \partial / \partial p$，其中$\hat{\bm{q}}$和$\hat{\bm{p}}$是单位方向向量。
 原系统瞬时平衡态的分布函数为
