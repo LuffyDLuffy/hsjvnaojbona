@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.4)  27 FEB 2021 09:35
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.4)  28 FEB 2021 10:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1309,13 +1309,13 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 11.04124pt on input line 148.
  [6] [7] [8] [9] [10] [11] [12]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 411.
+(Font)              scaled to size 9.03374pt on input line 416.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 411.
+(Font)              scaled to size 5.0pt on input line 416.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 411.
+(Font)              scaled to size 9.03374pt on input line 416.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.0pt on input line 411.
+(Font)              scaled to size 5.0pt on input line 416.
 Missing character: There is no ， in font ntx-Regular-tlf-ot1!
 Missing character: There is no 以 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 下 in font ntx-Regular-tlf-ot1!
@@ -1332,7 +1332,7 @@ Missing character: There is no 此 in font ntx-Regular-tlf-ot1!
 
 
 
-] [16] (./figures/p3.1.pdf_tex
+] [16] [17] [18] (./figures/p3.1.pdf_tex
 File: figures/p3.1.pdf Graphic file (type pdf)
 <use figures/p3.1.pdf, page 1>
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 57.
@@ -1350,11 +1350,11 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 6.07271pt on input line 57.
 File: figures/p3.1.pdf Graphic file (type pdf)
 <use figures/p3.1.pdf, page 2>
-) [17]) [18] [19] (./main.lof)
+) [19] [20]) [21] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [20
+ [22
 
 
 
@@ -1363,7 +1363,7 @@ File: figures/p3.1.pdf Graphic file (type pdf)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [21
+ [23
 
 
 ] (./main.loe
@@ -1491,7 +1491,7 @@ Overfull \hbox (2.80638pt too wide) detected at line 33
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-31 
  []
 
-[22
+[24
 
 
 ]
@@ -1659,95 +1659,140 @@ Overfull \hbox (2.80638pt too wide) detected at line 66
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-64 
  []
 
-[23]
-Overfull \hbox (2.80638pt too wide) detected at line 76
+
+Overfull \hbox (2.80638pt too wide) detected at line 67
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-65 
+ []
+
+[25]
+Overfull \hbox (2.80638pt too wide) detected at line 77
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-10 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 77
+Overfull \hbox (2.80638pt too wide) detected at line 78
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-11 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 78
+Overfull \hbox (2.80638pt too wide) detected at line 79
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-12 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 79
+Overfull \hbox (2.80638pt too wide) detected at line 80
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-13 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 80
+Overfull \hbox (2.80638pt too wide) detected at line 81
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-14 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 81
+Overfull \hbox (2.80638pt too wide) detected at line 82
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-15 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 82
+Overfull \hbox (2.80638pt too wide) detected at line 83
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-16 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 83
+Overfull \hbox (2.80638pt too wide) detected at line 84
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-17 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 84
+Overfull \hbox (2.80638pt too wide) detected at line 85
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-18 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 85
+Overfull \hbox (2.80638pt too wide) detected at line 86
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-19 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 86
+Overfull \hbox (2.80638pt too wide) detected at line 87
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-20 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 87
+Overfull \hbox (2.80638pt too wide) detected at line 88
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-21 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 88
+Overfull \hbox (2.80638pt too wide) detected at line 89
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-22 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 89
+Overfull \hbox (2.80638pt too wide) detected at line 90
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-23 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 90
+Overfull \hbox (2.80638pt too wide) detected at line 91
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-24 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 91
+Overfull \hbox (2.80638pt too wide) detected at line 92
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-25 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 93
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-26 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 94
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-27 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 95
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-28 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 96
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-29 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 97
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-30 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 98
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-31 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 99
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-32 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 100
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-33 
  []
 
 )
 \tf@loe=\write7
 \openout7 = `main.loe'.
 
- (./main.bbl [24]
+ (./main.bbl [26]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.53937pt on input line 1.
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
- [25
+ [27
 
 
 ]
@@ -1755,7 +1800,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.0pt on input line 165.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 7.0pt on input line 165.
-) [26]
+) [28]
 \openout2 = `data/ack.aux'.
 
  (./data/ack.tex
@@ -1765,9 +1810,9 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 11.
 
 
-Package natbib Warning: Citation `bnuthesis' on page 27 undefined on input line 11.
+Package natbib Warning: Citation `bnuthesis' on page 29 undefined on input line 11.
 
-) [27
+) [29
 
 
 
@@ -1780,32 +1825,32 @@ Package hyperref Info: bookmark level for unknown mpdef defaults to 0 on input l
 \c@currmpdefopctr=\count393
 \c@endmpdefopctr=\count394
 Package hyperref Info: bookmark level for unknown mpdefop defaults to 0 on input line 48.
-[28
+[30
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 (Font)              scaled to size 11.04124pt on input line 108.
- [29]
+ [31]
 File: figures/bnu-lib-logo.pdf Graphic file (type pdf)
 <use figures/bnu-lib-logo.pdf>
- [30]
+ [32]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sl' will be
 (Font)              scaled to size 12.045pt on input line 169.
- [31]
+ [33]
 附录 B
 File: figures/bnu-whole-logo.pdf Graphic file (type pdf)
 <use figures/bnu-whole-logo.pdf>
-[32
+[34
 
-] [33]
+] [35]
 附录 C
-) [34
+) [36
 
 ]
 \openout2 = `data/resume.aux'.
 
- (./data/resume.tex) [35
+ (./data/resume.tex) [37
 
 
 
@@ -1824,7 +1869,7 @@ File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 1>
 File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 1>
- [36
+ [38
 
 ]
 File: figures/scan-record.pdf Graphic file (type pdf)
@@ -1833,7 +1878,7 @@ File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 2>
 File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 2>
- [37]
+ [39]
 \tf@thm=\write8
 \openout8 = `main.thm'.
 
@@ -1847,7 +1892,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 78.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C1BF6EEEB5700CBD567D79F3C17A3B8A;6977.
+(rerunfilecheck)             Checksum: FDAD92C2B207FF7988D2BF0DB3950CA9;6977.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1857,12 +1902,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25323 strings out of 479418
- 509385 string characters out of 5881946
- 778320 words of memory out of 5000000
- 42317 multiletter control sequences out of 15000+600000
+ 25356 strings out of 479418
+ 510934 string characters out of 5881946
+ 778856 words of memory out of 5000000
+ 42350 multiletter control sequences out of 15000+600000
  677815 words of font info for 234 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 70i,19n,104p,2527b,720s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,20n,104p,2527b,720s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (44 pages).
+Output written on main.pdf (46 pages).
