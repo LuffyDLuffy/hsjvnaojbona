@@ -17,23 +17,24 @@
 \contentsline {subsection}{\numberline {3.1.2}欠阻尼布朗粒子的能量学}{16}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}类卡诺循环热机模型}{18}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}过阻尼布朗粒子构成的类卡诺循环热机}{18}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}类卡诺循环热机的功、熵、能量损失}{21}{section.3.3}%
-\contentsline {section}{\numberline {3.4}与其他热机的比较}{21}{section.3.4}%
-\contentsline {chapter}{插图索引}{22}{section*.14}%
-\contentsline {chapter}{表格索引}{23}{section*.16}%
-\contentsline {chapter}{公式索引}{24}{section*.18}%
-\contentsline {chapter}{参考文献}{27}{section*.20}%
-\contentsline {chapter}{致\hspace {1em}谢}{29}{section*.22}%
-\contentsline {chapter}{\numberline {附录 A}外文资料原文}{30}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Single-Objective Programming}{30}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Linear Programming}{31}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Nonlinear Programming}{32}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Integer Programming}{32}{subsection.A.1.3}%
-\contentsline {chapter}{\numberline {附录 B}外文资料的调研阅读报告或书面翻译}{34}{appendix.B}%
-\contentsline {section}{\numberline {B.1}单目标规划}{34}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}线性规划}{34}{subsection.B.1.1}%
-\contentsline {subsection}{\numberline {B.1.2}非线性规划}{35}{subsection.B.1.2}%
-\contentsline {subsection}{\numberline {B.1.3}整数规划}{35}{subsection.B.1.3}%
-\contentsline {chapter}{\numberline {附录 C}其它附录}{36}{appendix.C}%
-\contentsline {chapter}{在学期间参加课题的研究成果}{37}{section*.31}%
+\contentsline {subsection}{\numberline {3.2.2}欠阻尼布朗粒子构成的类卡诺循环热机}{21}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}类卡诺循环热机的功、熵、能量损失}{24}{section.3.3}%
+\contentsline {section}{\numberline {3.4}与其他热机的比较}{24}{section.3.4}%
+\contentsline {chapter}{插图索引}{25}{section*.17}%
+\contentsline {chapter}{表格索引}{26}{section*.19}%
+\contentsline {chapter}{公式索引}{27}{section*.21}%
+\contentsline {chapter}{参考文献}{31}{section*.23}%
+\contentsline {chapter}{致\hspace {1em}谢}{33}{section*.25}%
+\contentsline {chapter}{\numberline {附录 A}外文资料原文}{34}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Single-Objective Programming}{34}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Linear Programming}{35}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Nonlinear Programming}{36}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Integer Programming}{36}{subsection.A.1.3}%
+\contentsline {chapter}{\numberline {附录 B}外文资料的调研阅读报告或书面翻译}{38}{appendix.B}%
+\contentsline {section}{\numberline {B.1}单目标规划}{38}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}线性规划}{38}{subsection.B.1.1}%
+\contentsline {subsection}{\numberline {B.1.2}非线性规划}{39}{subsection.B.1.2}%
+\contentsline {subsection}{\numberline {B.1.3}整数规划}{39}{subsection.B.1.3}%
+\contentsline {chapter}{\numberline {附录 C}其它附录}{40}{appendix.C}%
+\contentsline {chapter}{在学期间参加课题的研究成果}{41}{section*.34}%
 \contentsfinish 
