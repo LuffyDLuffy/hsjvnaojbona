@@ -156,6 +156,7 @@
 在等温捷径中，由于系统与热浴接触，可以分过阻尼和欠阻尼两种情况进行讨论。
 
 \subsection{过阻尼布朗粒子构成的类卡诺循环热机}
+\label{sec3.2.1}
 \qquad 利用式\eqref{eq31.7},\quad \eqref{eq31.8},\quad \eqref{eq31.11}可以计算过阻尼布朗粒子的在等温捷径过程中的能量差$\Delta E$、输入功$W$、吸收热$Q$。注意到根据式\eqref{eq2.55}，$U=U_0 + U_1 = q^2/{2 \lambda(t)^2}  -{\gamma \dot{\lambda}(t)  q^{2}}/{2 \lambda(t)}$，又根据\eqref{eq2.46}的假设，$\rho(q, t)= \mathrm{e}^{\beta\left[F(\lambda(t))-q^2/{2 \lambda(t)^2}\right]},\ F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} \mathrm{e}^{-\beta q^2/{2 \lambda(t)^2}} \M{d} q \right]$。于是不难得到，
 能量差\R{（似乎可以根据辅助势满足的微风方程直接计算，省去中间步骤，可以考虑）}
 \begin{equation}
@@ -271,11 +272,11 @@
     \hline
     过程  & 能量差  & 输入功     & 吸收热 \\ 
     \hline
-    A    & 0       & $-\beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2 $                    &$\beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2 $     \\ 
+    A    & 0       & $-\beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} + \beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2 $                    &$\beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2 $     \\ 
     \hline
     B    & $(\beta_{\rm{c}}^{-1} - \beta_{\rm{h}}^{-1})$ & $(\beta_{\rm{c}}^{-1} - \beta_{\rm{h}}^{-1})$ & 0   \\ 
     \hline
-    C    & 0       & $-\beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2 $                    &$\beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2 $     \\ 
+    C    & 0       & $-\beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} + \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2 $                    &$\beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2 $     \\ 
     \hline
     D    & $(\beta_{\rm{h}}^{-1} - \beta_{\rm{c}}^{-1})$ & $(\beta_{\rm{h}}^{-1} - \beta_{\rm{c}}^{-1})$                         & 0   \\ 
     \hline
@@ -287,7 +288,7 @@
 \begin{equation}
     \begin{split}
         \eta &= \frac{Q_{\rm{A}} + Q_{\rm{C}}}{Q_{\rm{A}}}\\ 
-        &=1+ \frac{\beta_{\rm{h}}^{-1} \int_{0}^{t_1} \mathrm{d} t \left( {\dot{\lambda}}/{ \lambda}  -\gamma \dot{\lambda}^2 \right)}{\beta_{\rm{c}}^{-1} \int_{t_2}^{t_3} \mathrm{d} t \left( {\dot{\lambda}}/{ \lambda}  -\gamma \dot{\lambda}^2 \right)}
+        &=1+ \frac{\beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2 }{\beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2}
     \end{split}
     \label{3.20}
 \end{equation}
@@ -296,165 +297,57 @@
     \begin{split}
         P&=-\frac{W}{t_4}\\
         &=\frac{Q_{\rm{A}} + Q_{\rm{C}}}{t_3}\\
-        &=\frac{\beta_{\rm{h}}^{-1} \int_{0}^{t_1} \mathrm{d} t \left( {\dot{\lambda}}/{ \lambda}  -\gamma \dot{\lambda}^2 \right)+\beta_{\rm{c}}^{-1} \int_{t_2}^{t_3} \mathrm{d} t \left( {\dot{\lambda}}/{ \lambda}  -\gamma \dot{\lambda}^2 \right)}{t_4}
+        &=\frac{\left(\beta_{\rm{h}}^{-1}-\beta_{\rm{c}}^{-1}\right) \ln{\frac{\lambda_1}{\lambda_0}} - \left(\beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2 + \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2\right)}{t_4}
     \end{split}
     \label{eq3.21}
 \end{equation}
+
 
 
 \subsection{欠阻尼布朗粒子构成的类卡诺循环热机}
-\qquad 同样地，利用式\eqref{eq31.7},\quad \eqref{eq31.8},\quad \eqref{eq31.11}可以计算欠阻尼布朗粒子的在等温捷径过程中的能量差$\Delta E$、输入功$W$、吸收热$Q$。注意到根据式\eqref{eq2.55}，
+\qquad 同样地，利用式\eqref{eq3.7},\quad \eqref{eq3.8},\quad \eqref{eq3.11}可以计算欠阻尼布朗粒子的在等温捷径过程中的能量差$\Delta E$、输入功$W$、吸收热$Q$。注意到根据式\eqref{eq2.55}，
 \begin{equation}
     \begin{split}
         U&=U_0 + U_1 \\
-    &= \frac{q^2}/{2 \lambda(t)^2}  - \frac{\dot{\lambda}(t)}{2 \gamma \lambda(t)}\left[(p-\gamma q)^{2}+ q^{2}/\lambda(t)^2\right]
+    &= \frac{q^2}{2 \lambda(t)^2}  - \frac{\dot{\lambda}(t)}{2 \gamma \lambda(t)}\left[(p-\gamma q)^{2}+ q^{2}/\lambda(t)^2\right]
     \end{split}  
-    \label{eq3.22}
+    \label{eq3.34}
 \end{equation}
-又根据\eqref{eq2.58}的假设，
-\begin{equation}
-    \rho(q, t)= \mathrm{e}^{{\beta\left\{F-\frac{q^{2}}{2 \lambda^2}+\frac{\dot{\lambda}}{2 \gamma \lambda}\left[(p-\gamma q)^{2}+ \frac{q^{2}}{\lambda^2}\right]\right\}}}
-\end{equation}
-其中
-\begin{equation}
-    F(\lambda) \equiv-\beta^{-1} \ln  \int \M{d} q \int \M{d} p \mathrm{e}^{{\beta\left\{-\frac{q^{2}}{2 \lambda^2}+\frac{\dot{\lambda}}{2 \gamma \lambda}\left[(p-\gamma q)^{2}+ \frac{q^{2}}{\lambda^2}\right]\right\}}}  
-    \label{eq3.23}
-\end{equation}
+又根据\eqref{eq2.58}的假设，$\rho(q, t)= \mathrm{e}^{{\beta\left(F - \frac{p^2}{2}-\frac{q^{2}}{2 \lambda^2}\right)}}$其中，$F(\lambda) \equiv-\beta^{-1} \ln  \int \M{d} q \int \M{d} p \mathrm{e}^{{\beta\left(-\frac{p^2}{2}-\frac{q^{2}}{2 \lambda^2}\right)}} $ 
 。于是可以计算得到，能量差\R{（似乎可以根据辅助势满足的微风方程直接计算，省去中间步骤，可以考虑）}
 \begin{equation}
     \begin{split}
-        \Delta E &=\left.\int \M{d} q \left[\rho\left(\frac{1}{2 \lambda^2}q^2  -\frac{\gamma \dot{\lambda}}{2 \lambda} q^{2}\right)\right]\right|_{t_{i}} ^{t_{f}}\\
-         &=\left.\left(\frac{1}{2 \lambda^2}  -\frac{\gamma \dot{\lambda}}{2 \lambda}\right)\int \rho q^2 \M{d} q  \right|_{t_{i}} ^{t_{f}}\\
-         &=\left.\left(\frac{1}{2 \lambda^2}  -\frac{\gamma \dot{\lambda}}{2 \lambda}\right)\sqrt{\frac{\beta}{2 \pi}} \frac{1}{\lambda} \int \mathrm{e}^{-\frac{\beta}{2 \lambda^2 } q^2} q^2 \M{d} q  \right|_{t_{i}} ^{t_{f}}\\
-         &=\left.\left(\frac{1}{2 \lambda^2}  -\frac{\gamma \dot{\lambda}}{2 \lambda}\right)\sqrt{\frac{\beta}{2 \pi}} \frac{1}{\lambda} \frac{\sqrt{\pi}}{2}\left(\sqrt{\frac{\beta}{2}} \frac{1}{\lambda}\right)^{-3} \right|_{t_{i}}^{t_{f}}\\
-         &=\left.\left(\frac{1}{2 \lambda^2}  -\frac{\gamma \dot{\lambda}}{2 \lambda}\right) \frac{\lambda^2}{\beta} \right|_{t_{i}}^{t_{f}}\\
-         &=0
+        \Delta E&=\left.\int \M{d} q \int \M{d} p \rho \left( \frac{p^2}{2} + \frac{q^2}{2 \lambda(t)^2}  - \frac{\dot{\lambda}(t)}{2 \gamma \lambda(t)}\left[(p-\gamma q)^{2}+ q^{2}/\lambda(t)^2\right] \right)\right|_{t_{i}} ^{t_{f}}\\
+        &=\left. \left[1-\frac{\dot{\lambda}}{2 \gamma \lambda}\left(2+\gamma^{2} \lambda^{2}\right)\right] \beta^{-1}\right|_{t_{i}} ^{t_{f}}\\
+        &=0
     \end{split}
-    \label{eq3.13}
+    \label{eq3.37}
 \end{equation}
-其中最后一步用到了对$\lambda(t)$的限制条件\eqref{eq2.51}。注意到，和经典中理想气体的等温过程相似，粒子的能量没有变化。接下来计算输入功
+这个结果和过阻尼的情况下没有区别，为简单计，由于已知$Q + W = \Delta E =0$，不再计算输入功，直接计算吸收热
+% \begin{equation}
+%     \begin{split}
+%         W &=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \int \M{d} p \left[ \rho\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)\right]\\
+%         &=\frac{1}{2 \beta \gamma}\int_{t_i}^{t_f} \mathrm{d} t \frac{1}{\lambda^{2}}\left[-\lambda \ddot{\lambda}\left(\frac{1}{2} \gamma \lambda^{2}+2\right)+\dot{\lambda}^{2}\left(3+\gamma^{2} \lambda^{2}\right)-2 \gamma \lambda \dot{\lambda}\right] 
+%         \\\\
+%     \end{split}
+%     \label{eq3.14}
+% \end{equation}
+% 再来看看吸收的热量
 \begin{equation}
     \begin{split}
-        W &=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \left[\rho \left(- \frac{\dot{\lambda}}{\lambda^3} q^2 -\frac{\gamma \ddot{\lambda}}{2 \lambda} q^2 +  \frac{\gamma \dot{\lambda}^2}{2 \lambda^2} q^2 \right) \right]\\
-        &=\int_{t_{i}}^{t_{f}} \M{d} t  \left(- \frac{\dot{\lambda}}{\lambda^3} -\frac{\gamma \ddot{\lambda}}{2 \lambda} +  \frac{\gamma \dot{\lambda}^2}{2 \lambda^2} \right)\int \rho q^2 \M{d}   q\\
-        &=\int_{t_{i}}^{t_{f}} \M{d} t  \left(- \frac{\dot{\lambda}}{\lambda^3} -\frac{\gamma \ddot{\lambda}}{2 \lambda} +  \frac{\gamma \dot{\lambda}^2}{2 \lambda^2} \right)\frac{\lambda^2}{\beta}\\
-        &=\beta^{-1} \int_{t_{i}}^{t_{f}} \M{d} t  \left( -\frac{\dot{\lambda}}{\lambda} -\frac{\gamma \ddot{\lambda} \lambda }{2} +  \frac{\gamma \dot{\lambda}^2}{2} \right)
-    \end{split}
-    \label{eq3.14}
-\end{equation}
-再来看看吸收的热量
-\begin{equation}
-    \begin{split}
-        Q &=\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \left[-\frac{1}{\gamma}  \left( \frac{1}{ \lambda^2}q  -\frac{\gamma \dot{\lambda}}{ \lambda} q \right) \left(\left( \frac{1}{ \lambda^2}q  -\frac{\gamma \dot{\lambda}}{ \lambda} q \right) \rho-\frac{1}{\lambda^2}q \rho \right) \right ]\\
-        &=\int_{t_i}^{t_f} \mathrm{d} t \frac{1}{\gamma}  \left( \frac{1}{ \lambda^2}  -\frac{\gamma \dot{\lambda}}{ \lambda} \right) \frac{\gamma \dot{\lambda}}{ \lambda} \int \rho q^2 \mathrm{d} q\\
-        &=\int_{t_i}^{t_f} \mathrm{d} t \frac{1}{\gamma}  \left( \frac{1}{ \lambda^2}  -\frac{\gamma \dot{\lambda}}{ \lambda} \right) \frac{\gamma \dot{\lambda}}{ \lambda} \frac{\lambda^2}{\beta}\\ 
-        &=\beta^{-1} \int_{t_i}^{t_f} \mathrm{d} t \left( \frac{\dot{\lambda}}{ \lambda}  -\gamma \dot{\lambda}^2 \right)\\
-        &=\beta^{-1} \ln{\frac{\lambda_f}{\lambda_i}} - \beta^{-1} \gamma \int_{t_i}^{t_f} \mathrm{d} t    \dot{\lambda}^2 
+        Q &=-\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \int \mathrm{d} p\left[\gamma \rho\left(p+\frac{\partial U}{\partial p}\right)\left(p+\frac{\partial U}{\partial p}+\frac{1}{\beta \rho} \frac{\partial \rho}{\partial p}\right)\right]\\
+        &=\beta^{-1} \int_{t_i}^{t_f} \left(\frac{\dot{\lambda}}{\lambda}-\frac{1}{\gamma} \frac{\dot{\lambda}^{2}}{\lambda^{2}}-\gamma \dot{\lambda}^{2}\right)
     \end{split}
     \label{eq3.15}
 \end{equation}
-不难验证有热平衡关系$\Delta E = W + Q$，接下来我们分析过阻尼布朗粒子构成的类卡诺热机的各个过程。
-
-如图\ref{p3.1}所示，这个循环由如下四个过程组成。
-\begin{figure}[!htbp]
-    \centering
-    \def\svgwidth{0.6\columnwidth}
-    \input{figures/p3.1.pdf_tex}
-    \caption{热力学循环过程。点线对应于式\eqref{eq2.40}，竖直虚线对应于等温。0,\ 1,\ 2,\ 3代表循环中的四个状态，A,\ B,\ C,\ D代表四个过程。}
-    \label{p3.1}
-\end{figure}
-点1, 2, 3, 4代表了系统的四个状态，这四个状态对应的参数如下表\ref{t3.1}所示。
-\begin{table}[!htbp]
-    \centering
-    \caption{循环过程中各个状态所对应的参数}
-    \begin{tabular}{cccc}
-    \hline
-    状态 & 时间$t$ & （等效）温度$\beta^{-1}$      & 势能参数$\lambda$ \\ 
-    \hline
-    0                   & $0(t_4)$       & $\beta_{\rm{h}}^{-1}$  & $\lambda_0$   \\ 
-
-    1                   & $t_1$   & $\beta_{\rm{h}}^{-1}$ & $\lambda_1$   \\ 
-
-    2                   & $t_2$   & $\beta_{\rm{c}}^{-1}$ & $\lambda_2$   \\ 
-
-    3                   & $t_3$   & $\beta_{\rm{c}}^{-1}$ & $\lambda_3$   \\ 
-    \hline
-    \end{tabular}
-    \label{t3.1}
-\end{table}
-
-\begin{center}
-    {\bfseries A.等温膨胀}
-\end{center}
-
-在上图\ref{p3.1}中，由实线连接的$0 \to 1$代表了由等温捷径实现的“等温膨胀”过程。正如在第\ref{cha2}章第\ref{sec2.3.2}节所阐释的，参数$\lambda$表征了系统的空间尺度，而该过程中参数$\lambda$变大了，故把A过程称为等温膨胀过程。在A过程中，系统与高温热源$\beta_\mathrm{h}^{-1}$接触。可以由式\eqref{eq3.15}计算A过程系统吸收的能量，又鉴于在这个过程中由式\eqref{eq3.13}知有$\Delta E_{\rm{A}} = W_{\rm{A}} + Q_{\rm{A}}=0$，所以
-\begin{equation}
-    \Delta E_{\rm{A}}=0,\ -W_{\rm{A}}=Q_{\rm{A}} = \beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2 
-    \label{eq3.16}
-\end{equation}
-
-
-\begin{center}
-    {\bfseries B.绝热膨胀}
-\end{center}
-
-图\ref{p3.1}中由虚线连接的$1 \to 2$就是由绝热捷径所联系的“绝热膨胀”过程，膨胀一词也同样基于参数$\lambda$的增长。需要注意的是，在这个过程中我们只知道初末状态$1,\ 2$的等效温度$\beta_1 ,\ \beta_2$，中间过程的等效温度我们并不清楚，这也是我们用虚线作图的原因。好在，中间的过程的等效温度的知道与否并不影响我们接下来的讨论。
-
-根据绝热捷径过程中的关系式\eqref{eq2.40}，有$\lambda_2 =\lambda_1 \beta_{\rm{c}} / {\beta_{\rm{h}}}$。绝热捷径B过程中的能量差$\Delta E_{\rm{B}}$吸收热$Q_{\rm{B}}$，输入功$W_{\rm{B}}$正如本章开始所讨论的那样，
-\begin{equation}
-    W_{\rm{B}} = \Delta E_{\rm{B}} = (\beta_{\rm{c}}^{-1} - \beta_{\rm{h}}^{-1}),\  Q_{\rm{B}}=0
-    \label{eq3.17}
-\end{equation}
-
-\begin{center}
-    {\bfseries C.等温压缩}
-\end{center}
-
-在上图\ref{p3.1}中，由实线连接的$2 \to 3$代表了由等温捷径实现的“等温压缩”过程。在A过程中，系统与低温热源$\beta_\mathrm{c}^{-1}$接触。和A过程的讨论类似，不难得到
-\begin{equation}
-    \Delta E_{\rm{C}}=0,\ -W_{\rm{C}}=Q_{\rm{C}} = \beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2 
-    \label{eq3.18}
-\end{equation}
-
-\begin{center}
-    {\bfseries D.绝热压缩}
-\end{center}
-
-图\ref{p3.1}中由虚线连接的$3 \to 0$就是由绝热捷径所联系的“绝热压缩”过程。同样，根据\eqref{eq2.40}，有$\lambda_3 =\lambda_0 \beta_{\rm{c}} / {\beta_{\rm{h}}}$。而且和B过程类似，不难得到
-\begin{equation}
-    W_{\rm{D}} = \Delta E_{\rm{D}} = (\beta_{\rm{h}}^{-1} - \beta_{\rm{c}}^{-1}),\  Q_{\rm{D}}=0
-    \label{eq3.19}
-\end{equation}
-我们将各个过程的能量变化、输入功和吸收热总结如下表\ref{t3.2}
-
-\begin{table}[!htbp]
-    \caption{循环过程中的能量变化}
-    \centering
-    \begin{tabular}{c|c|c|c}
-    \hline
-    过程  & 能量差  & 输入功     & 吸收热 \\ 
-    \hline
-    A    & 0       & $-\beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2 $                    &$\beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\rm{h}}^{-1} \gamma \int_{0}^{t_1} \mathrm{d} t    \dot{\lambda}^2 $     \\ 
-    \hline
-    B    & $(\beta_{\rm{c}}^{-1} - \beta_{\rm{h}}^{-1})$ & $(\beta_{\rm{c}}^{-1} - \beta_{\rm{h}}^{-1})$ & 0   \\ 
-    \hline
-    C    & 0       & $-\beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2 $                    &$\beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\rm{c}}^{-1} \gamma \int_{t_2}^{t_3} \mathrm{d} t    \dot{\lambda}^2 $     \\ 
-    \hline
-    D    & $(\beta_{\rm{h}}^{-1} - \beta_{\rm{c}}^{-1})$ & $(\beta_{\rm{h}}^{-1} - \beta_{\rm{c}}^{-1})$                         & 0   \\ 
-    \hline
-    \end{tabular}
-    \label{t3.2}
-\end{table}
-
-在分析完了整个循环的各个过程之后，来分析这个类卡诺循环热机的效率与功率。先看效率$\eta$，整个循环只有在A过程中从高温热源吸热$Q_{\rm{A}}$，而在C过程中发热$Q_{\rm{C}}$给低温热源。于是效率为
+接下来的处理和上节\ref{sec3.2.1}过阻尼情况类似，不再赘述。热机的效率$\eta$为
 \begin{equation}
     \begin{split}
-        \eta &= \frac{Q_{\rm{A}} + Q_{\rm{C}}}{Q_{\rm{A}}}\\ 
-        &=1+ \frac{\beta_{\rm{h}}^{-1} \int_{0}^{t_1} \mathrm{d} t \left( {\dot{\lambda}}/{ \lambda}  -\gamma \dot{\lambda}^2 \right)}{\beta_{\rm{c}}^{-1} \int_{t_2}^{t_3} \mathrm{d} t \left( {\dot{\lambda}}/{ \lambda}  -\gamma \dot{\lambda}^2 \right)}
+        \eta &= 1+ \frac{\beta_{\rm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\rm{c}}^{-1} \int_{t_2}^{t_3} \mathrm{d} t    \left(\frac{1}{\gamma} \frac{\dot{\lambda}^{2}}{\lambda^{2}}+\gamma \dot{\lambda}^{2}\right) }{\beta_{\rm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\rm{h}}^{-1} \int_{0}^{t_1} \mathrm{d} t    \left(\frac{1}{\gamma} \frac{\dot{\lambda}^{2}}{\lambda^{2}}+\gamma \dot{\lambda}^{2}\right)}
     \end{split}
     \label{3.20}
 \end{equation}
-而功率$P$为
+功率$P$为
 \begin{equation}
     \begin{split}
         P&=-\frac{W}{t_4}\\
@@ -463,6 +356,7 @@
     \end{split}
     \label{eq3.21}
 \end{equation}
+
 
 
 \section{类卡诺循环热机的功、熵、能量损失}
