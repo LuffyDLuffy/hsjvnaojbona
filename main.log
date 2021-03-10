@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.4)  7 MAR 2021 16:40
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.4)  10 MAR 2021 09:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,6 +906,15 @@ LaTeX Warning: Unused global option(s):
 (./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux
 
 LaTeX Warning: Label `eq31.5' multiply defined.
+
+
+LaTeX Warning: Label `eq3.37' multiply defined.
+
+
+LaTeX Warning: Label `eq3.38' multiply defined.
+
+
+LaTeX Warning: Label `eq3.40' multiply defined.
 
 ) (./data/ack.aux) (./data/resume.aux))
 \openout1 = `main.aux'.
@@ -1839,6 +1848,11 @@ Overfull \hbox (2.80638pt too wide) detected at line 111
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-44 
  []
 
+
+Overfull \hbox (2.80638pt too wide) detected at line 112
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-45 
+ []
+
 )
 \tf@loe=\write7
 \openout7 = `main.loe'.
@@ -1958,8 +1972,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  25368 strings out of 479418
- 511034 string characters out of 5881946
- 779730 words of memory out of 5000000
+ 511024 string characters out of 5881946
+ 780685 words of memory out of 5000000
  42362 multiletter control sequences out of 15000+600000
  677815 words of font info for 234 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
