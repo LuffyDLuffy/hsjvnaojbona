@@ -11,7 +11,7 @@
 \end{equation}
 哈密顿量的全微分为
 \begin{equation}
-    \M{d} H=\left(\dot{q} \frac{\partial U_0}{\partial q} + \dot{q} \P1P{U_1}{q}  \right) \M{d} t+\left(\dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \P1P{U_1}{t} \right) \M{d} t
+    \M{d} H=\left(\dot{q} \frac{\partial U_0}{\partial q} + \dot{q} \PP{U_1}{q}  \right) \M{d} t+\left(\dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right) \M{d} t
     \label{eq31.2}
 \end{equation}
 这提示我们定义沿着相轨迹$(q(t), p(t))$的能量差\cite{Tu2013}
@@ -21,7 +21,7 @@
 \end{equation}
 输入功
 \begin{equation}
-    w \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \P1P{U_1}{t} \right)
+    w \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)
     \label{eq31.4}
 \end{equation}
 这也与传统的随机热力学对轨道功的定义相符合。\cite{Sekimoto2010,Jarzynski1997,Sekimoto_1997}。还有吸收的热量
@@ -42,7 +42,7 @@
 \end{equation}
 和
 \begin{equation}
-    W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \left[\rho \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \P1P{U_1}{t} \right) \right].
+    W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \left[\rho \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right) \right].
     \label{eq31.8}
 \end{equation}
 
@@ -79,7 +79,7 @@
 \end{equation}
 哈密顿量的全微分为
 \begin{equation}
-    \M{d} H=\left(\dot{p} p+\dot{q} \frac{\partial U_0}{\partial q} +  \dot{p} \P1P{U_1}{p} + \dot{q} \P1P{U_1}{q}  \right) \M{d} t+\left(\dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \P1P{U_1}{t} \right) \M{d} t
+    \M{d} H=\left(\dot{p} p+\dot{q} \frac{\partial U_0}{\partial q} +  \dot{p} \PP{U_1}{p} + \dot{q} \PP{U_1}{q}  \right) \M{d} t+\left(\dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right) \M{d} t
     \label{eq3.2}
 \end{equation}
 这提示我们定义沿着相轨迹$(q(t), p(t))$的能量差\cite{Tu2013}
@@ -89,12 +89,12 @@
 \end{equation}
 输入功
 \begin{equation}
-    w \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \P1P{U_1}{t} \right)
+    w \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)
     \label{eq3.4}
 \end{equation}
 这也与传统的随机热力学对轨道功的定义相符合。\cite{Sekimoto2010,Jarzynski1997,Sekimoto_1997}。还有吸收的热量
 \begin{equation}
-    q \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left(\dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \P1P{U}{p}\right).
+    q \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left(\dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \PP{U}{p}\right).
     \label{eq3.5}
 \end{equation}
 相轨连接了初时刻$t_i$对应的相点$(q_i , p_i )$和末时刻$t_f$对应的相点$(q_f , p_f )$。显然，对于每条相轨有
@@ -110,7 +110,7 @@
 \end{equation}
 和
 \begin{equation}
-    W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \int \M{d} p \left[ \rho\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \P1P{U_1}{t} \right)\right] .
+    W \equiv\langle w\rangle=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \int \M{d} p \left[ \rho\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)\right] .
     \label{eq3.8}
 \end{equation}
 
@@ -119,7 +119,7 @@
     Q=\int_{t_i}^{t_f}\langle(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H\rangle \mathrm{d} t
     \label{eq3.9}
 \end{equation}
-为了方便，上式\eqref{eq3.11}我们用了$(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H  = \dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \P1P{U}{p}$。
+为了方便，上式\eqref{eq3.11}我们用了$(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H  = \dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \PP{U}{p}$。
 现在分两步对上式\eqref{eq3.9}进行平均。
 
 第一步，对系综中在$t$时刻经过$x$且动量为$p$的轨道进行平均\R{（不懂至以下）}，得到
@@ -276,16 +276,16 @@
 \begin{table}[!htbp]
     \caption{循环过程中的能量变化}
     \centering
-    \begin{tabular}{c|c|c|c}
+    \begin{tabular}{p{.07\textwidth}p{.18\textwidth}p{.25\textwidth}p{.2\textwidth}}
     \hline
     过程  & 能量差  & 输入功     & 吸收热 \\ 
     \hline
     A    & 0       & $-\beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} + \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} \frac{1}{t_1}$                    &$\beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} \frac{1}{t_1}$     \\ 
-    \hline
+    
     B    & $(\beta_{\mathrm{c}}^{-1} - \beta_{\mathrm{h}}^{-1})$ & $(\beta_{\mathrm{c}}^{-1} - \beta_{\mathrm{h}}^{-1})$ & 0   \\ 
-    \hline
+    
     C    & 0       & $-\beta_{\mathrm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} + \beta_{\mathrm{c}}^{-1} C_{\mathrm{c}} \frac{1}{t_3}$                    &$\beta_{\mathrm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\mathrm{c}}^{-1} C_{\mathrm{c}} \frac{1}{t_3}$     \\ 
-    \hline
+    
     D    & $(\beta_{\mathrm{h}}^{-1} - \beta_{\mathrm{c}}^{-1})$ & $(\beta_{\mathrm{h}}^{-1} - \beta_{\mathrm{c}}^{-1})$                         & 0   \\ 
     \hline
     \end{tabular}
@@ -312,7 +312,7 @@
 \end{equation}
 
 
-现在考虑使得功率$P$最大时的效率$\eta$，可以通过优化$t_1,\ t_3$使得$P$最大，只需使$\P1P{P}{t_1}=\P1P{P}{t_3}=0$即可，解得
+现在考虑使得功率$P$最大时的效率$\eta$，可以通过优化$t_1,\ t_3$使得$P$最大，只需使$\PP{P}{t_1}=\PP{P}{t_3}=0$即可，解得
 \begin{equation}
     \left\{\begin{array}{l}
         \frac{1}{t_{1}}=\frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) \ln \frac{\lambda_{1}}{\lambda_{0}}}{2\left(\beta_{\mathrm{h}}^{-1} C_{\mathrm{h}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}\\
@@ -349,7 +349,13 @@
     \eta=\frac{\eta_{\mathrm{c}}\left(1+\sqrt{1-\eta_{\mathrm{c}}}\right)}{\left(2-\eta_{\mathrm{c}}\right) \sqrt{1-\eta_{\mathrm{c}}}+2}
     \label{eq3.40}
 \end{equation}
-$\text{Series}\left[\frac{x \left(\sqrt{1-x}+1\right)}{(2-x) \sqrt{1-x}+2},\{x,0,5\}\right]$
+
+在$\eta_{\mathrm{c}} \to 0$的情况下，可以将$\eta(\eta_{\mathrm{c}})$按$\eta_{\mathrm{c}}$展开，得到
+\begin{equation}
+    \eta = \frac{\eta_{\mathrm{c}}}{2}+\frac{\eta_{\mathrm{c}}^2}{8}-\frac{3 \eta_{\mathrm{c}}^4}{128}+O\left(\eta_{\mathrm{c}}^5\right)
+    \label{eq3.41}
+\end{equation}
+可以看到，这符合热机最大功率时效率的二阶普适性。但这个热机的效率比起Curzon 和 Ahlborn 构建的内可逆热机\cite{Curzon1975}的效率$\eta_{\mathrm{CA}}=1-\sqrt{1-\eta_{\mathrm{c}}}=\frac{\eta_{\mathrm{c}}}{2}+\frac{\eta_{\mathrm{c}}^{2}}{8}+\frac{6 \eta_{\mathrm{c}}^{3}}{96}+O\left(\eta_{\mathrm{c}}^{4}\right)$要低。
 
 
 \subsection{欠阻尼布朗粒子构成的类卡诺循环热机}
@@ -359,7 +365,7 @@ $\text{Series}\left[\frac{x \left(\sqrt{1-x}+1\right)}{(2-x) \sqrt{1-x}+2},\{x,0
         U&=U_0 + U_1 \\
     &= \frac{q^2}{2 \lambda(t)^2}  - \frac{\dot{\lambda}(t)}{2 \gamma \lambda(t)}\left[(p-\gamma q)^{2}+ q^{2}/\lambda(t)^2\right]
     \end{split}  
-    \label{eq3.34}
+    \label{eq3.42}
 \end{equation}
 又根据\eqref{eq2.58}的假设，$\rho(q, t)= \mathrm{e}^{{\beta\left(F - \frac{p^2}{2}-\frac{q^{2}}{2 \lambda^2}\right)}}$其中，$F(\lambda) \equiv-\beta^{-1} \ln  \int \M{d} q \int \M{d} p \mathrm{e}^{{\beta\left(-\frac{p^2}{2}-\frac{q^{2}}{2 \lambda^2}\right)}} $ 
 。于是可以计算得到，能量差\R{（似乎可以根据辅助势满足的微风方程直接计算，省去中间步骤，可以考虑）}
@@ -369,12 +375,12 @@ $\text{Series}\left[\frac{x \left(\sqrt{1-x}+1\right)}{(2-x) \sqrt{1-x}+2},\{x,0
         &=\left. \left[1-\frac{\dot{\lambda}}{2 \gamma \lambda}\left(2+\gamma^{2} \lambda^{2}\right)\right] \beta^{-1}\right|_{t_{i}} ^{t_{f}}\\
         &=0
     \end{split}
-    \label{eq3.37}
+    \label{eq3.43}
 \end{equation}
 这个结果和过阻尼的情况下没有区别，为简单计，由于已知$Q + W = \Delta E =0$，不再计算输入功，直接计算吸收热
 % \begin{equation}
 %     \begin{split}
-%         W &=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \int \M{d} p \left[ \rho\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \P1P{U_1}{t} \right)\right]\\
+%         W &=\int_{t_{i}}^{t_{f}} \M{d} t \int \M{d} q \int \M{d} p \left[ \rho\left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)\right]\\
 %         &=\frac{1}{2 \beta \gamma}\int_{t_i}^{t_f} \mathrm{d} t \frac{1}{\lambda^{2}}\left[-\lambda \dot{\lambda}\left(\frac{1}{2} \gamma \lambda^{2}+2\right)+\dot{\lambda}^{2}\left(3+\gamma^{2} \lambda^{2}\right)-2 \gamma \lambda \dot{\lambda}\right] 
 %         \\\\
 %     \end{split}
@@ -386,24 +392,28 @@ $\text{Series}\left[\frac{x \left(\sqrt{1-x}+1\right)}{(2-x) \sqrt{1-x}+2},\{x,0
         Q &=-\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \int \mathrm{d} p\left[\gamma \rho\left(p+\frac{\partial U}{\partial p}\right)\left(p+\frac{\partial U}{\partial p}+\frac{1}{\beta \rho} \frac{\partial \rho}{\partial p}\right)\right]\\
         &=\beta^{-1} \int_{t_i}^{t_f} \left(\frac{\dot{\lambda}}{\lambda}-\frac{1}{\gamma} \frac{\dot{\lambda}^{2}}{\lambda^{2}}-\gamma \dot{\lambda}^{2}\right)
     \end{split}
-    \label{eq3.38}
+    \label{eq3.44}
 \end{equation}
-接下来的处理和上节\ref{sec3.2.1}过阻尼情况类似，不再赘述。热机的效率$\eta$为
+接下来的处理和上节\ref{sec3.2.1}过阻尼情况类似，不再赘述。热机在最大功率时的效率$\eta$为
+\begin{equation}
+    \eta=\frac{\eta_{\mathrm{c}}\left[\sqrt{\chi(1-\eta_{\mathrm{c}})}+1\right]}{2-\eta_{\mathrm{c}}+2 \sqrt{\chi\left(1-\eta_{\mathrm{c}}\right)}}
+    \label{3.45}
+\end{equation}
+其中$\eta_{\mathrm{c}}\equiv 1-\frac{\beta_{\mathrm{c}}^{-1}}{\beta_{\mathrm{h}}^{-1}}$是卡诺效率，而$\chi\equiv\frac{C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]}{C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]}$。这个形式和过阻尼的情形没有区别，因为二者的吸收热的表达式\eqref{eq3.15}和式\eqref{eq3.44}里积分式的第二项都含有$\dot{\lambda}^2$项。对于欠阻尼情形而言，不同于过阻尼情形的是
 \begin{equation}
     \begin{split}
-        \eta &= 1+ \frac{\beta_{\mathrm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\mathrm{c}}^{-1} \int_{t_2}^{t_3} \mathrm{d} t    \left(\frac{1}{\gamma} \frac{\dot{\lambda}^{2}}{\lambda^{2}}+\gamma \dot{\lambda}^{2}\right) }{\beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\mathrm{h}}^{-1} \int_{0}^{t_1} \mathrm{d} t    \left(\frac{1}{\gamma} \frac{\dot{\lambda}^{2}}{\lambda^{2}}+\gamma \dot{\lambda}^{2}\right)}
+        C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]&\equiv \int_{{0}}^{{1}} \mathrm{d} t\left[\frac{1}{\gamma{\lambda_{\mathrm{h}}^{2}}} \left(\DD{{\lambda_{\mathrm{h}}}}{\tau}\right)^{2}+\gamma \left({\DD{\lambda_{\mathrm{h}}}{\tau}}\right)^{2} \right],\ \lambda_{\mathrm{h}}(\tau)\equiv\lambda(t_1 \tau),\\
+        C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]&\equiv \int_{{0}}^{{1}} \mathrm{d} t\left[\frac{1}{\gamma{\lambda_{\mathrm{c}}^{2}}} \left(\DD{{\lambda_{\mathrm{c}}}}{\tau}\right)^{2}+\gamma \left({\DD{\lambda_{\mathrm{c}}}{\tau}}\right)^{2} \right],\ \lambda_{\mathrm{c}}(\tau)\equiv\lambda(t_3 \tau + t_2 +t_1)
     \end{split}
-    \label{3.39}
+    \label{3.46}
 \end{equation}
-功率$P$为
+
+为了求出$\chi$我们依然可以使用变分的方法，$\lambda_{\mathrm{h}}(\tau)$和$\lambda_{\mathrm{h}}(\tau)$满足的微风方程都是一样的，以$\lambda_{\mathrm{c}}(\tau)$为例，由变分法得到
 \begin{equation}
-    \begin{split}
-        P&=-\frac{W}{t_4}\\
-        &=\frac{Q_{\mathrm{A}} + Q_{\mathrm{C}}}{t_3}\\
-        &=\frac{\beta_{\mathrm{h}}^{-1} \int_{0}^{t_1} \mathrm{d} t \left( {\dot{\lambda}}/{ \lambda}  -\gamma \dot{\lambda}^2 \right)+\beta_{\mathrm{c}}^{-1} \int_{t_2}^{t_3} \mathrm{d} t \left( {\dot{\lambda}}/{ \lambda}  -\gamma \dot{\lambda}^2 \right)}{t_4}
-    \end{split}
-    \label{eq3.40}
+    \gamma^{2} \lambda_{\mathrm{c}}^{3} \DDD{\lambda_{\mathrm{c}}}{\tau}+\lambda_{\mathrm{c}} \DDD{\lambda_{\mathrm{c}}}{\tau}-\left(\DD{\lambda_{\mathrm{c}}}{\tau}\right)^{2}=0
+    \label{3.47}
 \end{equation}
+
 
 
 

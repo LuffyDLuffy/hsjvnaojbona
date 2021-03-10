@@ -6,13 +6,12 @@ A level-1 auxiliary file: data/chap02.aux
 A level-1 auxiliary file: data/chap03.aux
 The style file: bnuthesis-numeric.bst
 A level-1 auxiliary file: data/ack.aux
-A level-1 auxiliary file: data/resume.aux
 Database file #1: ref/refs.bib
 Warning--I didn't find a database entry for "bnuthesis"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 You've used 35 entries,
             3363 wiz_defined-function locations,
-            1040 strings with 12010 characters,
+            1039 strings with 11995 characters,
 and the built_in function-call counts, 198181 in all, are:
 = -- 20539
 > -- 20442

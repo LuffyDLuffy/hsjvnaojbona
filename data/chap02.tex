@@ -24,7 +24,7 @@
 
 假设存在一个哈密顿量$H(t)$，它使得系统的态的演化严格为$|\psi(t)\rangle=|n(t)\rangle e^{i \theta_{n}(t)} e^{i \gamma_{n}(t)}$，则根据薛定谔方程有
 \begin{equation}
-    i \hbar \P1P{}{t} |\psi(t)\rangle= H(t) |\psi(t)\rangle
+    i \hbar \PP{}{t} |\psi(t)\rangle= H(t) |\psi(t)\rangle
     \label{eq2.2}
 \end{equation}
 
@@ -178,7 +178,7 @@
     \left(1+\frac{1}{i \hbar} \delta \lambda \xi \right) \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right)=\sqrt{\frac{2}{\lambda+\delta \lambda}} \sin \left(\frac{n \pi q}{\lambda+\delta \lambda}\right)
     \label{eq2.22}
 \end{equation}
-这一点可以通过计算$\P1P{}{\lambda} \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right) \delta \lambda = \frac{1}{i \hbar} \delta \lambda \xi \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right)$得到验证。\eqref{eq2.22}中的相位由于$A_{n}(\lambda)=i\langle n | \partial_\lambda  n\rangle = 0$而消失。于是可以立刻得到
+这一点可以通过计算$\PP{}{\lambda} \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right) \delta \lambda = \frac{1}{i \hbar} \delta \lambda \xi \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right)$得到验证。\eqref{eq2.22}中的相位由于$A_{n}(\lambda)=i\langle n | \partial_\lambda  n\rangle = 0$而消失。于是可以立刻得到
 \begin{equation}
     H(t)=-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial q^{2}}+V_{\mathrm{box}}(q ; \lambda)+\frac{\dot{\lambda}}{2 \lambda} \frac{\hbar}{i}\left(q \frac{\partial}{\partial q}+\frac{\partial}{\partial q} q\right)
     \label{eq2.23}
@@ -212,7 +212,7 @@
     \label{eq2.27}
 \end{equation}
 其中，$\mu \equiv \frac{b}{b+2} , c \equiv \sqrt{8 \pi m} \epsilon^{-1 / b} \frac{\Gamma\left(1+\frac{1}{b}\right)}{\Gamma\left(\frac{3}{2}+\frac{1}{b}\right)}$
-同样的，含时参数$\lambda \to \lambda + \delta \lambda$的变化，通过一个线性变换引起了能壳的变化。为了看到这一点，我们考虑$i(q, p;\ \lambda)$的变化$\delta i(q, p;\ \lambda) = \P1P{i}{q} \delta q + \P1P{i}{p} \delta p + \P1P{i}{\lambda} \delta \lambda \equiv 0$，为了使恒等式成立，可以假设$\delta q = x q \frac{\delta \lambda}{\lambda}, \delta p = - y p \frac{\delta \lambda}{\lambda}$，可以得到
+同样的，含时参数$\lambda \to \lambda + \delta \lambda$的变化，通过一个线性变换引起了能壳的变化。为了看到这一点，我们考虑$i(q, p;\ \lambda)$的变化$\delta i(q, p;\ \lambda) = \PP{i}{q} \delta q + \PP{i}{p} \delta p + \PP{i}{\lambda} \delta \lambda \equiv 0$，为了使恒等式成立，可以假设$\delta q = x q \frac{\delta \lambda}{\lambda}, \delta p = - y p \frac{\delta \lambda}{\lambda}$，可以得到
 \begin{equation}
     \frac{c}{2 \mu H_0} \left[ (\mu - y) \frac{p^2}{m} + (2 \mu - b + b x) \epsilon \left( \frac{q}{\lambda} \right)^b \right] \delta \lambda \equiv 0
     \label{eq2.28}
@@ -269,7 +269,7 @@
         \dot{q}=\frac{\partial H}{\partial p}=\frac{p}{m}+\frac{\lambda(t)}{2 \lambda(t)} q \\
         \dot{p}=-\frac{\partial H}{\partial q}=-2 \epsilon \frac{q}{\lambda^{2}(t)}-\frac{\dot{\lambda}(t)}{2 \lambda(t)} p
         \end{array}\right.
-    \label{eq31.5}
+    \label{eq2.31.7}
 \end{equation}
 
 
@@ -420,12 +420,12 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 \end{equation}
 其中$H_{0}(q, p, \lambda(t))=p^{2}/{2}+U_{0}(q, \lambda(t))$。\footnote{为了简便，令$m=1$，或者做变换$p=\frac{p}{\sqrt{m}}，以下皆是如此$}但是通常的福克-普朗克-克拉马斯方程只能描述势场不依赖于动量$p$时分布函数$\rho (q,p,t)$的时间演化。通过刘维尔方程，李耿\cite{Li2016}得到了势能含有动量$p$的福克-普朗克-克拉马斯方程如下
 \begin{equation}
-        \P1P{\rho}{t} + \nabla \cdot \bm{J} = 0
+        \PP{\rho}{t} + \nabla \cdot \bm{J} = 0
     \label{eq2.57}
 \end{equation}
 其中
 \begin{equation}
-    \bm{J} \equiv \rho \left( p + \P1P{U}{p} \right) \hat{\bm{q}}-\rho\left(\gamma p+\frac{\partial U}{\partial q}+ \P1P{U}{p} + \frac{\gamma}{\rho \beta} \frac{\partial \rho}{\partial p}\right) \hat{\bm{p}}
+    \bm{J} \equiv \rho \left( p + \PP{U}{p} \right) \hat{\bm{q}}-\rho\left(\gamma p+\frac{\partial U}{\partial q}+ \PP{U}{p} + \frac{\gamma}{\rho \beta} \frac{\partial \rho}{\partial p}\right) \hat{\bm{p}}
 \label{eq2.57.5}
 \end{equation}
 注意到，我们令$U \equiv U_0 + U_1$，算符$\nabla \equiv \hat{\bm{q}} \partial / \partial x+\hat{\bm{p}} \partial / \partial p$，其中$\hat{\bm{q}}$和$\hat{\bm{p}}$是单位方向向量。
