@@ -230,7 +230,7 @@
     \Delta E_{\mathrm{A}}=0,\ -W_{\mathrm{A}}=Q_{\mathrm{A}} = \beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} [\lambda(\tau)\lambda_{h}] \frac{1}{t_1}     
     \label{eq3.16}
 \end{equation}
-其中$C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)] \equiv \gamma \int_{0}^{1} \mathrm{d} t \left(\DD{\lambda_{h}}{\tau}\right)^2,\ \lambda_{h}(\tau)\equiv\lambda({t_1 \tau})$
+其中$C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)] \equiv \gamma \int_{0}^{1} \mathrm{d} \tau \left(\DD{\lambda_{h}}{\tau}\right)^2,\ \lambda_{h}(\tau)\equiv\lambda({t_1 \tau})$
 \begin{center}
     {\bfseries B.绝热膨胀}
 \end{center}
@@ -256,7 +256,7 @@
     \Delta E_{\mathrm{C}}=0,\ -W_{\mathrm{C}}=Q_{\mathrm{C}} = \beta_{\mathrm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\mathrm{c}}^{-1} C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)] \frac{1}{t_3}
     \label{eq3.18}
 \end{equation}
-其中$C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]\equiv \beta_{\mathrm{c}}^{-1} \gamma \int_{0}^{1} \mathrm{d} \tau    \left(\DD{\lambda_{c}}{\tau}\right)^2,\ \lambda_{\mathrm{c}}(\tau)\equiv\lambda(t_3 \tau + t_2 +t_1)$
+其中$C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]\equiv \gamma \int_{0}^{1} \mathrm{d} \tau    \left(\DD{\lambda_{c}}{\tau}\right)^2,\ \lambda_{\mathrm{c}}(\tau)\equiv\lambda(t_3 \tau + t_2 +t_1)$
 \begin{center}
     {\bfseries D.绝热压缩}
 \end{center}
@@ -314,10 +314,10 @@
 
 现在考虑使得功率$P$最大时的效率$\eta$，可以通过优化$t_1,\ t_3$使得$P$最大，只需使$\PP{P}{t_1}=\PP{P}{t_3}=0$即可，解得
 \begin{equation}
-    \left\{\begin{array}{l}
+    \left\{\begin{aligned}
         \frac{1}{t_{1}}=\frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) \ln \frac{\lambda_{1}}{\lambda_{0}}}{2\left(\beta_{\mathrm{h}}^{-1} C_{\mathrm{h}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}\\
         \frac{1}{t_{3}}=\frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) \ln \frac{\lambda_{1}}{\lambda_{0}}}{2\left(\beta_{\mathrm{c}}^{-1} C_{\mathrm{c}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}
-    \end{array}\right.
+    \end{aligned}\right.
     \label{eq3.36}
 \end{equation}
 于是，效率可以写为
@@ -356,6 +356,7 @@
     \label{eq3.41}
 \end{equation}
 可以看到，这符合热机最大功率时效率的二阶普适性。但这个热机的效率比起Curzon 和 Ahlborn 构建的内可逆热机\cite{Curzon1975}的效率$\eta_{\mathrm{CA}}=1-\sqrt{1-\eta_{\mathrm{c}}}=\frac{\eta_{\mathrm{c}}}{2}+\frac{\eta_{\mathrm{c}}^{2}}{8}+\frac{6 \eta_{\mathrm{c}}^{3}}{96}+O\left(\eta_{\mathrm{c}}^{4}\right)$要低。
+
 
 
 \subsection{欠阻尼布朗粒子构成的类卡诺循环热机}
@@ -397,24 +398,57 @@
 接下来的处理和上节\ref{sec3.2.1}过阻尼情况类似，不再赘述。热机在最大功率时的效率$\eta$为
 \begin{equation}
     \eta=\frac{\eta_{\mathrm{c}}\left[\sqrt{\chi(1-\eta_{\mathrm{c}})}+1\right]}{2-\eta_{\mathrm{c}}+2 \sqrt{\chi\left(1-\eta_{\mathrm{c}}\right)}}
-    \label{3.45}
+    \label{eq3.45}
 \end{equation}
 其中$\eta_{\mathrm{c}}\equiv 1-\frac{\beta_{\mathrm{c}}^{-1}}{\beta_{\mathrm{h}}^{-1}}$是卡诺效率，而$\chi\equiv\frac{C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]}{C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]}$。这个形式和过阻尼的情形没有区别，因为二者的吸收热的表达式\eqref{eq3.15}和式\eqref{eq3.44}里积分式的第二项都含有$\dot{\lambda}^2$项。对于欠阻尼情形而言，不同于过阻尼情形的是
 \begin{equation}
-    \begin{split}
-        C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]&\equiv \int_{{0}}^{{1}} \mathrm{d} t\left[\frac{1}{\gamma{\lambda_{\mathrm{h}}^{2}}} \left(\DD{{\lambda_{\mathrm{h}}}}{\tau}\right)^{2}+\gamma \left({\DD{\lambda_{\mathrm{h}}}{\tau}}\right)^{2} \right],\ \lambda_{\mathrm{h}}(\tau)\equiv\lambda(t_1 \tau),\\
-        C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]&\equiv \int_{{0}}^{{1}} \mathrm{d} t\left[\frac{1}{\gamma{\lambda_{\mathrm{c}}^{2}}} \left(\DD{{\lambda_{\mathrm{c}}}}{\tau}\right)^{2}+\gamma \left({\DD{\lambda_{\mathrm{c}}}{\tau}}\right)^{2} \right],\ \lambda_{\mathrm{c}}(\tau)\equiv\lambda(t_3 \tau + t_2 +t_1)
-    \end{split}
-    \label{3.46}
+    C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]\equiv \int_{{0}}^{{1}} \mathrm{d} \tau \left[\frac{1}{\gamma{\lambda_{\mathrm{h}}^{2}}} \left(\DD{{\lambda_{\mathrm{h}}}}{\tau}\right)^{2}+\gamma \left({\DD{\lambda_{\mathrm{h}}}{\tau}}\right)^{2} \right],\ \lambda_{\mathrm{h}}(\tau)\equiv\lambda(t_1 \tau)
+    \label{eq3.46}
 \end{equation}
-
-为了求出$\chi$我们依然可以使用变分的方法，$\lambda_{\mathrm{h}}(\tau)$和$\lambda_{\mathrm{h}}(\tau)$满足的微风方程都是一样的，以$\lambda_{\mathrm{c}}(\tau)$为例，由变分法得到
 \begin{equation}
-    \gamma^{2} \lambda_{\mathrm{c}}^{3} \DDD{\lambda_{\mathrm{c}}}{\tau}+\lambda_{\mathrm{c}} \DDD{\lambda_{\mathrm{c}}}{\tau}-\left(\DD{\lambda_{\mathrm{c}}}{\tau}\right)^{2}=0
-    \label{3.47}
+    C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]\equiv \int_{{0}}^{{1}} \mathrm{d} \tau \left[\frac{1}{\gamma{\lambda_{\mathrm{c}}^{2}}} \left(\DD{{\lambda_{\mathrm{c}}}}{\tau}\right)^{2}+\gamma \left({\DD{\lambda_{\mathrm{c}}}{\tau}}\right)^{2} \right],\ \lambda_{\mathrm{c}}(\tau)\equiv\lambda(t_3 \tau + t_2 +t_1)
+    \label{eq3.46.5}
 \end{equation}
 
+为了求出$\chi$我们依然可以使用变分的方法，$\lambda_{\mathrm{h}}(\tau)$和$\lambda_{\mathrm{h}}(\tau)$满足的微分方程都是一样的，以$\lambda_{\mathrm{h}}(\tau)$为例，考虑到$C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]$的积分表达式里面不显含$\tau$，我们可以直接得到对应的\textbf{欧拉-拉格朗日方程}的首次积分\cite{Wu2003}，即
+\begin{equation}
+    \left(\frac{1}{\gamma \lambda_{\mathrm{h}}^{2}}+\gamma\right)\left(\frac{\mathrm{d} \lambda_{\mathrm{h}}}{\mathrm{d} \tau}\right)^{2}=C_{\mathrm{h0}}
+    \label{eq3.47}
+\end{equation}
+其中$C_{\mathrm{h0}}$是不依赖于$\tau$的常数。非常有意思的是我们发现，上式\eqref{eq3.47}的左边恰好是式\eqref{eq3.46}里的积分项。那也就意味着
+\begin{equation}
+    C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]=C_{\mathrm{h0}}
+    \label{eq3.49}
+\end{equation}
+现在考虑如何求$C_{\mathrm{h0}}$，注意到由式\eqref{eq3.47}可得
+\begin{align}
+    \Rightarrow \quad &\sqrt{\frac{1}{\gamma \lambda_{\mathrm{h}}^2}+\gamma} \ \mathrm{d} \lambda_{\mathrm{h}}=\sqrt{C_{\mathrm{h0}}} \ \mathrm{d} \tau\\
+    \Rightarrow \quad& \int_{\lambda_0}^{\lambda_1} \mathrm{d}  \lambda_{\mathrm{h}} \sqrt{\frac{1}{\gamma \lambda_{\mathrm{h}}^2}+\gamma}=\int_{0}^{1} \mathrm{d} \tau \sqrt{C_{\mathrm{h0}}}\\
+    \Rightarrow \quad& C_{\mathrm{h0}} =\frac{1}{\gamma} \left[\left(\sqrt{\gamma^{2} \lambda_{1} ^{2}+1}-\sqrt{\gamma^{2} \lambda_{0} ^{2}+1}\right)-\ln \frac{\lambda_{0}\left(1+\sqrt{\gamma^{2} \lambda_{1} ^{2}+1}\right) }{\lambda_{1} \left(1+\sqrt{\gamma^{2} \lambda_{0} ^{2}+1}\right)}\right]^2 
+    \label{eq3.50}
+\end{align}
+考虑$\gamma \lambda \ll 1$的特殊情况，忽略二阶小量，可以得到
+\begin{equation}
+    C_{\mathrm{h0}}=\frac{1}{\gamma}\left(\ln \frac{\lambda_{1}}{\lambda_{0}}\right)^2
+    \label{eq3.51}
+\end{equation}
+同理可求得$C_{\mathrm{c0}}$，于是不难得到
+\begin{equation}
+    \begin{split}
+        \chi&=\frac{C_{\mathrm{c}} [\lambda_{\mathrm{h}}(\tau)]}{C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]}\\
+        &=\frac{C_{\mathrm{c0}}}{C_{\mathrm{h0}}}\\
+        &=1
+    \end{split}
+    \label{eq3.52}
+\end{equation}
+于是将上式\eqref{eq3.52}代入最大功率对应的效率的表达式\eqref{eq3.45}，就得到了欠阻尼情形下，并且满足$\gamma \lambda \ll 1$时，最大功率对应的效率
+\begin{equation}
+    \eta=1-\sqrt{1-\eta_{\mathrm{c}}}
+    \label{eq3.53}
+\end{equation}
+这正是Curzon 和 Ahlborn 构建的内可逆热机\cite{Curzon1975}的效率$\eta_{\mathrm{CA}}$
 
+\subsection{本章小结}
 
 
 \section{类卡诺循环热机的功、熵、能量损失}

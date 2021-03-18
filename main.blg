@@ -9,45 +9,45 @@ A level-1 auxiliary file: data/ack.aux
 Database file #1: ref/refs.bib
 Warning--I didn't find a database entry for "bnuthesis"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 35 entries,
+You've used 37 entries,
             3363 wiz_defined-function locations,
-            1039 strings with 11995 characters,
-and the built_in function-call counts, 198181 in all, are:
-= -- 20539
-> -- 20442
-< -- 20400
-+ -- 6424
-- -- 194
-* -- 964
-:= -- 21274
-add.period$ -- 104
-call.type$ -- 35
-change.case$ -- 71
-chr.to.int$ -- 5861
-cite$ -- 35
-duplicate$ -- 719
-empty$ -- 1907
-format.name$ -- 351
-if$ -- 57517
+            1050 strings with 12162 characters,
+and the built_in function-call counts, 204037 in all, are:
+= -- 21124
+> -- 20998
+< -- 20964
++ -- 6615
+- -- 201
+* -- 1004
+:= -- 21941
+add.period$ -- 110
+call.type$ -- 37
+change.case$ -- 75
+chr.to.int$ -- 6026
+cite$ -- 37
+duplicate$ -- 760
+empty$ -- 2013
+format.name$ -- 363
+if$ -- 59180
 int.to.chr$ -- 1
-int.to.str$ -- 36
+int.to.str$ -- 38
 missing$ -- 0
-newline$ -- 189
-num.names$ -- 105
-pop$ -- 8628
+newline$ -- 200
+num.names$ -- 111
+pop$ -- 8905
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 37
 quote$ -- 0
-skip$ -- 23996
+skip$ -- 24644
 stack$ -- 0
-substring$ -- 6632
-swap$ -- 70
-text.length$ -- 256
+substring$ -- 6845
+swap$ -- 72
+text.length$ -- 268
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 480
+type$ -- 503
 warning$ -- 0
-while$ -- 371
+while$ -- 390
 width$ -- 0
-write$ -- 544
+write$ -- 574
 (There was 1 warning)
