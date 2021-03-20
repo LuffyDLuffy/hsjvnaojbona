@@ -250,11 +250,11 @@
 
 \subsection{利用绝热捷径实现平衡态的转化}
 
-\qquad 接下来，我们举例说明绝热捷径如何实现平衡态的转化。\cite{Tu2013}考虑一个被时间依赖的谐振子势场驱动的布朗粒子，只需使式\eqref{eq2.26}中的$b=2$，再联系到式\eqref{eq2.29}，就可以直接得到它被施加反绝热哈密顿量之后的哈密顿量
+\qquad 接下来，我们举例说明绝热捷径如何实现平衡态的转化。\cite{Tu2013}考虑一个被时间依赖的谐振子势场$U_0 (q, \lambda(t))= q^{2} /  \lambda(t)^2$驱动的布朗粒子，只需使式\eqref{eq2.26}中的$b=2,\ \epsilon=2$，再联系到式\eqref{eq2.29}，就可以直接得到它被施加反绝热哈密顿量之后的哈密顿量
 \begin{equation}
     \begin{split}
-        H(t)=&H_0 (t) + \frac{\dot{\lambda}}{2 \lambda(t)} q p\\
-    =&\frac{p^{2}}{2 m}+\epsilon\left(\frac{q}{\lambda}\right)^{2}+\frac{\dot{\lambda}}{2 \lambda(t)} q p
+    H(t)=&H_0 (t) + \frac{\dot{\lambda}}{2 \lambda(t)} q p\\
+    =&\frac{p^{2}}{2 m}+\frac{1}{2}\frac{q^2}{\lambda(t)^2}+\frac{\dot{\lambda}}{2 \lambda(t)} q p
     \end{split}
     \label{eq2.31}
 \end{equation}
@@ -266,8 +266,8 @@
 这样才有$H\left(t_{f}\right)=H_0 \left(t_{f}\right), H\left(t_{f}\right)=H_0 \left(t_{f}\right)$，除此之外，$\lambda (t)$依赖于时间$t$的形式有很大的任意性。运动方程为
 \begin{equation}
     \left\{\begin{aligned}
-        &\dot{q}=\frac{\partial H}{\partial p}=\frac{p}{m}+\frac{\lambda(t)}{2 \lambda(t)} q \\
-        &\dot{p}=-\frac{\partial H}{\partial q}=-2 \epsilon \frac{q}{\lambda^{2}(t)}-\frac{\dot{\lambda}(t)}{2 \lambda(t)} p
+        &\dot{q}=\frac{\partial H}{\partial p}={p}+\frac{\dot{\lambda}}{2 \lambda(t)} q \\
+        &\dot{p}=-\frac{\partial H}{\partial q}=-\frac{q}{\lambda^{2}(t)}-\frac{\dot{\lambda}(t)}{2 \lambda(t)} p
         \end{aligned}\right.
     \label{eq2.31.7}
 \end{equation}
@@ -280,25 +280,25 @@
 \end{equation}
 其中$(q_i, p_i)$代表初始时的相点，根据\textbf{刘维尔定理}，当系统不和外界任何热浴接触时，分布函数沿着相轨应当是不变的。所以，末态的分布函数应当为
 \begin{equation}
-    \rho_{f}=\rho_{i}=\frac{\beta_{i} }{2 \pi \lambda_{i}} \exp \left[-\beta_{i} H\left(t_{i}\right)\right]
+    \rho_{f}=\rho_{i}=\frac{\beta_{i} }{2 \pi \lambda_{i}} \exp \left[-\beta_{i} H_0 \left(t_{i}\right)\right]
     \label{eq2.33}
 \end{equation}
 接着我们寻找末态的有效温度，使得末态的分布函数\eqref{eq2.33}可以被表达成正则分布的样子
 \begin{equation}
-    \rho_{f}=\frac{\beta_{f} }{2 \pi \lambda_{f}} \exp \left[-\beta_{f} H\left(t_{f}\right)\right]
+    \rho_{f}=\frac{\beta_{f} }{2 \pi \lambda_{f}} \exp \left[-\beta_{f} H_0 \left(t_{f}\right)\right]
     \label{eq2.34}
 \end{equation}
 其中$(q_f, p_f)$是末态的相点。计算$H_0 (t)$对时间的导数得
 \begin{equation}
     \begin{split}
-        \DD{H_0 (t)}{t} =& \frac{p}{m}\dot{p} + 2 \epsilon \frac{q}{\lambda^2}\dot{q} - 2 \epsilon \frac{q^2}{\lambda^2} \dot{\lambda}\\
-                        =& -H(t) \DD{\ln{\lambda(t)}}{t}
+        \DD{H_0 (t)}{t} =& \frac{p}{m}\dot{p} + 2 \epsilon \frac{q}{\lambda^2}\dot{q} - \frac{q^2}{\lambda^2} \dot{\lambda}\\
+                        =& -H_0 (t) \DD{\ln{\lambda(t)}}{t}
     \end{split}
     \label{eq2.35}
 \end{equation}
-第二个等式用到了运动方程\eqref{eq2.34}于是可得$H\left(t_{f}\right)=H\left(t_{i}\right) \lambda_{i} / \lambda_{f}$，将这个式子代入式\eqref{eq2.34}，得到
+第二个等式用到了运动方程\eqref{eq2.34}于是可得$H_0 \left(t_{f}\right)=H_0 \left(t_{i}\right) \lambda_{i} / \lambda_{f}$，将这个式子代入式\eqref{eq2.34}，得到
 \begin{equation}
-    \rho_{f}=\frac{\beta_{f} }{2 \pi \lambda_{f}} \exp \left[-\frac{\beta_{f} \lambda_i}{\lambda_f} H\left(t_{f}\right)\right]
+    \rho_{f}=\frac{\beta_{f} }{2 \pi \lambda_{f}} \exp \left[-\frac{\beta_{f} \lambda_i}{\lambda_f} H_0 \left(t_{f}\right)\right]
     \label{eq2.36}
 \end{equation}
 将这个式子和式\eqref{eq2.33}比较可得
@@ -431,7 +431,7 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 注意到，我们令$U \equiv U_0 + U_1$，算符$\nabla \equiv \hat{\bm{q}} \partial / \partial x+\hat{\bm{p}} \partial / \partial p$，其中$\hat{\bm{q}}$和$\hat{\bm{p}}$是单位方向向量。
 原系统瞬时平衡态的分布函数为
 \begin{equation}
-    \rho(x, p, t)=\rho_{\mathrm{ieq}}(x, p, \lambda(t)) \equiv \mathrm{e}^{\beta\left[F(\lambda(t))-H_{0}(x, p, \lambda(t))\right]}
+    \rho(q, p, t)=\rho_{\mathrm{ieq}}(q, p, \lambda(t)) \equiv \mathrm{e}^{\beta\left[F(\lambda(t))-H_{0}(x, p, \lambda(t))\right]}
     \label{eq2.58}
 \end{equation}
 其中$F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} \M{d} q \int_{-\infty}^{+\infty} \M{d} p e^{-\beta H_{0}(q, p, \lambda)}\right]$

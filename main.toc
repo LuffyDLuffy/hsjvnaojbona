@@ -19,12 +19,9 @@
 \contentsline {section}{\numberline {3.2}类卡诺循环热机模型}{20}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}过阻尼布朗粒子构成的类卡诺循环热机}{20}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}欠阻尼布朗粒子构成的类卡诺循环热机}{25}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}本章小结}{27}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}类卡诺循环热机的功、熵、能量损失}{27}{section.3.3}%
-\contentsline {section}{\numberline {3.4}与其他热机的比较}{27}{section.3.4}%
-\contentsline {chapter}{插图索引}{28}{section*.14}%
-\contentsline {chapter}{表格索引}{29}{section*.16}%
-\contentsline {chapter}{公式索引}{30}{section*.18}%
-\contentsline {chapter}{参考文献}{34}{section*.20}%
+\contentsline {chapter}{插图索引}{27}{section*.14}%
+\contentsline {chapter}{表格索引}{28}{section*.16}%
+\contentsline {chapter}{公式索引}{29}{section*.18}%
+\contentsline {chapter}{参考文献}{33}{section*.20}%
 \contentsline {chapter}{致\hspace {1em}谢}{36}{section*.22}%
 \contentsfinish 

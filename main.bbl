@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -66,6 +66,49 @@ Schilpp P~A.
 \newblock Albert einstein, autobiographical notes: a centennial
   edition.\allowbreak[J].
 \newblock Albert Einstein, 1979: 31.
+
+\bibitem[Partington(1989)]{partington1989short}
+Partington J~R.
+\newblock A short history of chemistry\allowbreak[M].
+\newblock [S.l.]: Courier Corporation, 1989
+
+\bibitem[Perrot(1998)]{perrot1998z}
+Perrot P.
+\newblock A to z of thermodynamics\allowbreak[M].
+\newblock [S.l.]: Oxford University Press on Demand, 1998
+
+\bibitem[of~Arts(1866)]{connecticut1866transactions}
+of~Arts C~A.
+\newblock Transactions of the connecticut academy of arts and sciences:
+  volume~1\allowbreak[M].
+\newblock [S.l.]: Academy, 1866
+
+\bibitem[SUGI\ et~al.(1993)SUGI and KATO]{sugi1993scientific}
+SUGI H, KATO M.
+\newblock The scientific papers of j. willard gibbs, volume 1
+  thermodynamics\allowbreak[J].
+\newblock Chemistry letters, 1993, 1993\penalty0 (8): 1365-1368.
+
+\bibitem[Duhem(1886)]{duhem1886potentiel}
+Duhem P.
+\newblock Le potentiel thermodynamique et ses applications\allowbreak[Z].
+\newblock [S.l.: s.n.], 1886.
+
+\bibitem[Lewis\ et~al.(1923)Lewis and Randall]{lewis1923thermodynamics}
+Lewis G~N, Randall M.
+\newblock Thermodynamics and the free energy of chemical
+  substances\allowbreak[M].
+\newblock [S.l.]: McGraw-Hill, 1923
+
+\bibitem[Guggenheim(2002)]{guggenheim2002modern}
+Guggenheim E~A.
+\newblock Modern thermodynamics by the methods of willard gibbs.\allowbreak[J].
+\newblock The Journal of Physical Chemistry, 2002, 38\penalty0 (5): 713-713.
+
+\bibitem[Guggenheim(1967)]{guggenheim1967advanced}
+Guggenheim E.
+\newblock An advanced treatment for chemists and physicists\allowbreak[J].
+\newblock Thermodynamics, 1967.
 
 \bibitem[Chen\ et~al.(2010)Chen, Ruschhaupt, Schmidt, {Del Campo},
   Gu{\'{e}}ry-Odelin, and Muga]{Chen2010}
