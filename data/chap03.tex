@@ -323,9 +323,9 @@
 于是，效率可以写为
 \begin{equation}
     \begin{split}
-        \eta&=1- \frac{\beta_{\mathrm{c}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} + \beta_{\mathrm{c}}^{-1} C_{\mathrm{c}} \frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) \ln \frac{\lambda_{1}}{\lambda_{0}}}{2\left(\beta_{\mathrm{c}}^{-1} C_{\mathrm{c}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}}{\beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} \frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) \ln \frac{\lambda_{1}}{\lambda_{0}}}{2\left(\beta_{\mathrm{h}}^{-1} C_{\mathrm{h}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}}\\
+        \eta^{*}&=1- \frac{\beta_{\mathrm{c}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} + \beta_{\mathrm{c}}^{-1} C_{\mathrm{c}} \frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) \ln \frac{\lambda_{1}}{\lambda_{0}}}{2\left(\beta_{\mathrm{c}}^{-1} C_{\mathrm{c}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}}{\beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} \frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) \ln \frac{\lambda_{1}}{\lambda_{0}}}{2\left(\beta_{\mathrm{h}}^{-1} C_{\mathrm{h}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}}\\
         &=1- \frac{\beta_{\mathrm{c}}^{-1}  + \beta_{\mathrm{c}}^{-1} C_{\mathrm{c}} \frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) }{2\left(\beta_{\mathrm{c}}^{-1} C_{\mathrm{c}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}}{\beta_{\mathrm{h}}^{-1}  - \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} \frac{\left(\beta_{\mathrm{h}}^{-1}-\beta_{\mathrm{c}}^{-1}\right) }{2\left(\beta_{\mathrm{h}}^{-1} C_{\mathrm{h}}+\sqrt{\beta_{\mathrm{c}}^{-1} \beta_{\mathrm{h}}^{-1} C_{\mathrm{c}} C_{\mathrm{h}}}\right)}}\\
-        &=\frac{\eta_{\mathrm{c}}\left[\sqrt{\chi(1-\eta_{\mathrm{c}})}+1\right]}{2-\eta_{\mathrm{c}}+2 \sqrt{\chi\left(1-\eta_{\mathrm{c}}\right)}}
+        &=\frac{\eta_{\mathrm{c}}}{2-\eta_{\mathrm{c}} \frac{\sqrt{\chi\left(1-\eta_{\mathrm{c}}\right)}-1}{\chi\left(1-n_{\mathrm{c}}\right)-1}}
     \end{split}
     \label{eq3.37}
 \end{equation}
@@ -346,7 +346,7 @@
 \end{equation}
 只需将上式\eqref{eq3.39}带入到式\eqref{eq3.37}，我们最终得到了过阻尼类卡诺热机在最大功率时的效率
 \begin{equation}
-    \eta=\frac{\eta_{\mathrm{c}}\left(1+\sqrt{1-\eta_{\mathrm{c}}}\right)}{\left(2-\eta_{\mathrm{c}}\right) \sqrt{1-\eta_{\mathrm{c}}}+2}
+    \eta=\frac{\eta_{\mathrm{c}}}{3-\left(\eta_{\mathrm{c}}+\sqrt{1-\eta_{\mathrm{c}}}\right)}
     \label{eq3.40}
 \end{equation}
 
@@ -397,7 +397,7 @@
 \end{equation}
 接下来的处理和上节\ref{sec3.2.1}过阻尼情况类似，不再赘述。热机在最大功率时的效率$\eta$为
 \begin{equation}
-    \eta=\frac{\eta_{\mathrm{c}}\left[\sqrt{\chi(1-\eta_{\mathrm{c}})}+1\right]}{2-\eta_{\mathrm{c}}+2 \sqrt{\chi\left(1-\eta_{\mathrm{c}}\right)}}
+    \eta^{*}=\frac{\eta_{\mathrm{c}}}{2-\eta_{\mathrm{c}} \frac{\sqrt{\chi\left(1-\eta_{\mathrm{c}}\right)}-1}{\chi\left(1-n_{\mathrm{c}}\right)-1}}
     \label{eq3.45}
 \end{equation}
 其中$\eta_{\mathrm{c}}\equiv 1-\frac{\beta_{\mathrm{c}}^{-1}}{\beta_{\mathrm{h}}^{-1}}$是卡诺效率，而$\chi\equiv\frac{C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]}{C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]}$。这个形式和过阻尼的情形没有区别，因为二者的吸收热的表达式\eqref{eq3.15}和式\eqref{eq3.44}里积分式的第二项都含有$\dot{\lambda}^2$项。对于欠阻尼情形而言，不同于过阻尼情形的是
