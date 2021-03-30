@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.4)  23 MAR 2021 15:31
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.4)  30 MAR 2021 11:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,48 +906,48 @@ LaTeX Warning: Unused global option(s):
 (./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux) (./data/ack.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 19.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 19.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 21.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 21.
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 19.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 19.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 21.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 21.
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 19.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 19.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 21.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 21.
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 19.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 19.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 21.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 21.
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 19.
+LaTeX Info: Redefining \selectfont on input line 21.
 \c@mv@tabular=\count387
 \c@mv@boldtabular=\count388
 Package caption Info: Begin \AtBeginDocument code.
@@ -966,7 +966,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 )
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 21.
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -976,9 +976,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count389
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -1023,7 +1023,7 @@ LaTeX Info: Redefining \nameref on input line 19.
 File: BNU.png Graphic file (type bmp)
 <BNU.png>
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 36.135pt on input line 27.
+(Font)              scaled to size 36.135pt on input line 29.
 
 Package fontspec Info: Could not resolve font "SimSun/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1071,53 +1071,53 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 27.
+(Font)              scaled to size 16.06pt on input line 29.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.06pt on input line 27.
+(Font)              scaled to size 16.06pt on input line 29.
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 27.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 29.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 26.09749pt on input line 27.
+(Font)              scaled to size 26.09749pt on input line 29.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 27.
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 27.
+(Font)              scaled to size 14.05249pt on input line 29.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 29.
 (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 27.
+(Font)              scaled to size 14.05249pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 27.
+(Font)              scaled to size 10.53937pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.52812pt on input line 27.
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 27.
+(Font)              scaled to size 7.52812pt on input line 29.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 29.
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 27.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 29.
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 27.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 29.
  (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 27.
+(Font)              scaled to size 14.05249pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 27.
+(Font)              scaled to size 10.53937pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.52812pt on input line 27.
+(Font)              scaled to size 7.52812pt on input line 29.
  [1
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
 
  []
 
@@ -1126,48 +1126,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--27
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vskip' on input line 27.
+(hyperref)                removing `\vskip' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 27.
+(hyperref)                removing `\@ifnextchar' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sanhao' on input line 27.
+(hyperref)                removing `\sanhao' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 27.
+(hyperref)                removing `\\' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vskip' on input line 27.
+(hyperref)                removing `\vskip' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 27.
+(hyperref)                removing `\@ifnextchar' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\xiaosan' on input line 27.
+(hyperref)                removing `\xiaosan' on input line 29.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.045pt on input line 27.
+(Font)              scaled to size 12.045pt on input line 29.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 27.
+(Font)              scaled to size 15.05624pt on input line 29.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 14.05249pt on input line 27.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 27.
+(Font)              scaled to size 14.05249pt on input line 29.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 29.
 (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 27.
+(Font)              scaled to size 14.05249pt on input line 29.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 27.
+(Font)              scaled to size 14.05249pt on input line 29.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 27.
+(Font)              scaled to size 9.03374pt on input line 29.
  [1
 
 
@@ -1175,31 +1175,31 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vskip' on input line 27.
+(hyperref)                removing `\vskip' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 27.
+(hyperref)                removing `\@ifnextchar' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sanhao' on input line 27.
+(hyperref)                removing `\sanhao' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 27.
+(hyperref)                removing `\\' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vskip' on input line 27.
+(hyperref)                removing `\vskip' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 27.
+(hyperref)                removing `\@ifnextchar' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\xiaosan' on input line 27.
+(hyperref)                removing `\xiaosan' on input line 29.
 
 [2
 
@@ -1245,38 +1245,69 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 
 
 ]
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 30.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.52437pt on input line 30.
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 31.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 33.
+ (e:/Program Files/texlive/2020/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
+File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
+)
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 10.84042pt on input line 33.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.045pt on input line 37.
- [2] [3]) [4]
+ [2]
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.045pt on input line 46.
+ [3]
+
+Package fontspec Info: Font family 'EBGaramond(0)' created for font 'EB
+(fontspec)             Garamond' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"EB
+(fontspec)             Garamond/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"EB
+(fontspec)             Garamond/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"EB
+(fontspec)             Garamond/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"EB
+(fontspec)             Garamond/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"EB
+(fontspec)             Garamond/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: <->"EB
+(fontspec)             Garamond/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"EB
+(fontspec)             Garamond/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"EB
+(fontspec)             Garamond/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+Package hyperref Info: bookmark level for unknown equation defaults to 0 on input line 77.
+ [4]) [5]
 \openout2 = `data/chap02.aux'.
 
  (./data/chap02.tex
 第2章
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 12.
-(e:/Program Files/texlive/2020/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
-File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
-)
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 12.64714pt on input line 12.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 11.74377pt on input line 12.
-Package hyperref Info: bookmark level for unknown equation defaults to 0 on input line 19.
- [5
+[6
 
 
 
-] [6] [7]
+] [7] [8]
 File: figures/p2.1.pdf Graphic file (type pdf)
 <use figures/p2.1.pdf>
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 11.04124pt on input line 148.
- [8] [9] [10] [11] [12] [13] [14]
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 416.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.52437pt on input line 416.
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 416.
+ [9] [10] [11] [12] [13] [14] [15]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.03374pt on input line 416.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -1292,16 +1323,16 @@ Missing character: There is no 皆 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 是 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 如 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 此 in font ntx-Regular-tlf-ot1!
- [15]) [16]
+ [16]) [17]
 \openout2 = `data/chap03.aux'.
 
  (./data/chap03.tex
 第3章
-[17
+[18
 
 
 
-] [18] [19] [20] (./figures/p3.1.pdf_tex
+] [19] [20] [21] (./figures/p3.1.pdf_tex
 File: figures/p3.1.pdf Graphic file (type pdf)
 <use figures/p3.1.pdf, page 1>
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 57.
@@ -1319,11 +1350,11 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 6.07271pt on input line 57.
 File: figures/p3.1.pdf Graphic file (type pdf)
 <use figures/p3.1.pdf, page 2>
-) [21] [22] [23] [24] [25]) [26] (./main.lof)
+) [22] [23] [24] [25] [26]) [27] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [27
+ [28
 
 
 
@@ -1332,534 +1363,534 @@ File: figures/p3.1.pdf Graphic file (type pdf)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [28
+ [29
 
 
 ] (./main.loe
-Overfull \hbox (2.13187pt too wide) detected at line 9
+Overfull \hbox (2.13187pt too wide) detected at line 12
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-9a 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 10
+Overfull \hbox (2.80638pt too wide) detected at line 13
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-9b 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 11
+Overfull \hbox (2.80638pt too wide) detected at line 14
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-10 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 12
+Overfull \hbox (2.80638pt too wide) detected at line 15
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-11 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 13
+Overfull \hbox (2.80638pt too wide) detected at line 16
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-12 
  []
 
 
-Overfull \hbox (8.15436pt too wide) detected at line 14
+Overfull \hbox (8.15436pt too wide) detected at line 17
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-13a 
  []
 
 
-Overfull \hbox (8.82887pt too wide) detected at line 15
+Overfull \hbox (8.82887pt too wide) detected at line 18
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-13b 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 16
+Overfull \hbox (2.80638pt too wide) detected at line 19
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-14 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 17
+Overfull \hbox (2.80638pt too wide) detected at line 20
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-15 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 18
+Overfull \hbox (2.80638pt too wide) detected at line 21
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-16 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 19
+Overfull \hbox (2.80638pt too wide) detected at line 22
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-17 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 20
+Overfull \hbox (2.80638pt too wide) detected at line 23
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-18 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 21
+Overfull \hbox (2.80638pt too wide) detected at line 24
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-19 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 22
+Overfull \hbox (2.80638pt too wide) detected at line 25
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-20 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 23
+Overfull \hbox (2.80638pt too wide) detected at line 26
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-21 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 24
+Overfull \hbox (2.80638pt too wide) detected at line 27
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-22 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 25
+Overfull \hbox (2.80638pt too wide) detected at line 28
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-23 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 26
+Overfull \hbox (2.80638pt too wide) detected at line 29
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-24 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 27
+Overfull \hbox (2.80638pt too wide) detected at line 30
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-25 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 28
+Overfull \hbox (2.80638pt too wide) detected at line 31
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-26 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 29
+Overfull \hbox (2.80638pt too wide) detected at line 32
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-27 
  []
 
 
-Overfull \hbox (2.80638pt too wide) detected at line 30
+Overfull \hbox (2.80638pt too wide) detected at line 33
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-28 
  []
 
-
-Overfull \hbox (2.80638pt too wide) detected at line 31
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-29 
- []
-
-
-Overfull \hbox (2.80638pt too wide) detected at line 32
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-30 
- []
-
-
-Overfull \hbox (2.80638pt too wide) detected at line 33
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-31 
- []
-
-[29
+[30
 
 
 ]
 Overfull \hbox (2.80638pt too wide) detected at line 34
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-32 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-29 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 35
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-33 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-30 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 36
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-34 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-31 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 37
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-35 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-32 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 38
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-36 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-33 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 39
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-37 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-34 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 40
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-38 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-35 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 41
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-39 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-36 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 42
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-40 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-37 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 43
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-41 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-38 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 44
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-42 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-39 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 45
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-43 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-40 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 46
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-44 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-41 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 47
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-45 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-42 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 48
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-46 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-43 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 49
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-47 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-44 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 50
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-48 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-45 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 51
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-49 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-46 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 52
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-50 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-47 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 53
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-51 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-48 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 54
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-52 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-49 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 55
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-53 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-50 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 56
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-54 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-51 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 57
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-55 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-52 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 58
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-56 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-53 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 59
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-57 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-54 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 60
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-58 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-55 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 61
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-59 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-56 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 62
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-60 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-57 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 63
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-61 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-58 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 64
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-62 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-59 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 65
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-63 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-60 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 66
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-64 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-61 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 67
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-62 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 68
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-63 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 69
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-64 
+ []
+
+[31]
+Overfull \hbox (2.80638pt too wide) detected at line 70
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 2-65 
- []
-
-[30]
-Overfull \hbox (2.80638pt too wide) detected at line 77
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-10 
- []
-
-
-Overfull \hbox (2.80638pt too wide) detected at line 78
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-11 
- []
-
-
-Overfull \hbox (2.80638pt too wide) detected at line 79
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-12 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 80
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-13 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-10 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 81
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-14 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-11 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 82
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-15 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-12 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 83
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-16 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-13 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 84
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-17 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-14 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 85
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-18 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-15 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 86
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-19 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-16 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 87
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-20 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-17 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 88
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-21 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-18 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 89
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-22 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-19 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 90
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-23 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-20 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 91
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-24 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-21 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 92
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-25 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-22 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 93
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-26 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-23 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 94
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-27 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-24 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 95
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-28 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-25 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 96
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-29 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-26 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 97
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-30 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-27 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 98
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-31 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-28 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 99
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-32 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-29 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 100
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-33 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-30 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 101
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-34 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-31 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 102
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-35 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-32 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 103
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-36 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-33 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 104
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-37 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-34 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 105
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-38 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-35 
  []
 
-[31]
+[32]
 Overfull \hbox (2.80638pt too wide) detected at line 106
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-39 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-36 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 107
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-40 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-37 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 108
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-41 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-38 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 109
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-42 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-39 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 110
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-43 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-40 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 111
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-44 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-41 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 112
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-45 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-42 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 113
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-46 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-43 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 114
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-47 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-44 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 115
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-48 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-45 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 116
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-49 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-46 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 117
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-50 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-47 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 118
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-51 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-48 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 119
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-52 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-49 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 120
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-53 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-50 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 121
-\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-54 
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-51 
  []
 
 
 Overfull \hbox (2.80638pt too wide) detected at line 122
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-52 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 123
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-53 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 124
+\TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-54 
+ []
+
+
+Overfull \hbox (2.80638pt too wide) detected at line 125
 \TU/SimSun(0)/b/n/12.045 公 式 \T1/ntxtlf/m/n/12.045 3-55 
  []
 
@@ -1867,19 +1898,19 @@ Overfull \hbox (2.80638pt too wide) detected at line 122
 \tf@loe=\write7
 \openout7 = `main.loe'.
 
- (./main.bbl [32]
+ (./main.bbl [33]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.53937pt on input line 1.
- [33
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.0pt on input line 141.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 7.0pt on input line 141.
+ [34
 
 
 ]
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 214.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.0pt on input line 214.
- [34]) [35]
+ [35]) [36]
 \openout2 = `data/ack.aux'.
 
  (./data/ack.tex
@@ -1889,9 +1920,9 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 11.
 
 
-Package natbib Warning: Citation `bnuthesis' on page 36 undefined on input line 11.
+Package natbib Warning: Citation `bnuthesis' on page 37 undefined on input line 11.
 
-) [36
+) [37
 
 
 
@@ -1910,7 +1941,7 @@ File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 1>
 File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 1>
- [37
+ [38
 
 ]
 File: figures/scan-record.pdf Graphic file (type pdf)
@@ -1919,7 +1950,7 @@ File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 2>
 File: figures/scan-record.pdf Graphic file (type pdf)
 <use figures/scan-record.pdf, page 2>
- [38]
+ [39]
 \tf@thm=\write8
 \openout8 = `main.thm'.
 
@@ -1927,25 +1958,25 @@ File: figures/scan-record.pdf Graphic file (type pdf)
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 (./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux) (./data/ack.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 78.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1DE5C838BBEDF7438E78B9A5B25EC4DC;5036.
+(rerunfilecheck)             Checksum: CD5565E4F9D95E528DEB48DEF26FB421;5084.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25277 strings out of 479418
- 510461 string characters out of 5881946
- 777749 words of memory out of 5000000
- 42293 multiletter control sequences out of 15000+600000
- 671652 words of font info for 227 fonts, out of 8000000 for 9000
+ 25404 strings out of 479418
+ 515821 string characters out of 5881946
+ 778509 words of memory out of 5000000
+ 42397 multiletter control sequences out of 15000+600000
+ 675145 words of font info for 244 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 70i,20n,104p,2527b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,20n,104p,2527b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (45 pages).
+Output written on main.pdf (46 pages).
