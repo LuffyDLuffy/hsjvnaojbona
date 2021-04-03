@@ -648,13 +648,13 @@
     \ifbnu@bachelor
       \vskip1cm
       %{\ifcsname lishu\endcsname\yihao\lishu\ziju{0.5}\bnu@schoolname\else\includegraphics{tsinghua}\fi}
-      {\includegraphics{BNU}}
+      {\includegraphics[width=300pt]{BNU}}
       \par\vskip1cm
       {\xiaochu\songti\ziju{0.1}\bnu@bachelor@subtitle}
       \vskip1.8cm\hskip0.8cm
       \noindent\heiti\sanhao\flushleft\textbf{\bnu@bachelor@title@pre\bnu@title@sep}
-      \parbox[t]{12cm}{%
-      \ignorespaces\yihao\songti\centering\vskip1mm%
+      \parbox[t]{\textwidth}{%
+      \ignorespaces\erhao\songti\vskip1mm%
       \newcommand{\CJKunderlinebasesep}{0.25cm}%
       \renewcommand{\ULthickness}{1.3pt}%
       \ifxetex

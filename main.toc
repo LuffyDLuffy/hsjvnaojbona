@@ -1,31 +1,33 @@
 \contentsline {chapter}{\numberline {第1章}绪论：从经典热力学到随机热力学}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}引言：热机的最大功率与效率问题}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}经典热力学}{2}{section.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.0.1}经典热力学简史}{2}{subsubsection.1.2.0.1}%
-\contentsline {subsubsection}{\numberline {1.2.0.2}经典热力学的基本概念}{3}{subsubsection.1.2.0.2}%
-\contentsline {subsubsection}{\numberline {1.2.0.3}热力学基本定律}{3}{subsubsection.1.2.0.3}%
+\contentsline {subsection}{\numberline {1.2.1}经典热力学简史}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}经典热力学的基本概念}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}热力学基本定律}{3}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}随机热力学简介}{4}{section.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.0.1}随机动力学}{5}{subsubsection.1.3.0.1}%
-\contentsline {chapter}{\numberline {第2章}随机热机}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}随机热机模型}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}绝热捷径}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}绝热捷径的实现}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}经典和量子偶次幂势场中生成元的构造}{9}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}利用绝热捷径实现平衡态的转化}{12}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}等温捷径}{13}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}等温捷径的实现}{14}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}等温捷径应用于过阻尼布朗粒子}{15}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}等温捷径应用于欠阻尼布朗粒子}{16}{subsection.2.3.3}%
-\contentsline {chapter}{\numberline {第3章}绝热捷径与等温捷径构成的类卡诺循环热机}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}布朗粒子的能量学}{18}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}过阻尼布朗粒子的能量学}{18}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}欠阻尼布朗粒子的能量学}{19}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}类卡诺循环热机模型}{21}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}过阻尼布朗粒子构成的类卡诺循环热机}{21}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}欠阻尼布朗粒子构成的类卡诺循环热机}{26}{subsection.3.2.2}%
-\contentsline {chapter}{插图索引}{28}{section*.14}%
-\contentsline {chapter}{表格索引}{29}{section*.16}%
-\contentsline {chapter}{公式索引}{30}{section*.18}%
-\contentsline {chapter}{参考文献}{34}{section*.20}%
-\contentsline {chapter}{致\hspace {1em}谢}{37}{section*.22}%
+\contentsline {subsection}{\numberline {1.3.1}随机动力学}{5}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}随机能量学}{7}{subsection.1.3.2}%
+\contentsline {chapter}{\numberline {第2章}随机热机}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}随机热机模型}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}卡诺热机模型}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}内可逆热机模型}{10}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}微观随机热机模型}{11}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}绝热捷径}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}绝热捷径的实现}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}经典和量子偶次幂势场中生成元的构造}{15}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}利用绝热捷径实现平衡态的转化}{18}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}等温捷径}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}等温捷径的实现}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}等温捷径应用于过阻尼布朗粒子}{21}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}等温捷径应用于欠阻尼布朗粒子}{22}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {第3章}绝热捷径与等温捷径构成的类卡诺循环热机}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}布朗粒子的能量学}{24}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}过阻尼布朗粒子的能量学}{24}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}欠阻尼布朗粒子的能量学}{25}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}类卡诺循环热机模型}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}过阻尼布朗粒子构成的类卡诺循环热机}{27}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}欠阻尼布朗粒子构成的类卡诺循环热机}{32}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {第4章}总结与展望}{34}{chapter.4}%
+\contentsline {chapter}{参考文献}{35}{section*.17}%
+\contentsline {chapter}{致\hspace {1em}谢}{38}{section*.19}%
 \contentsfinish 

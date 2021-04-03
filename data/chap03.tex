@@ -1,4 +1,5 @@
 \chapter{绝热捷径与等温捷径构成的类卡诺循环热机}
+\label{c3}
 \section{布朗粒子的能量学}
 \qquad 在正式开始讨论我们构建的热机之前，为了方便讨论热机的效率、熵变等问题，让我们先花一点时间讨论布朗粒子的能量学。
 \subsection{过阻尼布朗粒子的能量学}
@@ -360,6 +361,7 @@
 
 
 \subsection{欠阻尼布朗粒子构成的类卡诺循环热机}
+\label{c3e2}
 \qquad 同样地，利用式\eqref{eq3.7},\quad \eqref{eq3.8},\quad \eqref{eq3.11}可以计算欠阻尼布朗粒子的在等温捷径过程中的能量差$\Delta E$、输入功$W$、吸收热$Q$。注意到根据式\eqref{eq2.55}，
 \begin{equation}
     \begin{split}
@@ -427,7 +429,12 @@
     \Rightarrow \quad& C_{\mathrm{h0}} =\frac{1}{\gamma} \left[\left(\sqrt{\gamma^{2} \lambda_{1} ^{2}+1}-\sqrt{\gamma^{2} \lambda_{0} ^{2}+1}\right)-\ln \frac{\lambda_{0}\left(1+\sqrt{\gamma^{2} \lambda_{1} ^{2}+1}\right) }{\lambda_{1} \left(1+\sqrt{\gamma^{2} \lambda_{0} ^{2}+1}\right)}\right]^2 
     \label{eq3.50}
 \end{align}
-考虑$\gamma \lambda \ll 1$的特殊情况，忽略二阶小量，可以得到
+考虑到第\ref{c1s3}节提到的欠阻尼福克-普朗克方程的适用条件\cite{Sekimoto2010}，有
+\begin{equation}
+    \gamma \lambda \ll 1,\quad \lambda \text{可取}\lambda_0,\ \lambda_1,\ \lambda_2,\ \lambda_3
+    \label{eq3.51}
+\end{equation}
+于是忽略$\gamma \lambda$的二阶项，即考虑小阻尼情况，可得
 \begin{equation}
     C_{\mathrm{h0}}=\frac{1}{\gamma}\left(\ln \frac{\lambda_{1}}{\lambda_{0}}\right)^2
     \label{eq3.51}

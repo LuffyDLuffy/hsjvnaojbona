@@ -1,4 +1,5 @@
 \chapter{绪论：从经典热力学到随机热力学}
+\label{c1}
 热机的发明和使用对人类的生产生活产生了重大的影响，第一次工业革命和第二次工业革命都和热机的发展有紧密的关系. 一直以来，特别是近些年来，由于能源短缺的问题愈发突出，研究热机的效率问题也一直吸引着一大批研究者。
 
 \section{引言：热机的最大功率与效率问题}
@@ -30,7 +31,7 @@
 \qquad 经典热力学是从宏观的角度研究物质的。它所用的概念，如温度、密度、压强等，都是物质的宏观属性。这些都是不以物质的原子结构为基础就可以定义的概念。再根据宏观的观察和分析得到关于这些概念的经验性的规律和关系，经典热力学就是这样得以发展的。这些经验性的规律和关系被延伸为四个个基本定律，即所谓的热力学第零定律，第一定律，第二定律，第三定律，以这些定律为基础就构成了所谓的经典热力学。热力学原理(即其基本定律)具有相当的普遍性，即它们不依赖于任何有关物质结构的特殊假设，因为它们根本不以物质的原子特性为基础。由于这种普遍性，热力学的应用范围非常广泛。以至于爱因斯坦说道\cite{schilpp1979albert}：“（热力学）这是唯一普遍适用的物理理论，我确信，在这个理论的基本概念适用的范围内，它绝不会被推翻。”\footnote{It is the only physical theory of universal content, which I am convinced, that within the framework of applicability of its basic concepts will never be
 overthrown.}
 
-\subsubsection{经典热力学简史}
+\subsection{经典热力学简史}
 
 \qquad 经典热力学的历史最早可以追溯到Otto von Guericke（克里克），他在1650年建造和设计了世界上第一台真空泵，并用此演示了著名的Magdeburg hemispheres（马格德堡半球实验）。Guericke的实验推翻Aristotle（亚里士多德）长期以来的假设，即 "大自然厌恶真空"。之后不久，英裔爱尔兰物理学家和化学家Robert Boyle（波义耳）得知了Guericke的设计，并在1656年与英国科学家Robert Hooke（胡克）合作，制造了一个气泵。\cite{partington1989short} 利用这个气泵，Boyle和Hooke注意到压力、温度和体积之间的关系。随着时间的推移，\textbf{Boyle's Law（波义耳定律）}被发现，该定律指出：温度相同时，气体压力和体积成反比。
 
@@ -40,7 +41,7 @@ overthrown.}
 
 1873-76年间，美国物理学家吉布斯发表了一系列的三篇论文，最著名的是\textit{ On the Equilibrium of Heterogeneous Substances}（《论异质物质的平衡》）\cite{connecticut1866transactions}，他在论文中说明了如何利用图像分析包括化学反应在内的热力学过程，通过研究热力学系统的能量、熵、体积、温度和压力，可以确定一个过程是否会自发发生。\cite{sugi1993scientific} 另外，19世纪的Pierre Duhem（皮埃尔-杜赫姆）也写了关于化学热力学的文章\cite{duhem1886potentiel}。 20世纪初，Gilbert N. Lewis（吉尔伯特·N·刘易斯）、Merle Randall（梅尔·兰德尔）\cite{lewis1923thermodynamics}和E. A. Guggenheim（E·A·古根海姆）\cite{guggenheim2002modern,guggenheim1967advanced}等化学家将吉布斯的方法应用到化学过程的分析中。从中也可以窥见热力学的适用性之广。
 
-\subsubsection{经典热力学的基本概念}
+\subsection{经典热力学的基本概念}
 \qquad 按爱因斯坦的说法，在热力学的基本概念适用范围内，热力学本身也是适用的。这一方面说明了热力学概念的运用之宽泛，另一方面也说明爱因斯坦并没有将热力学的适用范围无限扩大。不管如何，这都说明了热力学中的这些概念的重要性，而且其中很大一部分也已经渗透进其他学科和社会、生活的方方面面。
 \begin{itemize}
     \item 系统\cite{Wu2010}：泛指个体的集合，这些个体之间通常有相互作用。在热力学中，一个系统通常指宏观系统，其包含的基本个体数的量级为$N_{\mathrm{A}}$。不与外界相互作用，包括不进行物质交换和热交换等的系统被称为\textbf{孤立系统}。
@@ -50,7 +51,7 @@ overthrown.}
     \item 熵：熵是系统的态函数，它和热力学第二定律息息相关。它大概是热力学中最具影响力的概念，已经成为科学衡量无序和信息的基本标尺。
 \end{itemize}
 
-\subsubsection{热力学基本定律}
+\subsection{热力学基本定律}
 \qquad 如前所述，热力学建立在四个基本定律之上。对于具体的系统，具体的问题，通常还要在加上一些唯象的假设，才能够解决相应的问题。
 \begin{itemize}
     \item 热力学第零定律：如两个系统之间达到了热平衡态，则两个系统必有一相同的态函数。这个态函数其实就是温度。\cite{Wu2010}热力学第零定律也常常被叙述为：如果两个系统分别与第三个系统达到热平衡态，则这两个系统也达到了热平衡态。
@@ -69,20 +70,146 @@ overthrown.}
 
 对于远离平衡态的情形，线性不可逆热力学依然无能为力。21世纪以来，生物科技和纳米技术的发展促进了人们对小系统的研究，与经典热力学研究的宏观系统不同，这种纳米尺度的小系统包含的粒子数要远小于$N_{\mathrm{A}}$。所以小系统的涨落效应和脱离平衡态的的程度都很大。1998年，Ken Sekimoto在研究用过阻尼郎之万方程描述的随机体系中，基于状态演化的随机相轨，给出了体系内能变化、输入功和吸收热等热力学变量的定义\cite{Sekimoto1998}。2005年，Udo Seifert进一步阐明，在受驱动布朗粒子中，体系的熵和熵产生同样可以基于单个随机相轨进行定义\cite{Seifert2005}，至此随机热力学正式建立。它将经典热力学中的功、热和熵等概念扩展到了单个轨道的情形。下面我们一维布朗粒子为例进行介绍。
 
-\subsubsection{随机动力学}
+\subsection{随机动力学}
+\label{c1s3}
 \qquad 根据牛顿第二定律，可以容易的写出处于一维势场中的布朗粒子的运动方程
 \begin{equation}
-    \frac{\md q}{\md t}=p, \quad \frac{\md p}{\md t}=-\frac{\partial U}{\partial q}-\gamma p+\xi(t)
+    \frac{\md q}{\md t}=p, \quad \frac{\md p}{\md t}=-\frac{\partial U(q,\lambda)}{\partial q}-\gamma p+\xi(t)
     \label{eq1.1}
 \end{equation}
-这就是\textbf{郎之万方程(Langevin Equation)}，其中$\gamma$是阻尼系数，$\xi(t)$是高斯白噪声。对于$\xi(t)$，我们有
+这就是\textbf{郎之万方程(Langevin Equation)}，其中$\gamma$是阻尼系数，$\xi(t)$是高斯白噪声。依赖于时间的势场$U(q,\lambda)$施加在布朗粒子上，$\lambda\equiv\lambda(t)$是外界控制的势场的参数。对于$\xi(t)$，我们有
 \begin{equation}
-    \left\langle\xi\left(t\right)\right\rangle_{\xi}=0,\quad \left\langle\xi\left(t_{1}\right) \xi\left(t_{2}\right)\right\rangle_{\xi}=2 \gamma k_{\mathrm{B}} T  \delta\left(t_{2}-t_{1}\right)
+    \left\langle\xi\left(t\right)\right\rangle_{\xi}=0,\quad \left\langle\xi\left(t_{1}\right) \xi\left(t_{2}\right)\right\rangle_{\xi}=2 \gamma T  \delta\left(t_{2}-t_{1}\right)
     \label{eq1.2}
 \end{equation}
-其中$\left\langle \cdots \right\rangle_{\xi}$是对随机变量$\xi(t)$的不同实现的平均，第二个式子等式右边的系数$2 \gamma k_{\mathrm{B}} T$可以由能量均分定理得到。\cite{Reichl2016}对于阻尼很大的情况，即过阻尼情况，我们可以忽略惯性的影响得到过阻尼情况下的郎之万方程
+其中$\left\langle \cdots \right\rangle_{\xi}$是对随机变量$\xi(t)$的不同实现的平均，第二个式子等式右边的系数$2 \gamma k_{\mathrm{B}} T$可以由能量均分定理得到。\cite{Reichl2016}
+
+在本文中，我们更常用的是描述布朗粒子的另一个等价的方程——\textbf{福克-普朗克方程(Fokker–Planck Equation)}\cite{Reichl2016}，福克-普朗克方程从另一个方面描述了布朗粒子，决定了布朗粒子的概率密度的演化。令$\rho_{\xi}(q,p,t)$为布朗粒子对于某一个随机力的实现$\xi(t)$的概率密度，而我们关心的实际上是$\rho(q,p,t)\equiv\langle \rho(q,p,t) \rangle_{\xi}$，即对随机力的实现$\xi(t)$的平均，这个量才是我们在实验中能够观测到的。它表明在实际情形下，我们在时刻$t$，位置$q+\md q$处找到动量为$p+\md p$的布朗粒子的概率为$\rho(q,p,t) \md q \md p$。福克-普朗克方程正是描述了这个量的演化。下面我们来从朗之万方程推导福克-普朗克方程
+
+对于$\rho_{\xi}(q,p,t)$，有刘维尔定理(Liouville Theorem)\cite{Wang2013}
 \begin{equation}
-    0=-\frac{\partial U}{\partial q}-\gamma \frac{\md q}{\md t}+\xi(t)
+    \PP{\rho_{\xi}}{t} + \nabla \cdot \left(\rho_{\xi} \bm{v} \right)=0
     \label{eq1.3}
 \end{equation}
-上面的郎之万方程都有自己适用的时间尺度，欠阻尼郎之万方程\eqref{eq3.1}适用的时间尺度要远大于环境中分子碰撞的时间尺度而远小于惯性的弛豫时间尺度$\tau_{\mathrm{c}}\equiv1/\gamma$；过阻尼郎之万方程适用的时间尺度则要远大于$\tau_{\mathrm{c}}$。\cite{Sekimoto2010}
+其中$\bm{v}\equiv\left(\dot{q}\hat{\mathbf{q}} + \dot{p}\hat{\mathbf{p}}\right)$，算符$\nabla \equiv \hat{\mathbf{q}} \partial / \partial q+\hat{\mathbf{p}} \partial / \partial p$，$\hat{\mathbf{q}}$和$\hat{\mathbf{p}}$是单位方向向量。
+将朗之万方程\eqref{eq1.1}代入上式\eqref{eq1.3}得到
+\begin{equation}
+    \frac{\partial \rho_{\xi}}{\partial t}=-\hat{L}_{0} \rho_{\xi}-\hat{L}_{1} \rho_{\xi}
+    \label{eq1.4}
+\end{equation}
+其中微分算符$\hat{L}_{0}$和$\hat{L}_{1}$的定义为
+\begin{equation}
+    \hat{L}_{0}=p \frac{\partial}{\partial q}-{\gamma}-{\gamma} p \frac{\partial}{\partial p}-\frac{\partial U}{\partial q} \frac{\partial}{\partial p},\quad \hat{L}_{1}= \xi(t) \frac{\partial}{\partial p}
+    \label{eq1.5}
+\end{equation}
+鉴于$\xi(t)$是随机变量，$\rho_{\xi}(q,p,t)$的时间演化对于不同的实现$\xi(t)$自然是不同的。
+
+引入概率密度$\sigma(t)$，使得
+\begin{equation}
+    \rho_{\xi}=\mathrm{e}^{-\hat{L}_{0} t} \sigma
+    \label{eq1.6}
+\end{equation}
+根据式\eqref{eq1.4}有
+\begin{equation}
+    \frac{\partial \sigma(t)}{\partial t}=-\hat{V}(t) \sigma(t)
+    \label{eq1.7}
+\end{equation}
+其中$\hat{V}(t)=\mathrm{e}^{+\hat{L}_{0} t} \hat{L}_{1}(t) \mathrm{e}^{-\hat{L}_{0} t}$。方程\eqref{eq1.7}有形式解
+\begin{equation}
+    \sigma(t)=\exp \left(\int_{0}^{t} \mathrm{~d} t^{\prime} \hat{V}\left(t^{\prime}\right)\right) \sigma(0)
+    \label{eq1.8}
+\end{equation}
+利用幂级数展开可将上式\eqref{eq1.8}写成
+\begin{equation}
+    \sigma(t)=\left[\sum_{n=0}^{\infty} \frac{(-1)^{n}}{n !}\left(\int_{0}^{t} \mathrm{~d} t^{\prime} \hat{V}\left(t^{\prime}\right)\right)^{n}\right] \sigma(0) .
+    \label{eq1.9}
+\end{equation}
+现在我们取等式\eqref{eq1.9}两边的平均$\langle \cdots \rangle_{\xi}$。根据对高斯白噪声的Wick定理，幂级数将只留下偶次幂项
+\begin{equation}
+    \begin{split}
+        \langle\sigma(t)\rangle_{\xi}&=\left[\sum_{n=0}^{\infty} \frac{1}{2 n !}\left\langle\left(\int_{0}^{t} \mathrm{~d} t^{\prime} \hat{V}\left(t^{\prime}\right)\right)^{2 n}\right\rangle_{\xi}\right] \sigma(0)\\
+        &=\left[\sum_{n=0}^{\infty} \frac{1}{n !}\left(\frac{1}{2} \int_{0}^{t} \mathrm{~d} t_{2} \int_{0}^{t} \mathrm{~d} t_{1}\left\langle\hat{V}\left(t_{2}\right) \hat{V}\left(t_{1}\right)\right\rangle_{\xi}\right)^{n}\right] \sigma(0)\\
+        &=\exp \left(\frac{1}{2} \int_{0}^{t} \mathrm{~d} t_{2} \int_{0}^{t} \mathrm{~d} t_{1}\left\langle\hat{V}\left(t_{2}\right) \hat{V}\left(t_{1}\right)\right\rangle_{\xi}\right) \sigma(0)
+    \end{split}
+    \label{eq1.10}
+\end{equation}
+现在来计算上式\eqref{eq1.10}中的积分
+\begin{equation}
+    \begin{split}
+    &\frac{1}{2} \int_{0}^{t} \mathrm{d} t_{2} \int_{0}^{t} \mathrm{d} t_{1}\left\langle\hat{V}\left(t_{2}\right) \hat{V}\left(t_{1}\right)\right\rangle_{\xi} \\
+    =&\gamma T \int_{0}^{t} \mathrm{d} t_{2} \int_{0}^{t} \mathrm{~d} t_{1} \delta\left(t_{2}-t_{1}\right) \mathrm{e}^{+\hat{L}_{0} t_{2}} \frac{\partial}{\partial p} \mathrm{e}^{-\hat{L}_{0}\left(t_{2}-t_{1}\right)} \frac{\partial}{\partial p} \mathrm{e}^{-\hat{L}_{0} t_{1}} \\
+    =&\gamma T \int_{0}^{t} \mathrm{d} t_{1} \mathrm{e}^{+\hat{L}_{0} t_{1}} \frac{\partial^{2}}{\partial p^{2}} \mathrm{e}^{-\hat{L}_{0} t_{1}}   
+    \end{split}
+    \label{eq1.11}
+\end{equation}
+将上式\eqref{eq1.11}代入式\eqref{eq1.10}，并对式\eqref{eq1.10}取对时间$t$的偏微分可得
+\begin{equation}
+    \frac{\partial\langle\sigma(t)\rangle_{\xi}}{\partial t}=\gamma T \mathrm{e}^{+\hat{L}_{0} t} \frac{\partial^{2}}{\partial p^{2}} \mathrm{e}^{-\hat{L}_{0} t}\langle\sigma(t)\rangle_{\xi}
+    \label{eq1.12}
+\end{equation}
+有了这个结果，我们就能得到$\rho(q,p,t)$的运动方程，注意到$\rho=\langle\rho_{\xi}\rangle_{\xi}=\mathrm{e}^{-\hat{L}_{0} t} \langle\sigma\rangle_{\xi}$，于是不难得到
+\begin{equation}
+    \frac{\partial \rho}{\partial t}=-\hat{L}_{0}\rho+\mathrm{e}^{-\hat{L}_{0} t} \frac{\partial\langle\sigma(t)\rangle_{\xi}}{\partial t}=-\hat{L}_{0}\rho+\gamma T \frac{\partial^{2} \rho}{\partial p^{2}}
+    \label{eq1.13}
+\end{equation}
+结合上式\eqref{eq1.13}和式\eqref{eq1.5}可以得到
+\begin{equation}
+    \frac{\partial \rho}{\partial t}=-v \frac{\partial \rho}{\partial q}+\frac{\partial}{\partial p}\left[\left({\gamma} v+ \PP{U}{q}\right) \rho\right]+\gamma T \frac{\partial^{2} \rho}{\partial p^{2}}
+    \label{eq1.14}
+\end{equation}
+这就是福克-普朗克方程。很重要的是我们注意到福克-普朗克方程满足概率守恒，我们可以将它写成连续性方程的形式
+\begin{equation}
+    \PP{\rho}{t} + \nabla \cdot \bm{J} = 0
+\label{eq12.57}
+\end{equation}
+其中
+\begin{equation}
+\bm{J} \equiv \rho  p  \hat{\mathbf{q}}-\rho\left(\gamma p+\frac{\partial U}{\partial q} + \frac{\gamma}{\rho \beta} \frac{\partial \rho}{\partial p}\right) \hat{\mathbf{p}}
+\label{eq12.57.5}
+\end{equation}
+算符$\nabla \equiv \hat{\mathbf{q}} \partial / \partial q+\hat{\mathbf{p}} \partial / \partial p$，$\hat{\mathbf{q}}$和$\hat{\mathbf{p}}$是单位方向向量。
+
+对于阻尼很大的情况，即过阻尼情况，我们可以忽略惯性的影响得到过阻尼情况下的郎之万方程
+\begin{equation}
+    0=-\frac{\partial U}{\partial q}-\gamma \frac{\md q}{\md t}+\xi(t)
+    \label{eq1.17}
+\end{equation}
+对应的也有过阻尼的福克-普朗克方程
+\begin{equation}
+    \frac{\partial \rho}{\partial t} + \frac{\partial J}{\partial q}=0,
+    \label{eq2.45}
+\end{equation}
+其中
+\begin{equation}
+    J=-\frac{1}{\gamma} \left(\frac{\partial U}{\partial q} \rho+\frac{1}{\beta} \frac{\partial \rho}{\partial q}\right)
+    \label{eq2.45.5}
+\end{equation}
+上面的郎之万方程和相应的福克-普朗克方程都有自己适用的时间尺度，欠阻尼郎之万方程\eqref{eq3.1}适用的时间尺度要远大于环境中分子碰撞的时间尺度而远小于惯性的弛豫时间尺度$\tau_{\mathrm{c}}\equiv1/\gamma$；过阻尼郎之万方程适用的时间尺度则要远大于$\tau_{\mathrm{c}}$。\cite{Sekimoto2010}这一点在\ref{c3e2}节中计算欠阻尼类卡诺热机的效率将起到重要作用。
+
+\subsection{随机能量学}
+\qquad 现在我们考虑为布朗粒子定义和经典热力学中对应的\textbf{吸收热}、\textbf{输入功}和\textbf{能量差}。环境对布朗粒子施加的力为$-\gamma p + \xi(t)$，那么粒子对环境有反作用力$-(-\gamma p + \xi(t))$，对于布朗粒子的一个轨道，当粒子的位移为$\md q$时，其对环境做的功为$-(-\gamma p+\xi(t)) \circ \md q$\footnote{"$\circ$"表示Stratonovich类型的乘积，它允许我们使用常规的微分运算。\cite{Gardiner,Sekimoto2010}}从环境的角度看，环境向粒子传递了$(-\gamma p+\xi(t)) \circ \md q$的能量。Sekimoto将它\cite{Sekimoto1997,Sekimoto2010}定义为吸收热
+\begin{equation}
+    \dbar \bar{q} \equiv (-\gamma p+\xi(t)) \circ \md q
+    \label{eq1.20}
+\end{equation}
+考虑到能量$e=\frac{1}{2}p^2 + U(q,\lambda)$，再结合郎之万方程\eqref{eq1.1}，不难得到
+\begin{equation}
+    \begin{split}
+        \dbar \bar{q} & \equiv\left(\frac{\md p}{\md t}+\frac{\partial U}{\partial q}\right) \circ \md q \\
+        &=\frac{\md p}{\md t} \circ p \md t+\md U(q, \lambda)-\frac{\partial U}{\partial \lambda} \md \lambda \\
+        &=\md\left(\frac{p^{2}}{2}\right)+d U(x, \lambda)-\frac{\partial U}{\partial \lambda} \md \lambda
+    \end{split}
+    \label{eq1.21}
+\end{equation}
+易得
+\begin{equation}
+    \md e=\md\left(\frac{p^{2}}{2}+U(q, \lambda)\right)=\md q+\frac{\partial U}{\partial \lambda} \md \lambda
+    \label{eq1.22}
+\end{equation}
+结合经典热力学，根据上式\eqref{eq1.22}我们可以定义输入功
+\begin{equation}
+    \dbar w \equiv \frac{\partial U}{\partial \lambda} \md \lambda
+    \label{eq1.23}
+\end{equation}
+
+自此我们定义小系统中的热、功、能量差，这为我们讨论热机的功率和效率做好了准备。

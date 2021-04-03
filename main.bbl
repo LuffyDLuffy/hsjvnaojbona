@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -157,6 +157,19 @@ Sekimoto K.
 \newblock {Stochastic energetics}: volume 799\allowbreak[M].
 \newblock Berlin Heidelberg: Springer, 2010
 
+\bibitem[Gardiner(2004)]{Gardiner}
+Gardiner C~W.
+\newblock {Handbook of Stochastic Methods for Physics, Chemistry and the
+  Natural Sciences}\allowbreak[M].
+\newblock Third ed.
+\newblock Berlin Heidelberg: Springer, 2004
+
+\bibitem[Sekimoto(1997{\natexlab{a}})]{Sekimoto1997}
+Sekimoto K.
+\newblock {Kinetic Characterization of Heat Bath and the Energetics of Thermal
+  Ratchet Models}\allowbreak[J].
+\newblock Journal of the Physical Society of Japan, 1997, 66: 1234-1237.
+
 \bibitem[Chen\ et~al.(2010)Chen, Ruschhaupt, Schmidt, {Del Campo},
   Gu{\'{e}}ry-Odelin, and Muga]{Chen2010}
 Chen X, Ruschhaupt A, Schmidt S, et~al.
@@ -266,13 +279,6 @@ Seifert U.
   machines}\allowbreak[J].
 \newblock Reports on Progress in Physics, 2012, 75\penalty0 (12).
 
-\bibitem[Gardiner(2004)]{Gardiner}
-Gardiner C~W.
-\newblock {Handbook of Stochastic Methods for Physics, Chemistry and the
-  Natural Sciences}\allowbreak[M].
-\newblock Third ed.
-\newblock Berlin Heidelberg: Springer, 2004
-
 \bibitem[Deffner\ et~al.(2014)Deffner, Jarzynski, and del Campo]{Deffner2014}
 Deffner S, Jarzynski C, del Campo A.
 \newblock {Classical and quantum shortcuts to adiabaticity for scale-invariant
@@ -289,7 +295,7 @@ Jarzynski C.
 \newblock {Nonequilibrium equality for free energy differences}\allowbreak[J].
 \newblock Physical Review Letters, 1997, 78\penalty0 (14): 2690-2693.
 
-\bibitem[Sekimoto(1997)]{Sekimoto_1997}
+\bibitem[Sekimoto(1997{\natexlab{b}})]{Sekimoto_1997}
 Sekimoto K.
 \newblock Kinetic characterization of heat bath and the energetics of thermal
   ratchet models\allowbreak[J/OL].
