@@ -3,19 +3,12 @@
 \section{布朗粒子的能量学}
 \qquad 在正式开始讨论我们构建的热机之前，为了方便讨论热机的效率、熵变等问题，让我们先花一点时间讨论布朗粒子的能量学。
 \subsection{过阻尼布朗粒子的能量学}
-\R{李耿博士毕业论文，第一章随机能量学可作为参考}
-
-考虑一个和温度为$T$的热浴接触的一维布朗粒子。它被施加一个依赖于时间的外势$U(q,p,t) = U_0 (q,\lambda(t)) + U_1 (q,t)$，其中考虑到了在绝热捷径和等温捷径中我们施加的辅助势$U_1$。在过阻尼情况下，粒子的惯性的影响可以忽略，哈密顿量为
+\qquad 考虑一个和温度为$T$的热浴接触的一维布朗粒子。它被施加一个依赖于时间的外势$U(q,p,t) = U_0 (q,\lambda(t)) + U_1 (q,t)$，其中考虑到了在绝热捷径和等温捷径中我们施加的辅助势$U_1$。在过阻尼情况下，粒子的惯性的影响可以忽略，哈密顿量为
 \begin{equation}
     H=U_0 (q,\lambda(t)) + U_1 (q,p,t)
     \label{eq31.1}
 \end{equation}
-哈密顿量的全微分为
-\begin{equation}
-    \M{d} H=\left(\dot{q} \frac{\partial U_0}{\partial q} + \dot{q} \PP{U_1}{q}  \right) \M{d} t+\left(\dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right) \M{d} t
-    \label{eq31.2}
-\end{equation}
-这提示我们定义沿着相轨迹$(q(t), p(t))$的能量差\cite{Tu2013}
+重复\ref{c1s1.3.2}随机能量学的讨论，我们容易得到如下的定义，能量差
 \begin{equation}
      \Delta e \equiv H\left(t_{f}\right)-H\left(t_{i}\right),
      \label{eq31.3}
@@ -27,16 +20,16 @@
 \end{equation}
 这也与传统的随机热力学对轨道功的定义相符合。\cite{Sekimoto2010,Jarzynski1997,Sekimoto_1997}。还有吸收的热量
 \begin{equation}
-    q \equiv \int_{t_{i}}^{t_{f}} \M{d} t \dot{q} \frac{\partial U}{\partial q} .
+    \bar{q} \equiv \int_{t_{i}}^{t_{f}} \M{d} t \dot{q} \frac{\partial U}{\partial q} .
     \label{eq31.5}
 \end{equation}
-相轨连接了初时刻$t_i$对应的相点$(q_i , p_i )$和末时刻$t_f$对应的相点$(q_f , p_f )$。显然，对于每条相轨有
+并且，显然对于每条相轨有
 \begin{equation}
     \Delta e = w + q
     \label{eq31.6}
 \end{equation}
 
-而系统的分布函数$\rho (q,p,t)$由的福克-普朗克-克拉马斯方程\eqref{eq2.45}决定,在知道了$\rho (q,p,t)$之后就可以计算以上式子\eqref{eq31.4}-\eqref{eq31.6}的系综平均，这和文献\cite{Seifert2005,Shizume1995,Bizarro2011}的步骤是类似的。得到能量差和输入功的系综平均为
+而系统的分布函数$\rho (q,p,t)$由的福克-普朗克方程\eqref{eq2.45}决定,在知道了$\rho (q,p,t)$之后就可以计算以上式子\eqref{eq31.4}-\eqref{eq31.6}的系综平均，这和文献\cite{Seifert2005,Shizume1995,Bizarro2011}的步骤是类似的。得到能量差和输入功的系综平均为
 \begin{equation}
     \Delta E \equiv\langle\Delta e\rangle=\left.\int \M{d} q (H \rho)\right|_{t_{i}} ^{t_{f}} ,
     \label{eq31.7}
@@ -54,7 +47,7 @@
 \end{equation}
 现在分两步对上式\eqref{eq31.9}进行平均。
 
-第一步，对系综中在$t$时刻经过$q$的轨道进行平均\R{（不懂至以下）}，得到
+第一步，对系综中在$t$时刻经过$q$的轨道进行平均，得到
 \begin{equation}
     \langle\dot{x} \mid x, p, t\rangle=\frac{J}{\rho}
     \label{eq31.10}
@@ -78,12 +71,7 @@
     H=\frac{p^{2}}{2}+U_0 (q,\lambda(t)) + U_1 (q,p,t)
     \label{eq3.1}
 \end{equation}
-哈密顿量的全微分为
-\begin{equation}
-    \M{d} H=\left(\dot{p} p+\dot{q} \frac{\partial U_0}{\partial q} +  \dot{p} \PP{U_1}{p} + \dot{q} \PP{U_1}{q}  \right) \M{d} t+\left(\dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right) \M{d} t
-    \label{eq3.2}
-\end{equation}
-这提示我们定义沿着相轨迹$(q(t), p(t))$的能量差\cite{Tu2013}
+仿照过阻尼的情形，容易定义能量差\cite{Tu2013}
 \begin{equation}
      \Delta e \equiv H\left(t_{f}\right)-H\left(t_{i}\right),
      \label{eq3.3}
@@ -93,18 +81,18 @@
     w \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left( \dot{\lambda} \frac{\partial U_0}{\partial \lambda} + \PP{U_1}{t} \right)
     \label{eq3.4}
 \end{equation}
-这也与传统的随机热力学对轨道功的定义相符合。\cite{Sekimoto2010,Jarzynski1997,Sekimoto_1997}。还有吸收的热量
+还有吸收的热量
 \begin{equation}
     q \equiv \int_{t_{i}}^{t_{f}} \M{d} t \left(\dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \PP{U}{p}\right).
     \label{eq3.5}
 \end{equation}
-相轨连接了初时刻$t_i$对应的相点$(q_i , p_i )$和末时刻$t_f$对应的相点$(q_f , p_f )$。显然，对于每条相轨有
+显然，对于每条相轨也有
 \begin{equation}
     \Delta e = w + q
     \label{eq3.6}
 \end{equation}
 
-而系统的分布函数$\rho (q,p,t)$由推广的福克-普朗克-克拉马斯方程\eqref{eq2.57}决定。在知道了$\rho (q,p,t)$之后就可以计算以上式子\eqref{eq3.4}-\eqref{eq3.6}的系综平均，这和文献\cite{Seifert2005,Shizume1995,Bizarro2011}的步骤是类似的。得到能量差和输入功的系综平均为
+而系统的分布函数$\rho (q,p,t)$由推广的福克-普朗克-克拉马斯方程\eqref{eq2.57}决定。接下来开始计算以上式子\eqref{eq3.4}-\eqref{eq3.6}的系综平均，能量差和输入功的系综平均为
 \begin{equation}
     \Delta E \equiv \langle\Delta e\rangle=\left.\int \M{d} q \int \M{d} p(H \rho)\right|_{t_{i}} ^{t_{f}} ,
     \label{eq3.7}
@@ -115,7 +103,7 @@
     \label{eq3.8}
 \end{equation}
 
-对于吸收的热的系综平均，由于存在$\dot{q}$和$\dot{p}$我们不好直接积分，需要做进一步的推导。系综平均为
+对于吸收的热的系综平均，需要做进一步的推导。系综平均为
 \begin{equation}
     Q=\int_{t_i}^{t_f}\langle(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H\rangle \mathrm{d} t
     \label{eq3.9}
@@ -123,7 +111,7 @@
 为了方便，上式\eqref{eq3.11}我们用了$(\dot{x} \hat{\mathbf{x}}+\dot{p} \hat{\mathbf{p}}) \cdot \nabla H  = \dot{p} p+\dot{q} \frac{\partial U}{\partial q} +  \dot{p} \PP{U}{p}$。
 现在分两步对上式\eqref{eq3.9}进行平均。
 
-第一步，对系综中在$t$时刻经过$x$且动量为$p$的轨道进行平均\R{（不懂至以下）}，得到
+第一步，对系综中在$t$时刻经过$x$且动量为$p$的轨道进行平均
 \begin{equation}
     \langle\dot{x} \mid x, p, t\rangle=\frac{J_{x}}{\rho}, \quad\langle\dot{p} \mid x, p, t\rangle=\frac{J_{p}}{\rho}
     \label{eq3.10}
@@ -135,7 +123,7 @@
     Q=\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \int \mathrm{d} p(\bm{J} \cdot \nabla H)
     \label{eq3.11}
 \end{equation}
-再将流矢量$J$的定义代入上式\eqref{eq3.11}，不难得到
+再将流矢量$\bm{J}$\eqref{eq2.57.5}的定义代入上式\eqref{eq3.11}，不难得到
 \begin{equation}
     Q=-\int_{t_i}^{t_f} \mathrm{d} t \int \mathrm{d} q \int \mathrm{d} p\left[\gamma \rho\left(p+\frac{\partial U}{\partial p}\right)\left(p+\frac{\partial U}{\partial p}+\frac{1}{\beta \rho} \frac{\partial \rho}{\partial p}\right)\right]
     \label{eq3.12}
@@ -144,7 +132,7 @@
 \section{类卡诺循环热机模型}
 \qquad 考虑一个由绝热捷径与等温捷径构成的类卡诺循环热机，它通过由一个依赖于时间的谐振子势$U_{0}(q, \lambda(t))= q^{2}/2{\lambda(t)}^2 $，来驱动布朗粒子对外做功。
 
-在绝热捷径中，由于系统不与任何热浴接触，故没有热交换，$Q=0,\ \Delta E = W$。也没有过阻尼的情况，即惯性的影响不能忽略。由于在绝热捷径中，系统的初末状态依然是正则平衡态。初末的分布函数分别为式\eqref{eq2.32}和式\eqref{eq2.34}，所以，我们依然可以用式\eqref{eq3.7}来计算能量差，于是
+在绝热捷径中，由于系统不与任何热浴接触，故没有热交换，$Q=0,\ \Delta E = W$。由于在绝热捷径中，系统的初末状态依然是正则平衡态。初末的分布函数分别为式\eqref{eq2.32}和式\eqref{eq2.34}，所以，我们依然可以用式\eqref{eq3.7}来计算能量差，于是
 \begin{equation}
     \begin{split}
         W &= \Delta E\\
@@ -158,8 +146,7 @@
 
 \subsection{过阻尼布朗粒子构成的类卡诺循环热机}
 \label{sec3.2.1}
-\qquad 利用式\eqref{eq31.7},\quad \eqref{eq31.8},\quad \eqref{eq31.11}可以计算过阻尼布朗粒子的在等温捷径过程中的能量差$\Delta E$、输入功$W$、吸收热$Q$。注意到根据式\eqref{eq2.55}，$U=U_0 + U_1 = q^2/{2 \lambda(t)^2}  -{\gamma \dot{\lambda}(t)  q^{2}}/{2 \lambda(t)}$，又根据\eqref{eq2.46}的假设，$\rho(q, t)= \mathrm{e}^{\beta\left[F(\lambda(t))-q^2/{2 \lambda(t)^2}\right]},\ F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} \mathrm{e}^{-\beta q^2/{2 \lambda(t)^2}} \M{d} q \right]$。于是不难得到，
-能量差\R{（似乎可以根据辅助势满足的微风方程直接计算，省去中间步骤，可以考虑）}
+\qquad 利用式\eqref{eq31.7},\quad \eqref{eq31.8},\quad \eqref{eq31.11}可以计算过阻尼布朗粒子的在等温捷径过程中的能量差$\Delta E$、输入功$W$、吸收热$Q$。注意到根据式\eqref{eq2.55}，$U=U_0 + U_1 = q^2/{2 \lambda(t)^2}  -{\gamma \dot{\lambda}(t)  q^{2}}/{2 \lambda(t)}$，又根据\eqref{eq2.46}的假设，$\rho(q, t)= \mathrm{e}^{\beta\left[F(\lambda(t))-q^2/{2 \lambda(t)^2}\right]},\ F(\lambda) \equiv-\beta^{-1} \ln \left[\int_{-\infty}^{+\infty} \mathrm{e}^{-\beta q^2/{2 \lambda(t)^2}} \M{d} q \right]$。于是不难得到，能量差
 \begin{equation}
     \begin{split}
         \Delta E &=\left.\int \M{d} q \left[\rho\left(\frac{1}{2 \lambda^2}q^2  -\frac{\gamma \dot{\lambda}}{2 \lambda} q^{2}\right)\right]\right|_{t_{i}} ^{t_{f}}\\
@@ -199,7 +186,7 @@
     \centering
     \def\svgwidth{0.6\columnwidth}
     \input{figures/p3.1.pdf_tex}
-    \caption{热力学循环过程。点线对应于式\eqref{eq2.40}，竖直虚线对应于等温。0,\ 1,\ 2,\ 3代表循环中的四个状态，A,\ B,\ C,\ D代表四个过程。各个过程所用的时间分别为$t_1,\ t_2,\ t_3,\ t_4$}
+    \caption{类卡诺循环热机模型}
     \label{p3.1}
 \end{figure}
 点1, 2, 3, 4代表了系统的四个状态，这四个状态对应的参数如下表\ref{t3.1}所示。
@@ -226,9 +213,9 @@
     {\bfseries A.等温膨胀}
 \end{center}
 
-在上图\ref{p3.1}中，由实线连接的$0 \to 1$代表了由等温捷径实现的“等温膨胀”过程。正如在第\ref{cha2}章第\ref{sec2.3.2}节所阐释的，参数$\lambda$表征了系统的空间尺度，而该过程中参数$\lambda$变大了，故把A过程称为等温膨胀过程。在A过程中，系统与高温热源$\beta_\mathrm{h}^{-1}$接触。可以由式\eqref{eq3.15}计算A过程系统吸收的能量，又鉴于在这个过程中由式\eqref{eq3.13}知有$\Delta E_{\mathrm{A}} = W_{\mathrm{A}} + Q_{\mathrm{A}}=0$，所以
+在上图\ref{p3.1}中，由实线连接的$0 \to 1$代表了由等温捷径实现的“等温膨胀”过程。正如在第\ref{sec2.3.2}节所阐释的，参数$\lambda$表征了系统的空间尺度，而该过程中参数$\lambda$变大了，故把A过程称为等温膨胀过程。在A过程中，系统与高温热源$\beta_\mathrm{h}^{-1}$接触。可以由式\eqref{eq3.15}计算A过程系统吸收的能量，又鉴于在这个过程中由式\eqref{eq3.13}知有$\Delta E_{\mathrm{A}} = W_{\mathrm{A}} + Q_{\mathrm{A}}=0$，所以
 \begin{equation}
-    \Delta E_{\mathrm{A}}=0,\ -W_{\mathrm{A}}=Q_{\mathrm{A}} = \beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} [\lambda(\tau)\lambda_{h}] \frac{1}{t_1}     
+    \Delta E_{\mathrm{A}}=0,\ -W_{\mathrm{A}}=Q_{\mathrm{A}} = \beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} [\lambda_{\M{h}}(\tau)] \frac{1}{t_1}     
     \label{eq3.16}
 \end{equation}
 其中$C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)] \equiv \gamma \int_{0}^{1} \mathrm{d} \tau \left(\DD{\lambda_{h}}{\tau}\right)^2,\ \lambda_{h}(\tau)\equiv\lambda({t_1 \tau})$
@@ -242,7 +229,7 @@
     \frac{\lambda_2}{\beta_{\mathrm{c}}} =\frac{\lambda_1}{\beta_{\mathrm{h}}}
     \label{eq3.16.5}
 \end{equation}
-绝热捷径B过程中的能量差$\Delta E_{\mathrm{B}}$吸收热$Q_{\mathrm{B}}$，输入功$W_{\mathrm{B}}$正如本章开始所讨论的那样，
+绝热捷径B过程中的能量差$\Delta E_{\mathrm{B}}$，吸收热$Q_{\mathrm{B}}$，输入功$W_{\mathrm{B}}$正如本章开始所讨论的那样，分别为
 \begin{equation}
     W_{\mathrm{B}} = \Delta E_{\mathrm{B}} = (\beta_{\mathrm{c}}^{-1} - \beta_{\mathrm{h}}^{-1}),\  Q_{\mathrm{B}}=0
     \label{eq3.17}
@@ -302,7 +289,7 @@
     \label{3.20}
 \end{equation}
 其中考虑到由式\eqref{eq3.16.5}和式\eqref{eq3.18.5}得$\ln{\frac{\lambda_3}{\lambda_2}}=-\ln{\frac{\lambda_1}{\lambda_0}}$
-现在考虑功率$P$，由于一个循环的做功和绝热过程无关，但功率却与绝热过程的时间成反比。好在我们对绝热过程的时间并没有限制，原则上这个时间可以任意短。所以以下的讨论中只考虑$t_2 + t_4 \ll t_1 + t_3$时的情况，有
+现在考虑功率$P$，一个循环的做功和绝热过程无关，但功率却与绝热过程的时间成反比。但我们对绝热过程的时间并没有限制，原则上这个时间可以任意短。所以的讨论中只考虑$t_2 + t_4 \ll t_1 + t_3$时的情况，或者说和微观随机热机模型一样\cite{Schmiedl2008}，我们忽略绝热过程的时间
 \begin{equation}
     \begin{split}
         P&=-\frac{W}{t_1+t_3}\\
@@ -332,9 +319,9 @@
 \end{equation}
 其中$\eta_{\mathrm{c}}\equiv 1-\frac{\beta_{\mathrm{c}}^{-1}}{\beta_{\mathrm{h}}^{-1}}$是卡诺效率，而$\chi\equiv\frac{C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]}{C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]}$。
 
-现在唯一的问题就是如何把$\chi$用$\eta_{\mathrm{c}}$表示出来，这一点可以这么考虑。对于上式\eqref{eq3.35}分子的第二项，除去一个负号外始终是大于零的。既然我们关心功率最大时的效率，就应当考虑选取适当的$\lambda_{\mathrm{c}}(\tau),\ \lambda_{\mathrm{h}}(\tau)$的形式，使得关于它们的泛函$C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)],\ C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]$都取最小值。这一点可以使用变分的方法求得，分别得到
+现在唯一的问题就是如何把$\chi$用$\eta_{\mathrm{c}}$表示出来，这一点可以这样考虑。对于上式\eqref{eq3.35}分子的第二项，除去一个负号外始终是大于零的。既然我们关心功率最大时的效率，就应当考虑选取适当的$\lambda_{\mathrm{c}}(\tau),\ \lambda_{\mathrm{h}}(\tau)$的形式，使得关于它们的泛函$C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)],\ C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]$都取最小值。这一点可以使用变分的方法求得\footnote{不要忘记，我们对$\lambda(t)$的限制条件\eqref{eq2.51},在一般情况这个附加的条件会导致$\lambda(t)$无解。但我们可以这么考虑，先不考虑限制条件\eqref{eq2.51}，解出$\lambda(t)$。接下来，将函数$\lambda(t)$靠近边界$\lambda_i,\ \lambda_f$“磨平”。在欠阻尼情形下我们也采用这种策略。}，分别得到
 \begin{equation}
-    \DD{\lambda_{c}}{\tau}=0,\quad \DD{\lambda_{h}}{\tau}=0
+    \DDD{\lambda_{c}}{\tau}=0,\quad \DDD{\lambda_{h}}{\tau}=0
     \label{eq3.38}
 \end{equation}
 可见函数$\lambda_{\mathrm{c}}(\tau),\ \lambda_{\mathrm{h}}(\tau)$是线性函数，于是容易知道
@@ -356,8 +343,7 @@
     \eta = \frac{\eta_{\mathrm{c}}}{2}+\frac{\eta_{\mathrm{c}}^2}{8}-\frac{3 \eta_{\mathrm{c}}^4}{128}+O\left(\eta_{\mathrm{c}}^5\right)
     \label{eq3.41}
 \end{equation}
-可以看到，这符合热机最大功率时效率的二阶普适性。但这个热机的效率比起Curzon 和 Ahlborn 构建的内可逆热机\cite{Curzon1975}的效率$\eta_{\mathrm{CA}}=1-\sqrt{1-\eta_{\mathrm{c}}}=\frac{\eta_{\mathrm{c}}}{2}+\frac{\eta_{\mathrm{c}}^{2}}{8}+\frac{6 \eta_{\mathrm{c}}^{3}}{96}+O\left(\eta_{\mathrm{c}}^{4}\right)$要低。
-
+可以看到，这符合热机最大功率时效率的二阶普适性，而且很有意思的是它没有三阶项。
 
 
 \subsection{欠阻尼布朗粒子构成的类卡诺循环热机}
@@ -371,7 +357,7 @@
     \label{eq3.42}
 \end{equation}
 又根据\eqref{eq2.58}的假设，$\rho(q, t)= \mathrm{e}^{{\beta\left(F - \frac{p^2}{2}-\frac{q^{2}}{2 \lambda^2}\right)}}$其中，$F(\lambda) \equiv-\beta^{-1} \ln  \int \M{d} q \int \M{d} p \mathrm{e}^{{\beta\left(-\frac{p^2}{2}-\frac{q^{2}}{2 \lambda^2}\right)}} $ 
-。于是可以计算得到，能量差\R{（似乎可以根据辅助势满足的微风方程直接计算，省去中间步骤，可以考虑）}
+。于是可以计算得到，能量差
 \begin{equation}
     \begin{split}
         \Delta E&=\left.\int \M{d} q \int \M{d} p \rho \left( \frac{p^2}{2} + \frac{q^2}{2 \lambda(t)^2}  - \frac{\dot{\lambda}(t)}{2 \gamma \lambda(t)}\left[(p-\gamma q)^{2}+ q^{2}/\lambda(t)^2\right] \right)\right|_{t_{i}} ^{t_{f}}\\
@@ -412,12 +398,12 @@
     \label{eq3.46.5}
 \end{equation}
 
-为了求出$\chi$我们依然可以使用变分的方法，$\lambda_{\mathrm{h}}(\tau)$和$\lambda_{\mathrm{h}}(\tau)$满足的微分方程都是一样的，以$\lambda_{\mathrm{h}}(\tau)$为例，考虑到$C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]$的积分表达式里面不显含$\tau$，我们可以直接得到对应的\textbf{欧拉-拉格朗日方程}的首次积分\cite{Wu2003}，即
+为了求出$\chi$我们依然可以使用变分的方法，$\lambda_{\mathrm{h}}(\tau)$和$\lambda_{\mathrm{h}}(\tau)$满足的微分方程都是一样的，以$\lambda_{\mathrm{h}}(\tau)$为例。考虑到$C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]$的积分表达式里面不显含$\tau$，我们可以直接得到对应的\textbf{欧拉-拉格朗日方程}的首次积分\cite{Wu2003}，即
 \begin{equation}
     \left(\frac{1}{\gamma \lambda_{\mathrm{h}}^{2}}+\gamma\right)\left(\frac{\mathrm{d} \lambda_{\mathrm{h}}}{\mathrm{d} \tau}\right)^{2}=C_{\mathrm{h0}}
     \label{eq3.47}
 \end{equation}
-其中$C_{\mathrm{h0}}$是不依赖于$\tau$的常数。非常有意思的是我们发现，上式\eqref{eq3.47}的左边恰好是式\eqref{eq3.46}里的积分项。那也就意味着
+其中$C_{\mathrm{h0}}$是不依赖于$\tau$的常数。非常有意思的是，我们发现，上式\eqref{eq3.47}的左边恰好是式\eqref{eq3.46}里的积分项。那也就意味着
 \begin{equation}
     C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]=C_{\mathrm{h0}}
     \label{eq3.49}
@@ -429,10 +415,10 @@
     \Rightarrow \quad& C_{\mathrm{h0}} =\frac{1}{\gamma} \left[\left(\sqrt{\gamma^{2} \lambda_{1} ^{2}+1}-\sqrt{\gamma^{2} \lambda_{0} ^{2}+1}\right)-\ln \frac{\lambda_{0}\left(1+\sqrt{\gamma^{2} \lambda_{1} ^{2}+1}\right) }{\lambda_{1} \left(1+\sqrt{\gamma^{2} \lambda_{0} ^{2}+1}\right)}\right]^2 
     \label{eq3.50}
 \end{align}
-考虑到第\ref{c1s3}节提到的欠阻尼福克-普朗克方程的适用条件\cite{Sekimoto2010}，有
+考虑到第\ref{c1s3}节提到的欠阻尼福克-普朗克方程的适用条件\cite{Sekimoto2010}，而对于谐振子势场来说，$\lambda$正是系统的特征时间尺度，于是有
 \begin{equation}
     \gamma \lambda \ll 1,\quad \lambda \text{可取}\lambda_0,\ \lambda_1,\ \lambda_2,\ \lambda_3
-    \label{eq3.51}
+    \label{eq3.51.5}
 \end{equation}
 于是忽略$\gamma \lambda$的二阶项，即考虑小阻尼情况，可得
 \begin{equation}
@@ -448,9 +434,9 @@
     \end{split}
     \label{eq3.52}
 \end{equation}
-于是将上式\eqref{eq3.52}代入最大功率对应的效率的表达式\eqref{eq3.45}，就得到了欠阻尼情形下，并且满足$\gamma \lambda \ll 1$时，最大功率对应的效率
+于是将上式\eqref{eq3.52}代入最大功率对应的效率的表达式\eqref{eq3.45}，热机最大功率对应的效率
 \begin{equation}
     \eta=1-\sqrt{1-\eta_{\mathrm{c}}}
     \label{eq3.53}
 \end{equation}
-这正是Curzon 和 Ahlborn 构建的内可逆热机\cite{Curzon1975}的效率$\eta_{\mathrm{CA}}$
+这正是Curzon 和 Ahlborn 构建的内可逆热机\cite{Curzon1975}的效率$\eta_{\mathrm{CA}}$，也和涂展春构建的类卡诺热机一致。\cite{Tu2013}

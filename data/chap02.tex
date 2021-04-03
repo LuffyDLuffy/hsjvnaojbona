@@ -1,4 +1,4 @@
-\chapter{随机热机}
+\chapter{随机热机及绝热捷径和等温捷径}
 \label{cha2}
 
 \section{随机热机模型}
@@ -14,21 +14,21 @@
     \label{f2.05}
 \end{figure}
 
-热机的效率定义为$\eta\equiv\frac{-W}{Q_{\mathrm{h}}}$，$-W$是热机对外输出的功，$Q_{\mathrm{h}}$是热机从高温热源吸收的热。根据热力学第一定律，$W=Q_{\mathrm{h}}+Q_{\mathrm{c}}$，其中$-Q_{\mathrm{c}}$是放给低温热源的热量。可得
+热机的效率定义为$\eta\equiv\frac{-W}{Q_{\mathrm{h}}}$，$-W$是热机对外输出的功，$Q_{\mathrm{h}}$是热机从高温热源吸收的热。根据热力学第一定律，$-W=Q_{\mathrm{h}}+Q_{\mathrm{c}}$，其中$-Q_{\mathrm{c}}$是放给低温热源的热量。可得
 \begin{equation}
     \eta=1+\frac{Q_{\mathrm{c}}}{Q_{\mathrm{h}}}
     \label{eq21.1}
 \end{equation}
 卡诺证明了卡诺热机的效率为
 \begin{equation}
-    \eta_{\mathrm{CA}}=1-\frac{T_{\mathrm{c}}}{T_{\mathrm{c}}}
+    \eta_{\mathrm{c}}=1-\frac{T_{\mathrm{c}}}{T_{\mathrm{c}}}
     \label{eq21.2}
 \end{equation}
-虽然卡诺热机在理论研究中有不可估量的价值，但在实际应用中却有不小的局限。问题在于卡诺热机是由可逆过程构成的，而可逆过程是无限缓慢的。在一个循环中卡洛热机对外输出的功是有限的，那意味着卡诺热机的功率为0。所以虽然在所有工作在相同高温热源$T_{\mathrm{h}}$和低温热源$T_{\mathrm{c}}$的热机中以卡诺热机的效率为最大，但其功率却是最小的。上述功率与效率的矛盾促进了\textbf{有限时间热力学(FTT)}的发展
+虽然卡诺热机在理论研究中有不可估量的价值，但在实际应用中却有不小的局限。问题在于卡诺热机是由可逆过程构成的，而可逆过程是无限缓慢的，那意味着卡诺热机的功率为0。所以虽然在所有工作在相同高温热源$T_{\mathrm{h}}$和低温热源$T_{\mathrm{c}}$的热机中以卡诺热机的效率为最大，但其功率却是最小的。上述功率与效率的矛盾促进了\textbf{有限时间热力学(FTT)}的发展
 \subsection{内可逆热机模型}
 \qquad 为了获得有限的功率输出，我们必须为卡诺热机中的可逆过程加速，这显然会导致效率的降低和不可逆熵的产生。有限时间热力学的专注点就是在有限时间内运行的热机的效率问题。而其中，一个重要而实际的议题就是热机在最大功率时的效率问题。
 
-1975年，Curzon和Ahlborn提出了内可逆热机模型，\cite{Curzon1975}该热机可以在有限时间内完成一个循环。并且二人得到了该热机在最大功率时的效率。Curzon和Ahlborn内可逆热机（CA内可逆热机）的结构如图\ref{f2.06}
+1975年，Curzon和Ahlborn提出了内可逆热机模型，\cite{Curzon1975}该热机可以在有限时间内完成一个循环。Curzon和Ahlborn内可逆热机（CA内可逆热机）的结构如图\ref{f2.06}所示。
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.4\textwidth]{p1.png}
@@ -37,7 +37,7 @@
 \end{figure}
 CA内可逆热机是一种类卡洛热机，一个循环中也包含等温膨胀、绝热膨胀、等温压缩和绝热压缩这四个过程，不同之处在于它采用了四个假设
 \begin{enumerate}
-    \item 内可逆假设。假设等温膨胀和等温压缩过程中热机的温度并没有达到高温热源和低温热源的温度$T_{\mathrm{h}},\ T_{\mathrm{c}}$，而是达到了等效高温热源温度和低温热源温度$T_{\mathrm{eh}},\ T_{\mathrm{ec}}T_{\mathrm{h}}>T_{\mathrm{eh}}>T_{\mathrm{ec}}>T_{\mathrm{c}})$。而且将整个系统拆分为内可逆部分和外不可逆部分，鉴于内可逆部分不可逆熵产生为零，则$Q_{\mathrm{h}}/T_{\mathrm{eh}}=-Q_{\mathrm{c}}/T_{\mathrm{ec}}$，于是热机效率为$\eta=1-T_{\mathrm{ec}}/T_{\mathrm{eh}}$
+    \item 内可逆假设。假设等温膨胀和等温压缩过程中热机的温度并没有达到高温热源和低温热源的温度$T_{\mathrm{h}},\ T_{\mathrm{c}}$，而是达到了等效高温热源温度和低温热源温度$T_{\mathrm{eh}},\ T_{\mathrm{ec}}$。$(T_{\mathrm{h}}>T_{\mathrm{eh}}>T_{\mathrm{ec}}>T_{\mathrm{c}})$而且整个系统可以拆分为内可逆部分和外不可逆部分，鉴于内可逆部分不可逆熵产生为零，则$Q_{\mathrm{h}}/T_{\mathrm{eh}}=-Q_{\mathrm{c}}/T_{\mathrm{ec}}$，于是热机效率为$\eta=1-T_{\mathrm{ec}}/T_{\mathrm{eh}}$
     \item 绝热过程熵产生为零。
     \item 假设绝热过程所用总时间与等温过程所用总时间成正比。那么一个循环的时间为$t_0 = a(t_{\M{h}}+t_{\M{c}})$。
     \item 线性热传输假设。在等温过程中，等效热源与热源间的热量传输满足线性关系
@@ -70,9 +70,9 @@ CA内可逆热机是一种类卡洛热机，一个循环中也包含等温膨胀
     \label{eq21.6}
 \end{equation}
 
-CA内可逆热机的工作开启了对于有限时间热力学的研究，也为后来的研究者提供了研究有限时间热机的一个范式。
+CA内可逆热机的工作开启了对于有限时间热力学的研究，也为后来的研究者提供了研究有限时间热机的一个范式。并且其效率的表达式也相当简洁，可以表达成$\eta_{\M{c}}$的函数，给予了后来的研究者以不小的启示。
 \subsection{微观随机热机模型}
-\qquad 2008年，Schmiedl和Seifert提出了一种基于布朗粒子的随机热机模型。这个热机通过利用依赖于时间的谐振子势场$U=\lambda q^2/2$控制布朗粒子来对外做功，该粒子处于过阻尼的热浴中。粒子的分布函数$\rho(q,p,t)$的由过阻尼的福克-普朗克方程\eqref{eq2.45}描述。
+\qquad 2008年，Schmiedl和Seifert提出了一种基于布朗粒子的随机热机模型。\cite{Schmiedl2008}这个热机通过利用依赖于时间的谐振子势场$U=\lambda q^2/2$控制布朗粒子来对外做功，该粒子处于过阻尼的热浴中。粒子的分布函数$\rho(q,p,t)$则由过阻尼的福克-普朗克方程\eqref{eq2.45}描述。
 
 如图\ref{f2.07}所示，随机热机模型也是一种类卡诺热机，由等温膨胀、绝热膨胀、等温压缩和绝热压缩四个过程构成。特别之处在于它假设绝热过程是瞬间完成的，并且绝热过程的不可逆熵产生为零。于是循环总时间为$t_{\mathrm{h}}+t_{\mathrm{c}}$，等温膨胀和等温压缩过程的熵变分别为$\Delta S$和$-\Delta S$。
 \begin{figure}[!htbp]
@@ -108,21 +108,18 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
 \end{equation}
 
 \section{绝热捷径}
-\qquad 在有限时间热力学中，一个非常重要的议题是如何实现不同平衡态的相互转换。因为\textbf{有限时间}的限制使得我们不能够使用准静态的方法，而绝热捷径\cite{Chen2010}提供了这样一种可以在有限时间内实现平衡态转化的策略。这个策略是由 Demirplak and Rice \cite{Demirplak2003}和 Berry \cite{Berry2009} 独立发展出来的。在这个策略提出以后的很长一段时间里，它引起了一大批研究者的关注。下面我们回顾一下绝热捷径是怎么实现的。
+\qquad 在有限时间热力学中，一个非常重要的议题是如何在有限时间内实现不同平衡态的相互转换。绝热捷径\cite{Chen2010}提供了这样一种可以在有限时间内实现平衡态转化的策略。这个策略由 Demirplak and Rice \cite{Demirplak2003}和 Berry \cite{Berry2009} 独立发展出来。在它提出以后的很长一段时间里，引起了一大批研究者的关注。下面我们回顾一下绝热捷径是怎么实现的。
 
 
 \subsection{绝热捷径的实现}
-
-
 \qquad 考虑量子力学中的绝热定理\cite{Griffiths2018}：如果一个系统的哈密顿量$H_0(t)$随时间变化很缓慢，即$\tau_\mathrm{e} \gg \tau_\mathrm{i}$，其中$\tau_\mathrm{e}, \tau_\mathrm{i}$分别表示环境的特征时间和系统的内部特征时间。那么如果系统在时间$t=0$处于$H_0 (0)$的本征态,即系统的初态$| \psi(0) \rangle = | n(0) \rangle$，绝热定理告诉我们系统在$t$时刻会处于$H_0 (t)$的对应于瞬时本征态$| n(0) \rangle$，并且
 \begin{equation}
     |\psi(t)\rangle=|n(t)\rangle e^{i \theta_{n}(t)} e^{i \gamma_{n}(t)}
     \label{eq2.1}
 \end{equation}
-其中$\theta_{n}(t)=-\frac{1}{\hbar} \int_{0}^{t} E_{n}(t^{\prime}) \M{d} t^{\prime}, \gamma_{n}(t)=i \int_{0}^{t}\langle n(t^{\prime}) | \partial_{t^{\prime}}n(t^{\prime})\rangle \M{d} t^{\prime}$
-注意到，绝热定理实现了$H_0(t)$的对应的本征态之间的转化$| n(0) \rangle \to | n(t) \rangle$。现在我们考虑取消$\tau_\mathrm{e} \gg \tau_\mathrm{i}$的要求。
+其中$\theta_{n}(t)=-\frac{1}{\hbar} \int_{0}^{t} E_{n}(t^{\prime}) \M{d} t^{\prime}, \gamma_{n}(t)=i \int_{0}^{t}\langle n(t^{\prime}) | \partial_{t^{\prime}}n(t^{\prime})\rangle \M{d} t^{\prime}$。注意到，绝热定理实现了$H_0(t)$的对应的本征态之间的转化$| n(0) \rangle \to | n(t) \rangle$。
 
-假设存在一个哈密顿量$H(t)$，它使得系统的态的演化严格为$|\psi(t)\rangle=|n(t)\rangle e^{i \theta_{n}(t)} e^{i \gamma_{n}(t)}$，则根据薛定谔方程有
+现在我们考虑取消$\tau_\mathrm{e} \gg \tau_\mathrm{i}$的要求。假设存在一个哈密顿量$H(t)$，它使得系统的态的演化严格为$|\psi(t)\rangle=|n(t)\rangle e^{i \theta_{n}(t)} e^{i \gamma_{n}(t)}$，则根据薛定谔方程有
 \begin{equation}
     i \hbar \PP{}{t} |\psi(t)\rangle= H(t) |\psi(t)\rangle
     \label{eq2.2}
@@ -135,9 +132,9 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     \end{split}
     \label{eq2.3}
 \end{equation}
-于是一个以$H (t)$作为哈密顿量的系统，若其初态为$H_0 (t)$的本征态$| n(0) \rangle$，那么不论$H (t)$随时间的变化快慢与否，在$t$时刻，系统的状态依然是$H_0 (t)$的本征态，只是两者有一个相位差。于是我们实现了在有限时间内的本征态之间的转化。这其中的关键在于我们引进了一个\textbf{反绝热哈密顿量}$H_1 (t)$，根据\eqref{eq2.3}，我们已经在形式上得到了$H_1 (t)$。现在我们考虑对于具体的$H_0 (t)$，如何得到$H_1 (t)$的具体表达式。\cite{Jarzynski2013}
+一个以$H (t)$作为哈密顿量的系统，若其初态为$H_0 (t)$的本征态$| n(0) \rangle$，那么不论$H (t)$随时间的变化快慢与否，在$t$时刻，系统的状态依然是$H_0 (t)$的本征态，只是两者有一个相位差。于是我们实现了在有限时间内的本征态之间的转化。这其中的关键在于我们引进了一个\textbf{反绝热哈密顿量}$H_1 (t)$，根据\eqref{eq2.3}，我们已经在形式上得到了$H_1 (t)$。现在我们考虑对于具体的$H_0 (t)$，如何得到$H_1 (t)$的具体表达式。\cite{Jarzynski2013}
 
-让$H_0$通过一系列参数$\bm{\lambda}(t)=\left( \lambda_1 (t) , \lambda_1 (t) , \lambda_1 (t) , \cdot , \lambda_{N} (t) \right)$依赖于时间$t$。同时，$H_0 (\bm{\lambda})$的本征值、本征态为$E_n (\bm{\lambda}), | n (\bm{\lambda}) \rangle$，根据复合函数的微分法则，式\eqref{eq2.4}可以写为
+让$H_0$通过一系列参数$\bm{\lambda}(t)=\left( \lambda_1 (t) , \lambda_1 (t) , \lambda_1 (t) , \cdot , \lambda_{N} (t) \right)$依赖于时间$t$。同时，$H_0 (\bm{\lambda})$的本征值、本征态为$E_n (\bm{\lambda}),\ | n (\bm{\lambda}) \rangle$，根据复合函数的微分法则，式\eqref{eq2.4}可以写为
 \begin{equation}
     H_1 (t)=\dot{\boldsymbol{\lambda}} \cdot \boldsymbol{\xi}(\boldsymbol{\lambda}(t))
     \label{eq2.5}
@@ -147,9 +144,9 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     \boldsymbol{\xi}(\boldsymbol{\lambda})=i \hbar \sum_{m}(|\boldsymbol{\nabla} m\rangle\langle m|-\langle m \mid \boldsymbol{\nabla} m\rangle| m\rangle\langle m|)
     \label{eq2.4}
 \end{equation}
-同时$|\nabla m\rangle \equiv \partial_{\boldsymbol{\lambda}}|m(\boldsymbol{\lambda})\rangle  , \dot{\boldsymbol{\lambda}} \equiv \mathrm{d} \lambda / \mathrm{d} t$
+同时$|\nabla m\rangle \equiv \partial_{\boldsymbol{\lambda}}|m(\boldsymbol{\lambda})\rangle,\ \dot{\boldsymbol{\lambda}} \equiv \mathrm{d} \lambda / \mathrm{d} t$
 
-把$\boldsymbol{\xi}$看做参数空间的无穷小平移$\boldsymbol{\lambda} \to \boldsymbol{\lambda} + \delta \boldsymbol{\lambda}$的生成元。这个无穷小平移与希尔伯特空间中态的变换$|\psi\rangle \rightarrow|\psi\rangle+|\delta \psi\rangle$相联系，通过以下方式
+把$\boldsymbol{\xi}$看做参数空间的无穷小平移$\boldsymbol{\lambda} \to \boldsymbol{\lambda} + \delta \boldsymbol{\lambda}$的生成元。这个无穷小平移与希尔伯特空间中态的变换$|\psi\rangle \rightarrow|\psi\rangle+|\delta \psi\rangle$通过以下方式相联系
 \begin{equation}
     i \hbar|\delta \psi\rangle=\delta \boldsymbol{\lambda} \cdot \boldsymbol{\xi}|\psi\rangle
     \label{eq2.6}
@@ -166,10 +163,9 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
      \left(1+\frac{1}{i \hbar} H \delta t\right)|\psi\rangle=|\psi\rangle+\frac{1}{i \hbar} \delta t H_{0}|\psi\rangle+\frac{1}{i \hbar} \delta \boldsymbol{\lambda} \cdot \boldsymbol{\xi}|\psi\rangle
    \label{eq2.8}
 \end{equation}
+如果考虑态$|\psi \rangle = |n(\bm{\lambda}) \rangle$，那么\eqref{eq2.8}的物理意义就很显然了——$H_0$产生了我们熟悉的动力学相位，而$\boldsymbol{\xi}$产生了几何相因子。
 
-如果考虑态$|\psi \rangle = |n(\bm{\lambda}) \rangle$，那么\eqref{eq2.8}的物理意义是明显的。$H_0$产生了我们熟悉的动力学相位，而$\boldsymbol{\xi}$产生了几何相因子。
-
-由\eqref{eq2.4}定义的$\bm{\xi}$，也可由下式\eqref{eq2.9}定义，（二者的等价性可由$\langle m \mid \boldsymbol{\nabla} n\rangle=\left\langle m\left|\boldsymbol{\nabla} \hat{H}_{0}\right| n\right\rangle /\left(E_{n}-E_{m}\right)$\cite{Berry2009}加以证明）
+由\eqref{eq2.4}定义的$\bm{\xi}$，也可由下式\eqref{eq2.9}定义（二者的等价性可由$\langle m \mid \boldsymbol{\nabla} n\rangle=\left\langle m\left|\boldsymbol{\nabla} \hat{H}_{0}\right| n\right\rangle /\left(E_{n}-E_{m}\right)$\cite{Berry2009}加以证明）
 \begin{subequations}
     \begin{align}
         \left[ \boldsymbol{\xi}, H_{0} \right] &= i \hbar \left( \boldsymbol{\nabla} H_{0}-\operatorname{diag} \left(\boldsymbol{\nabla} H_{0} \right) \right) \label{eq2.9a}\\
@@ -179,12 +175,12 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
 \end{subequations}
 其中$\operatorname{diag}\left(\boldsymbol{\nabla} H_{0}\right)=\sum_{m}|m\rangle\left\langle m\left|\boldsymbol{\nabla} H_{0}\right| m\right\rangle\langle m|.$ 对\eqref{eq2.9a}两端同时进行操作$\langle m|\cdots| n\rangle$，得到$\langle m| \boldsymbol{\xi} | n\rangle (E_n - E_m) = \langle m|i \hbar \left( \boldsymbol{\nabla} H_{0}-\operatorname{diag} \left(\boldsymbol{\nabla} H_{0} \right) \right)| n\rangle$. 可见，\eqref{eq2.9a}决定了$\boldsymbol{\xi}$的非对角元，\eqref{eq2.9b}决定了其非对角元。
 
-式\eqref{eq2.9}提供了一种在经典力学中找到\textbf{反绝热哈密顿量}的对应方法。因为我可以利用量子与经典的对应$[A, B]/i \hbar \to \{A, B\}  $将\eqref{eq2.9}转换为经典的，进而可以在经典力学中找到对应的\textbf{反绝热哈密顿量}。现在考虑一个经典系统，其自由度为1，哈密顿量为$H_0 (\bm{\eta};\bm{\lambda}).$ 其中$\bm{\lambda}$依然为依赖于时间的一系列参数，$\bm{\eta}=(q,p)$为广义坐标和广义动量，确定了相空间的一个点。对于确定的能量$E = H_0 (\bm{\eta};\bm{\lambda})$，这将相点约束在相空间的一个能壳上，积分
+式\eqref{eq2.9}提供了一种在经典力学中找到反绝热哈密顿量的对应方法。因为我可以利用量子与经典的对应$[A, B]/i \hbar \to \{A, B\}  $将\eqref{eq2.9}转换为经典的，进而可以在经典力学中找到对应的反绝热哈密顿量。现在考虑一个经典系统，其自由度为1，哈密顿量为$H_0 (\bm{\eta};\bm{\lambda}).$ 其中$\bm{\lambda}$依然为依赖于时间的一系列参数，$\bm{\eta}=(q,p)$为广义坐标和广义动量，确定了相空间的一个点。确定的能量$E = H_0 (\bm{\eta};\bm{\lambda})$，将相点约束在相空间的一个能壳上，积分
 \begin{equation}
     I(E, \boldsymbol{\lambda}) \equiv \int \mathrm{d} \bm{\eta} \theta\left[E-H_{0}(z ; \boldsymbol{\lambda})\right]
   \label{eq2.10}
 \end{equation}
-表示的是能壳所围成的体积，阶跃函数$\theta\left[E-H_{0}(z ; \boldsymbol{\lambda})\right]$可以使得积分区域为整个相空间。经典的绝热定理告诉我们$I(E, \boldsymbol{\lambda})$是一个\textbf{绝热不变量} \cite{LiuChuan2019}。也就是说如果$H_0$随时间$t$变化的足够缓慢，那么能壳所围成的体积将保持不变。定义任意可观测量$A$的\textbf{微正则分布平均}
+表示的是能壳所围成的体积，阶跃函数$\theta\left[E-H_{0}(z ; \boldsymbol{\lambda})\right]$的存在可以使得积分区域为整个相空间。经典的绝热定理告诉我们$I(E, \boldsymbol{\lambda})$是一个\textbf{绝热不变量} \cite{LiuChuan2019}，也就是说如果$H_0$随时间$t$变化得足够缓慢，那么能壳所围成的体积将保持不变。定义任意可观测量$A$的微正则分布平均
 \begin{equation}
     \langle A \rangle_{E, \lambda} \equiv \frac{1}{\partial_{E} I} \int \mathrm{d} \bm{\eta} \delta\left(E-H_{0}\right) A
   \label{eq2.11}
@@ -194,7 +190,7 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     \boldsymbol{\nabla} E(I, \boldsymbol{\lambda})=-\frac{\boldsymbol{\nabla} I(E, \boldsymbol{\lambda})}{\partial_{E} I(E, \boldsymbol{\lambda})}=\left\langle\boldsymbol{\nabla} H_{0}\right\rangle_{E, \boldsymbol{\lambda}}
   \label{eq2.12}
 \end{equation}
-其中第一个等式利用循环函数的偏导数的性质，第二个等式利用了式\eqref{eq2.10}和式\eqref{eq2.11}。
+其中第一个等式利用了函数的偏导数的性质，第二个等式利用了式\eqref{eq2.10}和式\eqref{eq2.11}。
 
 式\eqref{eq2.9}的经典对应为\cite{Jarzynski1995}
 \begin{subequations}
@@ -204,7 +200,7 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     \end{align}
     \label{eq2.13}
 \end{subequations}
-其中$\{ \cdots \}$是经典力学中的泊松括号$\{A, B\}=(\partial A / \partial q)(\partial B / \partial p)-(\partial A / \partial p)(\partial B / \partial q)$。利用式\eqref{eq2.12}和泊松括号的定义，式\eqref{eq2.13a}可改写为\R{不懂，出自\cite{Jarzynski2013} page2 (13)}
+其中$\{ \cdots \}$是经典力学中的泊松括号$\{A, B\}=(\partial A / \partial q)(\partial B / \partial p)-(\partial A / \partial p)(\partial B / \partial q)$。利用式\eqref{eq2.12}和泊松括号的定义，式\eqref{eq2.13a}可改写为
 \begin{equation}
     \{\boldsymbol{\xi}, i\}=\boldsymbol{\nabla} i
   \label{eq2.14}
@@ -226,36 +222,33 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
 \end{equation}
 这说明，变换$\bm{\eta} \to \bm{\eta} + \delta  \bm{\lambda} \cdot \{\bm{\eta}, \boldsymbol{\xi}\}$将能壳$H_{0}(\bm{\eta} ; \boldsymbol{\lambda})$上的一个相点映射到能壳$H_{0}(\bm{\eta} + \delta \bm{\eta} ; \boldsymbol{\lambda})$上的一个点，而二者包围着相同的相体积。
 
-可见，类似于量子中的情形，只要给经典的系统施加一个反绝热的哈密顿量$\dot{\boldsymbol{\lambda}} \cdot \boldsymbol{\xi}(\bm{\eta}, \boldsymbol{\lambda}(t))$。那么此系统的$I(E, \boldsymbol{\lambda}) \equiv \int \mathrm{d} \bm{\eta} \theta\left[E-H_{0}(z ; \boldsymbol{\lambda})\right]$将严格保持不变，不论$H_0 $随时间的变化快慢与否。这个新的哈密顿量为\R{（文献\cite{Jarzynski2013} page eq16直接计算了$\DD{}{t} i (\bm{\eta}; \bm{\lambda})$，但其中的推理过程未能理解）}
+可见，类似于量子中的情形，只要给经典的系统施加一个反绝热的哈密顿量$\dot{\boldsymbol{\lambda}} \cdot \boldsymbol{\xi}(\bm{\eta}, \boldsymbol{\lambda}(t))$。那么此系统的$I(E, \boldsymbol{\lambda}) \equiv \int \mathrm{d} \bm{\eta} \theta\left[E-H_{0}(z ; \boldsymbol{\lambda})\right]$将严格保持不变，不论$H_0 $随时间的变化快慢与否。这个新的哈密顿量为
 \begin{equation}
     H(\bm{\eta}, t)=H_{0}(\bm{\eta} ; \boldsymbol{\lambda}(t))+\dot{\boldsymbol{\lambda}} \cdot \boldsymbol{\xi}(\bm{\eta}, \boldsymbol{\lambda}(t))
     \label{eq2.17}
 \end{equation}
 
-\emph{从系综的角度来考虑这个过程：想象一下从H0的能壳E0中取样的初始条件的集合。在任何后来的时间t>0，从这些初始条件演化出来的轨迹，在Hamiltonian H(z; t)下，将填充一个H0(z;(t))的单一能壳E(t)，具体来说是绝热能壳，它与初始能壳的相空间体积相同。如果我们把绝热能壳想象成一个随着参数随时间变化而变形的闭合循环，那么在式16中，H0围绕这个循环产生运动，调整每个轨迹，使其保持在壳上。}\R{可不要，出自\cite{Jarzynski2013} page eq16}
-
-\subsection{经典和量子偶次幂势场中生成元的构造}
+\subsection{经典和量子情形下偶次幂势场中生成元的构造}
 \label{sec2.3.2}
 
 \qquad 现在，鉴于变换$\bm{\eta} \to \bm{\eta} + \delta  \bm{\lambda} \cdot \{\bm{\eta}, \boldsymbol{\xi}\}$将能壳$H_{0}(\bm{\eta} ; \boldsymbol{\lambda})$ 上的相点映射到了能壳 $ H_{0}(\bm{\eta} + \delta \bm{\eta} ; \boldsymbol{\lambda})$上，我们可以此为根据构造经典力学中的$\boldsymbol{\xi}(\bm{\eta}, \boldsymbol{\lambda})$，下面我们用例子进行说明
 
-考虑一个一维的粒子，处在两堵刚性墙之间，刚性墙的位置为$q=0,\lambda$，这个例子这对应于量子力学中的一维无限深势阱。其相空间的能壳如图\eqref{p2.1}所示。
+考虑一个一维的粒子，处在两堵刚性墙之间，刚性墙的位置为$q=0,\ \lambda$，这个例子这对应于量子力学中的一维无限深势阱。其相空间的能壳如图\eqref{p2.1}所示。
 \begin{figure}[!htbp]
     \begin{center}
         \includegraphics[width=0.5\textwidth]{figures/p2.1.pdf}
     \end{center}
-    \caption{在一维盒子中的粒子的能壳。该粒子的能壳是一个矩形，当盒子的长度发生极小的改变时，矩形能壳也发生相应的改变。但矩形的体积不变}
+    \caption{在一维盒子中的粒子的能壳}
     \label{p2.1}
 \end{figure}
-
 系统的哈密顿量为
 \begin{equation}
-     H_{0}(\bm{\eta} ; \lambda)=\frac{p^{2}}{2 m}+V_{\mathrm{box}}(q ; \lambda)
+     H_{0}(\bm{\eta} ; \lambda)=\frac{p^{2}}{2}+V_{\mathrm{box}}(q ; \lambda)
         \label{eq2.18}
 \end{equation}
-其中$V_{\mathrm{box}}(q ; \lambda)$代表一维盒子的势场$V_{\mathrm{box}}(q ; \lambda) = \left\{\begin{array}{l} 0 , q<\lambda\\ \infty , q \leq 0\ \text{or}\ q \geq \lambda \end{array}\right.$在经典中这个粒子的运动是平凡的——以相同的速度在两堵墙之间做往返运动。
+其中$V_{\mathrm{box}}(q ; \lambda)$代表一维盒子的势场$V_{\mathrm{box}}(q ; \lambda) = \left\{\begin{array}{l} 0 ,\ q<\lambda\\ \infty ,\ q \leq 0\ \text{or}\ q \geq \lambda \end{array}\right.$在经典中这个粒子的运动是平凡的——以相同的速度在两堵墙之间做往返运动。
     
-哈密顿量的参数$\lambda$随时间$t$变化，现在我们构造这个系统的\textbf{反绝热哈密顿量}。不难得出，矩形能壳的面积为$I=2 \bar{p} \lambda$，由于矩形能壳的长的变化为$\lambda \to \lambda(1+\nu)$，为了维持矩形能壳的面积，在一阶精度下，可令其宽的微小改变为$2 \bar{p} \to 2 \bar{p} (1-\nu)$，其中$\nu \equiv \delta \lambda / \lambda$。于是，这两个能壳被一个线性的尺度变换所联系
+哈密顿量的参数$\lambda$随时间$t$变化，现在我们构造这个系统的反绝热哈密顿量。不难得出，矩形能壳的面积为$I=2 \bar{p} \lambda$，由于矩形能壳的长的变化为$\lambda \to \lambda(1+\nu)$，为了维持矩形能壳的面积，在一阶精度下，可令其宽的微小改变为$2 \bar{p} \to 2 \bar{p} (1-\nu)$，其中$\nu \equiv \delta \lambda / \lambda$。于是，这两个能壳被一个线性的尺度变换所联系
 \begin{equation}
     q \rightarrow q(1+\nu) \quad, \quad p \rightarrow p(1-\nu)
     \label{eq2.19}
@@ -265,14 +258,14 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     H(\bm{\eta}, t)=H_{0}(\bm{\eta} ; \lambda)+\frac{\dot{\lambda}}{\lambda} q p \quad, \quad \lambda=\lambda(t)
     \label{eq2.20}
 \end{equation}
-在这个时间依赖的哈密顿量之下，绝热不变量$i(q, p;\ \lambda)=2 |p| \lambda$是严格守恒的，不论函数$\lambda(t)$的形式是怎样的。现在我们对于这个具体的例子，实实在在的构造出了\textbf{反绝热哈密顿量}，这说明其并不只是存在于形式化理论中，而是可以在实际中加以利用的。
+在这个时间依赖的哈密顿量之下，绝热不变量$i(q, p;\ \lambda)=2 |p| \lambda$是严格守恒的，不论函数$\lambda(t)$的形式是怎样的。现在我们对于这个具体的例子，实实在在的构造出了反绝热哈密顿量，这说明其并不只是存在于形式化理论中，而是可以在实际中加以利用的。
 
-在构造出了经典的\textbf{反绝热哈密顿量}之后，我们也可以通过$\xi$的经典表达式来猜想量子力学中的\textbf{反绝热哈密顿量}，因为算符$p, q$是不对易的，一个自然的猜想是
+在构造出了经典的反绝热哈密顿量之后，我们也可以通过$\xi$的经典表达式来猜想量子力学中的反绝热哈密顿量，因为算符$p, q$是不对易的，一个自然的猜想是
 \begin{equation}
     \xi(\lambda) = \frac{q p + p q}{2 \lambda}
     \label{eq2.21}
 \end{equation}
-于是，再联系到已知的量子力学中\textbf{一维无限深势阱}的本征解，非常幸运的，我们发现选择的这个$\xi$满足式\eqref{eq2.7}
+于是，再联系到已知的量子力学中一维无限深势阱的本征解，非常幸运地，我们发现选择的这个$\xi$满足式\eqref{eq2.7}
 \begin{equation}
     \left(1+\frac{1}{i \hbar} \delta \lambda \xi \right) \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right)=\sqrt{\frac{2}{\lambda+\delta \lambda}} \sin \left(\frac{n \pi q}{\lambda+\delta \lambda}\right)
     \label{eq2.22}
@@ -287,21 +280,19 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     \psi (q, t)=\sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right) \exp \left(-\frac{i}{\hbar} \int_{0}^{t} \mathrm{~d} t^{\prime} \frac{n^{2} \pi^{2} \hbar^{2}}{2 m \lambda^{2}}\right)
     \label{eq2.24}
 \end{equation}
-将成为这个系统的精确解（初态为$\psi (q, 0) = \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right)$），不论$\lambda(t)$的函数形式如何。
-
-式\eqref{eq2.23}也可以更一般的写成
+将成为这个系统的精确解（初态为$\psi (q, 0) = \sqrt{\frac{2}{\lambda}} \sin \left(\frac{n \pi q}{\lambda}\right)$），不论$\lambda(t)$的函数形式如何。式\eqref{eq2.23}也可以更一般的写成
 \begin{equation}
     \left(1+\frac{1}{i \hbar} \delta \lambda \hat{\xi}\right) \psi(q)=\sqrt{\frac{1}{s}} \psi\left(\frac{q}{s}\right) \quad, \quad s=\frac{\lambda+\delta \lambda}{\lambda}
     \label{eq2.25}
 \end{equation}
-换句话说，算符$\exp (\delta \lambda \xi / i \hbar)$对波函数$\psi(q)$进行了线性放大。（系数$\sqrt{\frac{1}{s}}$保证了波函数的归一化）自此我们也成功的通过构造的\textbf{经典反绝热哈密顿量}构造出了\textbf{量子反绝热哈密顿量}
+换句话说，算符$\exp (\delta \lambda \xi / i \hbar)$对波函数$\psi(q)$进行了线性放大。（系数$\sqrt{\frac{1}{s}}$保证了波函数的归一化）自此我们也成功的通过构造的经典反绝热哈密顿量构造出了\textbf{量子反绝热哈密顿量}
 
-不难发现，我们的构造能够成功，很大程度上得益于能壳和本征态之间的\textbf{尺度变换}关系能够成立。相似的办法也能够应用于\textbf{偶次幂势场}，则经典哈密顿量为
+不难发现，我们的构造能够成功，很大程度上得益于能壳和本征态之间的尺度变换关系能够成立。相似的办法也能够应用于偶次幂势场，则经典哈密顿量为
 \begin{equation}
     H_{0}(\bm{\eta} ; \lambda)=\frac{p^{2}}{2 m}+\epsilon\left(\frac{q}{\lambda}\right)^{b}
     \label{eq2.26}
 \end{equation}
-可以证明，对于相应的量子的情形，也是可以按照类似的方式构造其\textbf{量子反绝热哈密顿量}的。其中$\epsilon > 0$调节了能量尺度，而$b$是正偶数。同样的，我们先在经典中加以考虑，再推广到量子中。上述系统的\textbf{绝热不变量}为
+可以证明，对于相应的量子的情形，也是可以按照类似的方式构造其量子反绝热哈密顿量的。其中$\epsilon > 0$调节了能量尺度，而$b$是正偶数。同样的，我们先在经典中加以考虑，再推广到量子中。上述系统的绝热不变量为
 \begin{equation}
     \begin{split}
         i(\bm{\eta};\ \lambda) &= 4 \int_0^{\lambda \left(H_0 / \epsilon \right)^{1/b}} \sqrt{2 m \left[ H_0 -\epsilon \left(q/{\lambda}\right)^b\right]} \, \M{d}q \\ 
@@ -321,17 +312,17 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     H(\bm{\eta}, t)=H_{0}(\bm{\eta} ; \lambda)+\mu \frac{\dot{\lambda}}{\lambda} q p
     \label{eq2.28.5}
 \end{equation}
-在这个哈密顿量下，$i(\bm{\eta};\ \lambda) = c \lambda H_0^{\frac{1}{2 \mu}}$将成为一个严格的守恒量。在量子力学中，本征态将满足\R{（不甚理解）}
+在这个哈密顿量下，$i(\bm{\eta};\ \lambda) = c \lambda H_0^{\frac{1}{2 \mu}}$将成为一个严格的守恒量。在量子力学中，势场\eqref{eq2.26}的本征态将满足
 \begin{equation}
     \phi_{n}(q ; \lambda)=\sqrt{\frac{1}{\lambda^{\mu}}} \phi_{n}\left(\frac{q}{\lambda^{\mu}} ; 1\right)
     \label{eq2.29}
 \end{equation}
-在新的哈密顿量
+新的哈密顿量为
 \begin{equation}
     H(t)=H_{0}(\lambda)+\frac{b}{b+2} \frac{\dot{\lambda}}{2 \lambda} \frac{\hbar}{i}\left(q \frac{\partial}{\partial q}+\frac{\partial}{\partial q} q\right)
     \label{eq2.29.5}
 \end{equation}
-之下。这结果对任意$b \in \{ 2, 4, 6, \cdots\}$都是成立对的。特别的，$b=2$和$b \to \infty$对应于\textbf{一维谐振子}和\textbf{一维无限深势阱}的情况。不过，对于\textbf{一维谐振子}的情况，Muga等人使用升降算子$a, a^{\dagger}$结合式\eqref{eq2.3}的办法更为简单地得到了相同的结果。\cite{Muga2010}
+之下。这个结果对任意$b \in \{ 2, 4, 6, \cdots\}$都是成立的。特别地，$b=2$和$b \to \infty$对应于一维谐振子和一维无限深势阱的情况。不过，对于一维谐振子的情况，Muga等人使用升降算子$a, a^{\dagger}$结合式\eqref{eq2.3}的办法更为简单地得到了相同的结果。\cite{Muga2010}
 
 对于一般的一维势场，生成元应该满足
 \begin{equation}
@@ -342,18 +333,17 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
 
 如果我们考虑相空间中复杂一点的能壳，它们不是简单闭合的环。比如如果势$V(q;\ \bm{\lambda})$是双阱势，而参数$\bm{\lambda}$的变化可以改变能壳的拓扑结构——从单环变成双环或相反。这时$i$的绝热不变性将被破坏。\cite{Tennyson1986,Cary1986,Hannay1986}
 
-对于自由度$f \geq 2$的经典系统，如果$H_0$是\textbf{完全可积的}\cite{LiuChuan2019}，我们就有可能能够重复
-式\eqref{eq2.10}-\eqref{eq2.17}对\textbf{作用量-角度变量}的分析，每一个生成$\bm{\xi}_i$元对应一对\textbf{作用量-角度变量}。\R{（可加一脚注）}另一个情形下，如果$H_0$是各态历经的，那么式$\eqref{eq2.13a}$的解的存在将意味着能壳$H_0 (\bm{\eta};\ \bm{\lambda})$可以被\textbf{正则变换}到$H_0 (\bm{\eta};\ \bm{\lambda}+\delta \bm{\lambda} )$。\cite{Jarzynski1995}虽然对于$f \geq 2$的系统，这一条件通常并不能满足，但一旦满足，$\bm{\xi}$就简单的是这个变换的生成元，无耗散的驱动就可以由$H_0 + \dot{\boldsymbol{\lambda}} \cdot \boldsymbol{\xi}$实现。
+对于自由度$f \geq 2$的经典系统，如果$H_0$是完全可积的\cite{LiuChuan2019}，我们就有可能能够重复
+式\eqref{eq2.10}-\eqref{eq2.17}对作用量-角度变量的分析，每一个生成元$\bm{\xi}_i$对应一对作用量-角度变量。另外，如果$H_0$是各态历经的，那么式$\eqref{eq2.13a}$的解的存在将意味着能壳$H_0 (\bm{\eta};\ \bm{\lambda})$可以被正则变换到$H_0 (\bm{\eta};\ \bm{\lambda}+\delta \bm{\lambda} )$。\cite{Jarzynski1995}虽然对于$f \geq 2$的系统，这一条件通常并不能被满足，但一旦满足，$\bm{\xi}$就简单的是这个变换的生成元。
 
-上述的方法除了可以应用在量子和经典动力学之外，相似的方法也可以应用于统计力学，用于估算自由能的变化。其中反绝热的\textbf{度规缩放}\cite{Miller2000}或者\textbf{场流}\cite{Vaikuntanathan2008}被构造出来，用于减少或者消除对有限时间过程中数字模拟的不可逆性。
+上述的方法除了可以应用在量子和经典动力学之外，相似的方法也可以应用于统计力学，用于估算自由能的变化。在统计力学中，为了减少或者消除对有限时间过程中数字模拟的不可逆性，反绝热的度规缩放\cite{Miller2000}和场流\cite{Vaikuntanathan2008}被构造出来。
 
 \subsection{利用绝热捷径实现平衡态的转化}
-
-\qquad 接下来，我们举例说明绝热捷径如何实现平衡态的转化。\cite{Tu2013}考虑一个被时间依赖的谐振子势场$U_0 (q, \lambda(t))= q^{2} /  \lambda(t)^2$驱动的布朗粒子，只需使式\eqref{eq2.26}中的$b=2,\ \epsilon=2$，再联系到式\eqref{eq2.29}，就可以直接得到它被施加反绝热哈密顿量之后的哈密顿量
+\qquad 接下来我们举例说明绝热捷径如何实现平衡态的转化。\cite{Tu2013}考虑一个被依赖于时间的谐振子势场$U_0 (q, \lambda(t))= q^{2} / 2 \lambda(t)^2$驱动的布朗粒子，只需使式\eqref{eq2.26}中的$b=2,\ \epsilon=2$，再联系到式\eqref{eq2.29}，就可以直接得到它被施加反绝热哈密顿量之后的哈密顿量
 \begin{equation}
     \begin{split}
     H(t)=&H_0 (t) + \frac{\dot{\lambda}}{2 \lambda(t)} q p\\
-    =&\frac{p^{2}}{2 m}+\frac{1}{2}\frac{q^2}{\lambda(t)^2}+\frac{\dot{\lambda}}{2 \lambda(t)} q p
+    =&\frac{p^{2}}{2}+\frac{1}{2}\frac{q^2}{\lambda(t)^2}+\frac{\dot{\lambda}}{2 \lambda(t)} q p
     \end{split}
     \label{eq2.31}
 \end{equation}
@@ -372,12 +362,12 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
 \end{equation}
 
 
-接下来我们将说明\textbf{绝热捷径}如何联系两个不同\textbf{有效温度}的\textbf{正则态}。\cite{Tu2013}假设系统初始处在有效温度为$\left(k_\M{B} \beta_i\right)^{-1}$的正则态中，那么初始时系统的分布函数可以表达为
+接下来我们将说明绝热捷径如何联系两个不同有效温度的正则态。\cite{Tu2013}假设系统初始处在有效温度为$\left(k_\M{B} \beta_i\right)^{-1}$的正则态中，那么初始时系统的分布函数可以表达为
 \begin{equation}
     \rho_{i}=\frac{\beta_{i}}{2 \pi \lambda_{i}} \exp \left[-\beta_{i} H_0 \left(t_{i}\right)\right]
     \label{eq2.32}
 \end{equation}
-其中$(q_i, p_i)$代表初始时的相点，根据\textbf{刘维尔定理}，当系统不和外界任何热浴接触时，分布函数沿着相轨应当是不变的。所以，末态的分布函数应当为
+其中$(q_i, p_i)$代表初始时的相点，根据刘维尔定理，当系统不和外界任何热浴接触时，分布函数沿着相轨应当是不变的。所以，末态的分布函数应当为
 \begin{equation}
     \rho_{f}=\rho_{i}=\frac{\beta_{i} }{2 \pi \lambda_{i}} \exp \left[-\beta_{i} H_0 \left(t_{i}\right)\right]
     \label{eq2.33}
@@ -405,26 +395,26 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     \frac{\beta_f}{\lambda_f} = \frac{\beta_i}{\lambda_i}
     \label{eq2.40}
 \end{equation}
-这说明，如果系统的初态等效温度为$\left( k_\M{B} \beta_i\right)^{-1}$的正则态，那么在系统经历绝热捷径之后，我们可以把系统的末态视为等效温度为$\left( k_\M{B} \beta_f\right)^{-1}$的正则态。而且，初态和末态的等效温度满足\eqref{eq2.40}。
+这说明，如果系统的初态等效温度为$\beta_{i}^{-1}$的正则态，那么在系统经历绝热捷径之后，我们可以把系统的末态视为等效温度为$\beta_{f}^{-1}$的正则态。而且，初态和末态的等效温度满足\eqref{eq2.40}。
 
 这样，通过绝热捷径，在有限时间时间$t_i \sim t_f$内，我们实现了微观正则态之间的转换。
 
 
 \section{等温捷径}
     
-\qquad 上一节我们介绍了绝热捷径，它可以在有限时间内实现\textbf{正则平衡态}之间的转化。又由于这个过程中，系统和外界没有热交换故而称之为\textbf{绝热捷径}。那么类比于经典中的绝热过程和等温过程，我自然难免思考是否会存在对应的\textbf{等温捷径}。类似的，我们希望它可以在有限时间内实现两个等温平衡态间的转化。如果可以成功，我们还可以进一步思考由\textbf{绝热捷径}和\textbf{等温捷径}构成的有限时间类卡诺循环的功率与效率等问题。
+\qquad 上一节我们介绍了绝热捷径，它可以在有限时间内实现两个不同有效温度的正则平衡态之间的转化。又由于这个过程中，系统和外界没有热交换故而称之为绝热捷径。那么类比于经典中的绝热过程和等温过程，我自然难免思考是否会存在对应的等温捷径。类似的，我们希望它可以在有限时间内实现两个等温平衡态间的转化。
 
-Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲度系数进行调节，是系统比自然驰豫过程快一百倍达到了平衡态。Le Cunuder等人\cite{LeCunuder2016}实现了微观谐振子平衡态的快速转化。不过这些方法都只能限制于布朗粒子系统，我们需要在一般情况也能适用的办法。于是，李耿等人\cite{Li2016}发展出了等温捷径的概念。很类似于绝热捷径，李耿等人为一个初始处于平衡态的系统施加了一个辅助势场（类似于绝热捷径中的反绝热哈密顿量），它使得这个和恒温热浴接触的系统的演化处于原哈密顿量的瞬时平衡态。通过对辅助势场的调节，可以使得系统的初末状态都是原哈密顿量的平衡态，就此实现了等温情况下平衡态间的转化。
+Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲度系数进行调节，使系统比自然驰豫过程快一百倍达到了平衡态。Le Cunuder等人\cite{LeCunuder2016}实现了微观谐振子平衡态的快速转化。不过这些方法都只能限制于布朗粒子系统，我们需要在一般情况也能适用的办法。于是，李耿等人\cite{Li2016}发展出了等温捷径的概念。很类似于绝热捷径，李耿等人为一个初始处于平衡态的系统施加了一个辅助势场（类似于绝热捷径中的反绝热哈密顿量），它使得这个和恒温热浴接触的系统的演化处于原哈密顿量的瞬时平衡态。通过对辅助势场的调节，可以使得系统的初末状态都是原哈密顿量的平衡态，就此实现了等温情况下平衡态间的转化。
 
 \subsection{等温捷径的实现}
 
 
-\qquad 考虑一个和温度为$T$的热浴接触的系统，如果系统的哈密段量$H_0 \left(\bm{\eta}, \lambda\left( t \right) \right)$依赖于时间。分布函数$\rho (\bm{\eta}, t)$的时间演化由下式决定
+\qquad 考虑一个和温度为$T$的热浴接触的系统，如果系统的哈密顿量$H_0 \left(\bm{\eta}, \lambda\left( t \right) \right)$依赖于时间。分布函数$\rho (\bm{\eta}, t)$的时间演化由下式决定
 \begin{equation}
     \frac{\partial \rho(\bm{\eta}, t)}{\partial t}=L_{0}(\bm{\eta}, \lambda(t)) \rho(\bm{\eta}, t)
     \label{eq2.41}
 \end{equation}
-其中$L_{0}(\bm{\eta}, \lambda(t))$是演化算符，我们将讨论的框架限制在这样一种情况下：对于固定的参数$\lambda$，系统处于这样一种平衡态之中，它的分布函数满足$\rho_{\mathrm{eq}} \propto e^{-\beta H_{0}(\bm{\eta}, \lambda)}$，其中$\beta= \frac{1}{k_{\M{B}} T}$。现在给系统引入一个辅助势$U_1 (\bm{\eta}, t)$，哈密顿量成为$H(\bm{\eta}, t)=H_{0}(\bm{\eta}, \lambda(t))+U_{1}(\bm{\eta}, t)$，演化方程\eqref{eq2.41}成为
+其中$L_{0}(\bm{\eta}, \lambda(t))$是演化算符，我们将讨论的框架限制在这样一种情况下：对于固定的参数$\lambda$，系统处于这样一种平衡态之中，它的分布函数满足$\rho_{\mathrm{eq}} \propto e^{-\beta H_{0}(\bm{\eta}, \lambda)}$。现在给系统引入一个辅助势$U_1 (\bm{\eta}, t)$，哈密顿量成为$H(\bm{\eta}, t)=H_{0}(\bm{\eta}, \lambda(t))+U_{1}(\bm{\eta}, t)$，演化方程\eqref{eq2.41}成为
 \begin{equation}
     \frac{\partial \rho(\bm{\eta}, t)}{\partial t}=L_{0}(\bm{\eta}, \lambda(t)) \rho(\bm{\eta}, t)+L_{1}(\bm{\eta}, t) \rho(\bm{\eta}, t)
     \label{eq2.42}
@@ -434,9 +424,9 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
     \rho(\bm{\eta}, t)=\rho_{\mathrm{ieq}}(\bm{\eta}, \lambda(t)) \equiv e^{\beta\left[F(\lambda(t))-H_{0}(\bm{\eta}, \lambda(t))\right]}
     \label{eq2.43}
 \end{equation}
-其中，$F(\lambda) \equiv-\beta^{-1} \ln \left[\int e^{-\beta H_{0}(\bm{\eta}, \lambda)} \M{d} \bm{\eta}\right]$是原系统在给定参数$\lambda$时，在平衡态下的自由能。\eqref{eq2.43}的积分是对整个相空间的。如果我们限制辅助势$U_1 (\bm{\eta} , t)$在驱动过程的初末时刻都为零，即分布函数在初末时刻都对应于哈密顿量$H(\bm{\eta} \, t)$，那么我们就实现了有限时间内的等温平衡态的转化。
+其中，$F(\lambda) \equiv-\beta^{-1} \ln \left[\int e^{-\beta H_{0}(\bm{\eta}, \lambda)} \M{d} \bm{\eta}\right]$是原系统在给定参数$\lambda$时，在平衡态下的自由能。\eqref{eq2.43}的积分是对整个相空间的。如果我们限制辅助势$U_1 (\bm{\eta} , t)$在驱动过程的初末时刻都为零，即分布函数在初末时刻都对应于哈密顿量$H(\bm{\eta}\ , t)$，那么我们就实现了有限时间内的等温平衡态的转化。
 
-上面的这种方法看上去很类似于Vaikuntanathan和Jarzynski提出的出的\textbf{护送自由能模拟(escorted free-energy simulations)}。\cite{Vaikuntanathan2008}通过在系统中引入恰当的人工场流和巧妙的功的定义，这个方法可以生成相轨迹，沿着这些相轨迹做的功等于系统自由能的改变。而等温捷径的方法致力于为等温情况下有限时间内平衡态的转化提供统一的理论框架。也不用额外引入功的定义，可以依旧采用随机热力学中轨道功的定义。\cite{Seifert2012,Sekimoto2010}
+上面的这种方法看上去很类似于Vaikuntanathan和Jarzynski提出的护送自由能模拟(escorted free-energy simulations)。\cite{Vaikuntanathan2008}通过在系统中引入恰当的人工场流和巧妙的功的定义，这个方法可以生成相轨迹，沿着这些相轨迹做的功等于系统自由能的改变。而等温捷径的方法致力于为等温情况下有限时间内平衡态的转化提供统一的理论框架。也不用额外引入功的定义，可以依旧采用随机热力学中轨道功的定义。\cite{Seifert2012,Sekimoto2010}
 
 \subsection{等温捷径应用于过阻尼布朗粒子}
 
@@ -470,9 +460,9 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
     U_{1}(q, t)=\gamma \beta \dot{\lambda}(t) \int \M{d} q \frac{\int \M{d} q h(q, \lambda(t))}{\rho_{\mathrm{ieq}}(q, \lambda(t))}
     \label{eq2.50}
 \end{equation}
-其中$h(q, \lambda) \equiv\left[\frac{\M{d} F(\lambda)}{\M{d} \lambda}-\frac{\partial U_{0}(q, \lambda)}{\partial \lambda}\right] \rho_{\mathrm{ieq}}(q, \lambda)$。注意到，从分布函数的演化得到势能的想法，Martínez等人在\textbf{快速平衡(engineered swift equilibration)}的研究\cite{Martinez2016}中已经被应用过。不过，我们是从给定的势能$U_0 (q,\lambda(t))$得到辅助势，Martínez等人是从给定的分布函数得到辅助势。而且，Martínez等人的方法不能同时确定哈密顿量和自由能。
+其中$h(q, \lambda) \equiv\left[\frac{\M{d} F(\lambda)}{\M{d} \lambda}-\frac{\partial U_{0}(q, \lambda)}{\partial \lambda}\right] \rho_{\mathrm{ieq}}(q, \lambda)$。注意到，从分布函数的演化得到势能的想法，Martínez等人在快速平衡(engineered swift equilibration)的研究\cite{Martinez2016}中已经应用过。不过，我们是从给定的势能$U_0 (q,\lambda(t))$得到辅助势，Martínez等人是从给定的分布函数得到辅助势。而且，Martínez等人的方法不能同时确定哈密顿量和自由能。
 
-考虑到我们对辅助势的$U(q,t)$限制条件——在驱动过程的初末时刻$t_i , t_f$要使得$U(q,t)=U_0 (q,t)$，于是我们引入限制条件
+考虑到我们对辅助势的$U(q,t)$限制条件——在驱动过程的初末时刻$t_i,\ t_f$要使得$U(q,t)=U_0 (q,t)$，于是我们引入限制条件
 \begin{equation}
     \dot{\lambda}(t_i)=\dot{\lambda}(t_f)=0
     \label{eq2.51}
@@ -549,7 +539,7 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
 \end{equation}
 类似于过阻尼的情形，在欠阻尼的情形下我们也可以为两类势场的辅助势找到解析解\cite{Li2016}，势场$U_0 (q, \lambda(t))= q^{n} / 2 \lambda(t)^n \quad (n=2,4,6\cdots) ,\ U_{0}(q, \lambda(t))=u(q-\lambda(t))$的辅助势分别为$U_{1}(q, p, t) = - \dot{\lambda}\left[(p-\gamma q)^{2}+ q^{n}/\lambda(t)^n \right] / 2  \gamma \lambda ,\ U_{1}(q, p, t)=\dot{\lambda}(p-\gamma q)$。
 
-由Le Cunuder和他的合作者\cite{LeCunuder2016}所做的实验说明了辅助势\eqref{eq2.61}是能够在实验上实现的,而辅助势\eqref{eq2.62}里的交叉项$qp$很类似于绝热捷径中的反绝热哈密顿量\cite{Jarzynski2013,Deffner2014,DelCampo2013}。对于一大类由绝热捷径控制的量子多体系统，del Campo提出了一种可能的实验方案来实现交叉项\cite{DelCampo2013}。这种方案不需要知道微观系统的详细信息，通过适当的\textbf{正则变换}，他得到了在另一个表象，在这个表象下没有交叉项。这个办法为我们实现辅助势\eqref{eq2.62}提供了思路。
+由Le Cunuder和他的合作者\cite{LeCunuder2016}所做的实验说明了辅助势\eqref{eq2.61}是能够在实验上实现的,而辅助势\eqref{eq2.62}里的交叉项$qp$很类似于绝热捷径中的反绝热哈密顿量\cite{Jarzynski2013,Deffner2014,DelCampo2013}。对于一大类由绝热捷径控制的量子多体系统，del Campo提出了一种可能的实验方案来实现交叉项\cite{DelCampo2013}。这种方案不需要知道微观系统的详细信息，通过适当的正则变换，他得到了在另一个表象，在这个表象下没有交叉项。这个办法为我们实现辅助势\eqref{eq2.62}提供了思路。
 
 
 

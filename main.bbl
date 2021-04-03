@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -117,6 +117,12 @@ Guggenheim E.
 \newblock 第一版.
 \newblock 北京: 科学出版社, 2010
 
+\bibitem[Rifkin(1980)]{rifkin1980entropy}
+Rifkin J.
+\newblock Entropy: a new world view.[social and political implications of the
+  second law of thermodynamics]\allowbreak[M].
+\newblock [S.l.]: Viking Press, New York, NY, 1980
+
 \bibitem[汪志诚(2013)]{Wang2013}
 汪志诚.
 \newblock 热力学·统计物理\allowbreak[M].
@@ -136,9 +142,8 @@ De~Groot S~R, Mazur P.
 
 \bibitem[Sekimoto(1998)]{Sekimoto1998}
 Sekimoto K.
-\newblock {Langevin Equation and Thermodynamics}\allowbreak[J/OL].
+\newblock {Langevin Equation and Thermodynamics}\allowbreak[J].
 \newblock Progress of Theoretical Physics Supplement, 1998, 130: 17-27.
-\newblock \url{https://doi.org/10.1143/PTPS.130.17}.
 
 \bibitem[Seifert(2005)]{Seifert2005}
 Seifert U.
@@ -269,9 +274,8 @@ Mart{\'{i}}nez I~A, Petrosyan A, Gu{\'{e}}ry-Odelin D, et~al.
   Gu{\'{e}}ry-Odelin, Trizac, and Ciliberto]{LeCunuder2016}
 {Le Cunuder} A, Mart{\'{i}}nez I~A, Petrosyan A, et~al.
 \newblock {Fast equilibrium switch of a micro mechanical
-  oscillator}\allowbreak[J/OL].
+  oscillator}\allowbreak[J].
 \newblock Applied Physics Letters, 2016, 109\penalty0 (11).
-\newblock \url{http://dx.doi.org/10.1063/1.4962825}.
 
 \bibitem[Seifert(2012)]{Seifert2012}
 Seifert U.
@@ -298,16 +302,14 @@ Jarzynski C.
 \bibitem[Sekimoto(1997{\natexlab{b}})]{Sekimoto_1997}
 Sekimoto K.
 \newblock Kinetic characterization of heat bath and the energetics of thermal
-  ratchet models\allowbreak[J/OL].
+  ratchet models\allowbreak[J].
 \newblock Journal of the Physical Society of Japan, 1997, 66\penalty0 (5):
   1234-1237.
-\newblock \url{https://doi.org/10.1143%2Fjpsj.66.1234}.
 
 \bibitem[Shizume(1995)]{Shizume1995}
 Shizume K.
-\newblock Heat generation required by information erasure\allowbreak[J/OL].
+\newblock Heat generation required by information erasure\allowbreak[J].
 \newblock Phys. Rev. E, 1995, 52: 3495-3499.
-\newblock \url{https://link.aps.org/doi/10.1103/PhysRevE.52.3495}.
 
 \bibitem[Bizarro\ et~al.(2011)Bizarro and Report]{Bizarro2011}
 Bizarro P~S, Report B.
