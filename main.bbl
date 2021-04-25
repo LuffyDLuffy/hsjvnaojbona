@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -249,20 +249,6 @@ Hannay J~H.
 \newblock Journal of Physics A: Mathematical and General, 1986, 19\penalty0
   (17): L1067-L1072.
 
-\bibitem[Miller\ et~al.(2000)Miller and Reinhardt]{Miller2000}
-Miller M~A, Reinhardt W~P.
-\newblock {Efficient free energy calculations by variationally optimized metric
-  scaling: Concepts and applications to the volume dependence of cluster free
-  energies and to solid-solid phase transitions}\allowbreak[J].
-\newblock Journal of Chemical Physics, 2000, 113\penalty0 (17): 7035-7046.
-
-\bibitem[Vaikuntanathan\ et~al.(2008)Vaikuntanathan and
-  Jarzynski]{Vaikuntanathan2008}
-Vaikuntanathan S, Jarzynski C.
-\newblock {Escorted free energy simulations: Improving convergence by reducing
-  dissipation}\allowbreak[J].
-\newblock Physical Review Letters, 2008, 100\penalty0 (19): 8-11.
-
 \bibitem[Mart{\'{i}}nez\ et~al.(2016)Mart{\'{i}}nez, Petrosyan,
   Gu{\'{e}}ry-Odelin, Trizac, and Ciliberto]{Martinez2016}
 Mart{\'{i}}nez I~A, Petrosyan A, Gu{\'{e}}ry-Odelin D, et~al.
@@ -277,22 +263,18 @@ Mart{\'{i}}nez I~A, Petrosyan A, Gu{\'{e}}ry-Odelin D, et~al.
   oscillator}\allowbreak[J].
 \newblock Applied Physics Letters, 2016, 109\penalty0 (11).
 
+\bibitem[Vaikuntanathan\ et~al.(2008)Vaikuntanathan and
+  Jarzynski]{Vaikuntanathan2008}
+Vaikuntanathan S, Jarzynski C.
+\newblock {Escorted free energy simulations: Improving convergence by reducing
+  dissipation}\allowbreak[J].
+\newblock Physical Review Letters, 2008, 100\penalty0 (19): 8-11.
+
 \bibitem[Seifert(2012)]{Seifert2012}
 Seifert U.
 \newblock {Stochastic thermodynamics, fluctuation theorems and molecular
   machines}\allowbreak[J].
 \newblock Reports on Progress in Physics, 2012, 75\penalty0 (12).
-
-\bibitem[Deffner\ et~al.(2014)Deffner, Jarzynski, and del Campo]{Deffner2014}
-Deffner S, Jarzynski C, del Campo A.
-\newblock {Classical and quantum shortcuts to adiabaticity for scale-invariant
-  driving}\allowbreak[J].
-\newblock Physical Review X, 2014, 4\penalty0 (2): 1-19.
-
-\bibitem[{Del Campo}(2013)]{DelCampo2013}
-{Del Campo} A.
-\newblock {Shortcuts to adiabaticity by counterdiabatic driving}\allowbreak[J].
-\newblock Physical Review Letters, 2013, 111\penalty0 (10): 1-5.
 
 \bibitem[Jarzynski(1997)]{Jarzynski1997}
 Jarzynski C.
@@ -322,5 +304,41 @@ Bizarro P~S, Report B.
 \newblock 数学物理方法\allowbreak[M].
 \newblock 第二版.
 \newblock 北京: 北京大学出版社, 2003: 328-332
+
+\bibitem[Miller\ et~al.(2000)Miller and Reinhardt]{Miller2000}
+Miller M~A, Reinhardt W~P.
+\newblock {Efficient free energy calculations by variationally optimized metric
+  scaling: Concepts and applications to the volume dependence of cluster free
+  energies and to solid-solid phase transitions}\allowbreak[J].
+\newblock Journal of Chemical Physics, 2000, 113\penalty0 (17): 7035-7046.
+
+\bibitem[Deffner\ et~al.(2014)Deffner, Jarzynski, and del Campo]{Deffner2014}
+Deffner S, Jarzynski C, del Campo A.
+\newblock {Classical and quantum shortcuts to adiabaticity for scale-invariant
+  driving}\allowbreak[J].
+\newblock Physical Review X, 2014, 4\penalty0 (2): 1-19.
+
+\bibitem[{Del Campo}(2013)]{DelCampo2013}
+{Del Campo} A.
+\newblock {Shortcuts to adiabaticity by counterdiabatic driving}\allowbreak[J].
+\newblock Physical Review Letters, 2013, 111\penalty0 (10): 1-5.
+
+\bibitem[Blickle\ et~al.(2012)Blickle and Bechinger]{Blickle2012}
+Blickle V, Bechinger C.
+\newblock {Realization of a micrometre-sized stochastic heat
+  engine}\allowbreak[J].
+\newblock Nature Physics, 2012, 8\penalty0 (2): 143-146.
+
+\bibitem[Li\ et~al.(2013)Li and Raizen]{Li2013}
+Li T, Raizen M~G.
+\newblock {Brownian motion at short time scales}\allowbreak[J].
+\newblock Annalen der Physik, 2013, 525\penalty0 (4): 281-295.
+
+\bibitem[Huang\ et~al.(2011)Huang, Chavez, Taute, Luki{\'{c}}, Jeney, Raizen,
+  and Florin]{Huang2011}
+Huang R, Chavez I, Taute K~M, et~al.
+\newblock {Direct observation of the full transition from ballistic to
+  diffusive Brownian motion in a liquid}\allowbreak[J].
+\newblock Nature Physics, 2011, 7\penalty0 (7): 576-580.
 
 \end{thebibliography}

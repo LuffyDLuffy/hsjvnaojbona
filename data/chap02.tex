@@ -1,7 +1,7 @@
-\chapter{随机热机及绝热捷径和等温捷径}
+\chapter{热机模型及绝热捷径和等温捷径}
 \label{cha2}
 
-\section{随机热机模型}
+\section{热机模型}
 \qquad 本节我们将讨论几个典型的热机模型，它们中的每一个模型的提出对于相关领域都有重要价值。同时，回顾这几个热机模型的效率与功率的计算，也将为我们建立类卡诺热机模型和计算它的效率与功率提供思路。
 \subsection{卡诺热机模型}
 \qquad 卡诺热机对于热力学的意义大概怎么说都不算高估，正是基于卡诺的工作，克劳修斯和开尔文才提出了热力学第二定律。熵、绝对温标等重要的概念也是基于卡诺定理给出的。\cite{2005}
@@ -132,7 +132,7 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     \end{split}
     \label{eq2.3}
 \end{equation}
-一个以$H (t)$作为哈密顿量的系统，若其初态为$H_0 (t)$的本征态$| n(0) \rangle$，那么不论$H (t)$随时间的变化快慢与否，在$t$时刻，系统的状态依然是$H_0 (t)$的本征态，只是两者有一个相位差。于是我们实现了在有限时间内的本征态之间的转化。这其中的关键在于我们引进了一个\textbf{反绝热哈密顿量}$H_1 (t)$，根据\eqref{eq2.3}，我们已经在形式上得到了$H_1 (t)$。现在我们考虑对于具体的$H_0 (t)$，如何得到$H_1 (t)$的具体表达式。\cite{Jarzynski2013}
+一个以$H (t)$作为哈密顿量的系统，若其初态为$H_0 (t)$的本征态$| n(0) \rangle$，那么不论$H (t)$随时间的变化快慢与否，在$t$时刻，系统的状态依然是$H_0 (t)$的本征态，只是两者有一个相位差。于是我们实现了在有限时间内的本征态之间的转化。这其中的关键在于我们引进了一个反绝热哈密顿量$H_1 (t)$，根据\eqref{eq2.3}，我们已经在形式上得到了$H_1 (t)$。现在我们考虑对于具体的$H_0 (t)$，如何得到$H_1 (t)$的具体表达式。\cite{Jarzynski2013}
 
 让$H_0$通过一系列参数$\bm{\lambda}(t)=\left( \lambda_1 (t) , \lambda_1 (t) , \lambda_1 (t) , \cdot , \lambda_{N} (t) \right)$依赖于时间$t$。同时，$H_0 (\bm{\lambda})$的本征值、本征态为$E_n (\bm{\lambda}),\ | n (\bm{\lambda}) \rangle$，根据复合函数的微分法则，式\eqref{eq2.4}可以写为
 \begin{equation}
@@ -285,7 +285,7 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
     \left(1+\frac{1}{i \hbar} \delta \lambda \hat{\xi}\right) \psi(q)=\sqrt{\frac{1}{s}} \psi\left(\frac{q}{s}\right) \quad, \quad s=\frac{\lambda+\delta \lambda}{\lambda}
     \label{eq2.25}
 \end{equation}
-换句话说，算符$\exp (\delta \lambda \xi / i \hbar)$对波函数$\psi(q)$进行了线性放大。（系数$\sqrt{\frac{1}{s}}$保证了波函数的归一化）自此我们也成功的通过构造的经典反绝热哈密顿量构造出了\textbf{量子反绝热哈密顿量}
+换句话说，算符$\exp (\delta \lambda \xi / i \hbar)$对波函数$\psi(q)$进行了线性放大。（系数$\sqrt{\frac{1}{s}}$保证了波函数的归一化）自此我们也成功的通过构造的经典反绝热哈密顿量构造出了量子反绝热哈密顿量
 
 不难发现，我们的构造能够成功，很大程度上得益于能壳和本征态之间的尺度变换关系能够成立。相似的办法也能够应用于偶次幂势场，则经典哈密顿量为
 \begin{equation}
@@ -335,8 +335,6 @@ $A_{\mathrm{irr}}$是不可逆作用量，他们分别除以驱动时间$t_{\mat
 
 对于自由度$f \geq 2$的经典系统，如果$H_0$是完全可积的\cite{LiuChuan2019}，我们就有可能能够重复
 式\eqref{eq2.10}-\eqref{eq2.17}对作用量-角度变量的分析，每一个生成元$\bm{\xi}_i$对应一对作用量-角度变量。另外，如果$H_0$是各态历经的，那么式$\eqref{eq2.13a}$的解的存在将意味着能壳$H_0 (\bm{\eta};\ \bm{\lambda})$可以被正则变换到$H_0 (\bm{\eta};\ \bm{\lambda}+\delta \bm{\lambda} )$。\cite{Jarzynski1995}虽然对于$f \geq 2$的系统，这一条件通常并不能被满足，但一旦满足，$\bm{\xi}$就简单的是这个变换的生成元。
-
-上述的方法除了可以应用在量子和经典动力学之外，相似的方法也可以应用于统计力学，用于估算自由能的变化。在统计力学中，为了减少或者消除对有限时间过程中数字模拟的不可逆性，反绝热的度规缩放\cite{Miller2000}和场流\cite{Vaikuntanathan2008}被构造出来。
 
 \subsection{利用绝热捷径实现平衡态的转化}
 \qquad 接下来我们举例说明绝热捷径如何实现平衡态的转化。\cite{Tu2013}考虑一个被依赖于时间的谐振子势场$U_0 (q, \lambda(t))= q^{2} / 2 \lambda(t)^2$驱动的布朗粒子，只需使式\eqref{eq2.26}中的$b=2,\ \epsilon=2$，再联系到式\eqref{eq2.29}，就可以直接得到它被施加反绝热哈密顿量之后的哈密顿量
@@ -538,8 +536,6 @@ Martínez\cite{Martinez2016}针对谐振子场中的布朗粒子，通过对劲�
     \label{eq2.62}
 \end{equation}
 类似于过阻尼的情形，在欠阻尼的情形下我们也可以为两类势场的辅助势找到解析解\cite{Li2016}，势场$U_0 (q, \lambda(t))= q^{n} / 2 \lambda(t)^n \quad (n=2,4,6\cdots) ,\ U_{0}(q, \lambda(t))=u(q-\lambda(t))$的辅助势分别为$U_{1}(q, p, t) = - \dot{\lambda}\left[(p-\gamma q)^{2}+ q^{n}/\lambda(t)^n \right] / 2  \gamma \lambda ,\ U_{1}(q, p, t)=\dot{\lambda}(p-\gamma q)$。
-
-由Le Cunuder和他的合作者\cite{LeCunuder2016}所做的实验说明了辅助势\eqref{eq2.61}是能够在实验上实现的,而辅助势\eqref{eq2.62}里的交叉项$qp$很类似于绝热捷径中的反绝热哈密顿量\cite{Jarzynski2013,Deffner2014,DelCampo2013}。对于一大类由绝热捷径控制的量子多体系统，del Campo提出了一种可能的实验方案来实现交叉项\cite{DelCampo2013}。这种方案不需要知道微观系统的详细信息，通过适当的正则变换，他得到了在另一个表象，在这个表象下没有交叉项。这个办法为我们实现辅助势\eqref{eq2.62}提供了思路。
 
 
 

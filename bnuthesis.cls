@@ -920,7 +920,7 @@
   \bnu@put@keywords{\sihao\textbf\bnu@ckeywords@title}{\sihao\bnu@ckeywords}
 %-----------------------------------------------------------------------------------------------------------
 %ABSTRACT
-  \bnu@chapter*[]{\vskip-1cm\makebox{\sanhao\bnu@etitle}\\ \vskip1cm \makebox{\xiaosan\eabstractname}} % no tocline
+  \bnu@chapter*[]{\vskip-1cm \sanhao \bnu@etitle \\ \vskip1cm \makebox{\xiaosan\eabstractname}} % no tocline
   \sihao\bnu@eabstract
   \ifbnu@doctor\vfill\else\vskip12bp\fi
   \bnu@put@keywords{%

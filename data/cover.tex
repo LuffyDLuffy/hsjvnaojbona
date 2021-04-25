@@ -8,77 +8,54 @@
   %=====
   % 中文信息
   %=========
-  ctitle={等温捷径与绝热捷径构成的类卡诺循环热机的功率与效率},
+  ctitle={等温捷径和绝热捷径构成的类卡诺循环热机的功率与效率},
   cdegree={理学学士},
   cdepartment={物理学系},
   cmajor={物理学},
   cauthor={龚政楠},
   csupervisor={涂展春~教授},
-  cassosupervisor={涂展春~教授}, % 校内
+  cassosupervisor={北京师范大学~物理学系}, % 校内
   % 日期自动使用当前时间，若需指定按如下方式修改：
   %=========
   % 英文信息
   %=========
-  etitle={Finite Time Thermodynamics},
+  etitle={Power and efficiency of a Carnot-like cycle heat engine consisting of the isothermal shortcuts and the adiabatic shortcuts},
   edegree={Bacholar of Science},
   emajor={Physics},
-  eauthor={R.Z},
+  eauthor={ZN.G},
   esupervisor={XXX},
   eassosupervisor={XXXX},
   % 日期自动生成，若需指定按如下方式修改：
   % edate={December, 2005}
   %
   % 关键词用“英文逗号”分割
-  ckeywords={有限时间热力学, 等温捷径, 绝热捷径, 类卡诺热机},
-  ekeywords={TeX, LaTeX, CJK, template, thesis}
+  ckeywords={随机热机,绝热捷径,等温捷径,最大功率时的效率},
+  ekeywords={stochastic heate engine, adiabatic shortcuts, isothermal shortcuts, efficiency at maximum power}
 }
 
 % 定义中英文摘要和关键字
 \begin{cabstract}
-  论文的摘要是对论文研究内容和成果的高度概括。摘要应对论文所研究的问题及其研究目
-  的进行描述，对研究方法和过程进行简单介绍，对研究成果和所得结论进行概括。摘要应
-  具有独立性和自明性，其内容应包含与论文全文同等量的主要信息。使读者即使不阅读全
-  文，通过摘要就能了解论文的总体内容和主要成果。
+热机的效率问题一向深受研究者的关注。虽然卡诺已经得到热机效率的极限，但鉴于卡诺循环热机要求循环过程是可逆的，而这会导致卡诺热机的输出功率为0。人们开始思考如何加速可逆过程以获得有限的功率，这导致了有限时间热力学的诞生。在如何平衡效率与功率的问题上，Curzon 和 Ahlborn为后来的研究者树立了范式。1975年，他们构建了可在有限时间内运行的CA内可逆热机，并且计算出了该热机在最大功率时的效率。在这以后，研究者又构建了形形色色的可在有限时间内运行的热机，并且计算了它们在最大功率时的效率。其中，T. Schmiedl 和 U. Seifert 提出的微观随机热机模型通过外势场驱动布朗粒子对外做功，以随机热力学为基础的随机热机随之出现在人们眼前。
 
-  论文摘要的书写应力求精确、简明。切忌写成对论文书写内容进行提要的形式，尤其要避
-  免“第 1 章……；第 2 章……；……”这种或类似的陈述方式。
+随机热力学发端于人们对小系统的热力学性质的研究，这种纳米尺度的小系统包含的粒子数要远小于$N_{\M{A}}$。所以小系统的涨落效应和脱离平衡态的的程
+度都很大，传统热力学对于处理这样的系统力不从心。Ken Sekimoto和Udo Seifert等人将经典热力学中的概念如功、热、熵等推广得到了单个轨道的情形，这是我们处理随机热机的功率与效率问题的基础。
 
-  本文介绍清华大学论文模板 \bnuthesis{} 的使用方法。本模板符合学校的本科、硕士、
-  博士论文格式要求。
+在有限时间热力学中的一个关键问题就是如何在有限时间内实现平衡态的转化。Martínez针对谐振子场中的布朗粒子，通过对劲度系数进行调节，使系统比自然驰豫过程快一百倍达到了平衡态。而Le Cunuder 等人也实现了微观谐振子平衡态的快速转化……在这许许多多的实现平衡态转化的策略中，绝热捷径和等温捷径的策略占有一席之地。通过为原系统引入辅助哈密顿量和辅助势，两者通过将系统的状态保持在原哈密顿量的平衡态下，进而实现了平衡态的转化。这也是捷径一词的由来。
 
-  本文的创新点主要有：
-  \begin{itemize}
-    \item 用例子来解释模板的使用方法；
-    \item 用废话来填充无关紧要的部分；
-    \item 一边学习摸索一边编写新代码。
-  \end{itemize}
-
-  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。关键词不超过 5
-  个，每个关键词中间用分号分隔。（模板作者注：关键词分隔符不用考虑，模板会自动处
-  理。英文关键词同理。）
+于是我们利用绝热捷径和等温捷径构建了一个类卡诺热机模型，再结合随机热力学的知识，计算了热机的效率与功率。通过借鉴T. Schmiedl 和 U. Seifert等人处理微观随机热机的方法，利用求多元函数极值和泛函极值的办法，在过阻尼和欠阻尼的情形下，得到了构建的热机在最大功率时的效率。
 \end{cabstract}
 
 % 如果习惯关键字跟在摘要文字后面，可以用直接命令来设置，如下：
 % \ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}
 
 \begin{eabstract}
-   An abstract of a dissertation is a summary and extraction of research work
-   and contributions. Included in an abstract should be description of research
-   topic and research objective, brief introduction to methodology and research
-   process, and summarization of conclusion and contributions of the
-   research. An abstract should be characterized by independence and clarity and
-   carry identical information with the dissertation. It should be such that the
-   general idea and major contributions of the dissertation are conveyed without
-   reading the dissertation.
+The efficiency of heat engines has always been of great interest to researchers. Although Carnot had already obtained the limit of heat engine efficiency, since the Carnot cycle heat engine required the cycle process to be reversible, which resulted in zero output power of the Carnot heat engine, people started to think about how to accelerate the reversible process to obtain finite power, which led to the birth of Finite Time Thermodynamics(FTT). Curzon and Ahlborn set the paradigm for later researchers on how to balance efficiency and power. In 1975, they constructed a CA internal reversible heat engine that could operate in finite time and calculated the efficiency of the heat engine at maximum power. Since then, researchers have constructed various types of heat engines that can operate in finite time and calculated their efficiency at maximum power. Among them, the microscopic stochastic heat engine model proposed by T. Schmiedl and U. Seifert, which is based on stochastic thermodynamics, emerged by driving Brownian particles to do external work through an external potential field. And the stochastic heat engine based on stochastic thermodynamics appears in people’s eyes.
 
-   An abstract should be concise and to the point. It is a misunderstanding to
-   make an abstract an outline of the dissertation and words ``the first
-   chapter'', ``the second chapter'' and the like should be avoided in the
-   abstract.
+Stochastic thermodynamics began with the study of the thermodynamic properties of small systems, which contain far fewer particles than $N_{\M{A}}$ at the nanoscale. Seifert \textit{et al}. extended the concepts of classical thermodynamics, such as work, heat, and entropy, to the case of a single orbit, which is the basis for our treatment of the power and efficiency problems of stochastic heat engines. 
 
-   Key words are terms used in a dissertation for indexing, reflecting core
-   information of the dissertation. An abstract may contain a maximum of 5 key
-   words, with semi-colons used in between to separate one another.
+A key problem in finite time thermodynamics is how to achieve the equilibrium transition in finite time, and Martínez, for Brownian particles in a harmonic oscillator field, adjusted the stiffness coefficient so that the system reaches the equilibrium state 100 times faster than the natural chirality process. The fast transformation of microscopic resonator equilibria was also achieved by Le Cunuder \textit{et al}. ...... Among the many strategies to achieve equilibrium transformation, adiabatic shortcuts and isothermal shortcuts have a place. By introducing auxiliary Hamiltonian and auxiliary potential to the original system, both of them achieve the equilibrium transition by keeping the system in the equilibrium state of the original Hamiltonian. This is where the term shortcut comes from. 
+
+Thus, a Carnot-like heat engine model is constructed using adiabatic shortcuts and isothermal shortcuts, and the efficiency and power of the heat engine are calculated by combining the knowledge of stochastic thermodynamics. The efficiency of the constructed heat engine at maximum power is obtained by using the multivariate function extremum and the funtional extremum in the overdamped and underdamped cases, drawing on the approach of T. Schmiedl and U. Seifert \textit{et al}. for microscopic stochastic heat engines.
 \end{eabstract}
 
 % \ekeywords{\TeX, \LaTeX, CJK, template, thesis}

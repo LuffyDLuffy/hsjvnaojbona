@@ -194,9 +194,9 @@
     \centering
     \caption{循环过程中各个状态所对应的参数}
     \begin{tabular}{cccc}
-    \hline
+    \toprule
     状态 & 时间$t$ & （等效）温度$\beta^{-1}$      & 势能参数$\lambda$ \\ 
-    \hline
+    \midrule
     0                   & $0(t_1+t_2+t_3+t_4)$       & $\beta_{\mathrm{h}}^{-1}$  & $\lambda_0$   \\ 
 
     1                   & $t_1$   & $\beta_{\mathrm{h}}^{-1}$ & $\lambda_1$   \\ 
@@ -204,7 +204,7 @@
     2                   & $t_1+t_2$   & $\beta_{\mathrm{c}}^{-1}$ & $\lambda_2$   \\ 
 
     3                   & $t_1+t_2+t_3$   & $\beta_{\mathrm{c}}^{-1}$ & $\lambda_3$   \\ 
-    \hline
+    \bottomrule
     \end{tabular}
     \label{t3.1}
 \end{table}
@@ -265,9 +265,9 @@
     \caption{循环过程中的能量变化}
     \centering
     \begin{tabular}{p{.07\textwidth}p{.18\textwidth}p{.25\textwidth}p{.2\textwidth}}
-    \hline
+    \toprule
     过程  & 能量差  & 输入功     & 吸收热 \\ 
-    \hline
+    \midrule
     A    & 0       & $-\beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} + \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} \frac{1}{t_1}$                    &$\beta_{\mathrm{h}}^{-1} \ln{\frac{\lambda_1}{\lambda_0}} - \beta_{\mathrm{h}}^{-1} C_{\mathrm{h}} \frac{1}{t_1}$     \\ 
     
     B    & $(\beta_{\mathrm{c}}^{-1} - \beta_{\mathrm{h}}^{-1})$ & $(\beta_{\mathrm{c}}^{-1} - \beta_{\mathrm{h}}^{-1})$ & 0   \\ 
@@ -275,7 +275,7 @@
     C    & 0       & $-\beta_{\mathrm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} + \beta_{\mathrm{c}}^{-1} C_{\mathrm{c}} \frac{1}{t_3}$                    &$\beta_{\mathrm{c}}^{-1} \ln{\frac{\lambda_3}{\lambda_2}} - \beta_{\mathrm{c}}^{-1} C_{\mathrm{c}} \frac{1}{t_3}$     \\ 
     
     D    & $(\beta_{\mathrm{h}}^{-1} - \beta_{\mathrm{c}}^{-1})$ & $(\beta_{\mathrm{h}}^{-1} - \beta_{\mathrm{c}}^{-1})$                         & 0   \\ 
-    \hline
+    \bottomrule
     \end{tabular}
     \label{t3.2}
 \end{table}
@@ -319,7 +319,7 @@
 \end{equation}
 其中$\eta_{\mathrm{c}}\equiv 1-\frac{\beta_{\mathrm{c}}^{-1}}{\beta_{\mathrm{h}}^{-1}}$是卡诺效率，而$\chi\equiv\frac{C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)]}{C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]}$。
 
-现在唯一的问题就是如何把$\chi$用$\eta_{\mathrm{c}}$表示出来，这一点可以这样考虑。对于上式\eqref{eq3.35}分子的第二项，除去一个负号外始终是大于零的。既然我们关心功率最大时的效率，就应当考虑选取适当的$\lambda_{\mathrm{c}}(\tau),\ \lambda_{\mathrm{h}}(\tau)$的形式，使得关于它们的泛函$C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)],\ C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]$都取最小值。这一点可以使用变分的方法求得\footnote{不要忘记，我们对$\lambda(t)$的限制条件\eqref{eq2.51},在一般情况这个附加的条件会导致$\lambda(t)$无解。但我们可以这么考虑，先不考虑限制条件\eqref{eq2.51}，解出$\lambda(t)$。接下来，将函数$\lambda(t)$靠近边界$\lambda_i,\ \lambda_f$“磨平”。在欠阻尼情形下我们也采用这种策略。}，分别得到
+现在唯一的问题就是如何把$\chi$用$\eta_{\mathrm{c}}$表示出来，这一点可以这样考虑。对于上式\eqref{eq3.35}分子的第二项，除去一个负号外始终是大于零的。既然我们关心功率最大时的效率，就应当考虑选取适当的$\lambda_{\mathrm{c}}(\tau),\ \lambda_{\mathrm{h}}(\tau)$的形式，使得关于它们的泛函$C_{\mathrm{c}} [\lambda_{\mathrm{c}}(\tau)],\ C_{\mathrm{h}} [\lambda_{\mathrm{h}}(\tau)]$都取最小值。这一点可以使用变分的方法求得\footnote{不要忘记，我们对$\lambda(t)$的限制条件\eqref{eq2.51},在一般情况这个附加的条件会导致$\lambda(t)$无解。但我们可以这么考虑，先不考虑限制条件\eqref{eq2.51}，解出$\lambda(t)$。接下来，将函数$\lambda(t)$靠近边界$\lambda_i,\ \lambda_f$的部分“磨平”，使得它满足限制条件\eqref{eq2.51}。在欠阻尼情形下我们也将采用这样的策略。}，分别得到
 \begin{equation}
     \DDD{\lambda_{c}}{\tau}=0,\quad \DDD{\lambda_{h}}{\tau}=0
     \label{eq3.38}
@@ -420,7 +420,7 @@
     \gamma \lambda \ll 1,\quad \lambda \text{可取}\lambda_0,\ \lambda_1,\ \lambda_2,\ \lambda_3
     \label{eq3.51.5}
 \end{equation}
-于是忽略$\gamma \lambda$的二阶项，即考虑小阻尼情况，可得
+于是忽略$\gamma \lambda$的二阶项，可得
 \begin{equation}
     C_{\mathrm{h0}}=\frac{1}{\gamma}\left(\ln \frac{\lambda_{1}}{\lambda_{0}}\right)^2
     \label{eq3.51}

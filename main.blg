@@ -9,44 +9,44 @@ The style file: bnuthesis-numeric.bst
 A level-1 auxiliary file: data/ack.aux
 Database file #1: ref/refs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 53 entries,
+You've used 56 entries,
             3363 wiz_defined-function locations,
-            1132 strings with 13860 characters,
-and the built_in function-call counts, 268870 in all, are:
-= -- 27801
-> -- 27432
-< -- 27469
-+ -- 8786
-- -- 267
-* -- 1308
-:= -- 29102
-add.period$ -- 148
-call.type$ -- 53
-change.case$ -- 108
-chr.to.int$ -- 7948
-cite$ -- 53
-duplicate$ -- 1079
-empty$ -- 2829
-format.name$ -- 471
-if$ -- 77816
+            1154 strings with 14445 characters,
+and the built_in function-call counts, 292426 in all, are:
+= -- 30262
+> -- 29896
+< -- 29914
++ -- 9560
+- -- 289
+* -- 1419
+:= -- 31634
+add.period$ -- 157
+call.type$ -- 56
+change.case$ -- 114
+chr.to.int$ -- 8661
+cite$ -- 56
+duplicate$ -- 1139
+empty$ -- 3006
+format.name$ -- 514
+if$ -- 84637
 int.to.chr$ -- 2
-int.to.str$ -- 54
+int.to.str$ -- 57
 missing$ -- 0
-newline$ -- 280
-num.names$ -- 159
-pop$ -- 11890
+newline$ -- 295
+num.names$ -- 168
+pop$ -- 12947
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 56
 quote$ -- 0
-skip$ -- 32265
+skip$ -- 35117
 stack$ -- 0
-substring$ -- 9039
-swap$ -- 94
-text.length$ -- 370
+substring$ -- 9845
+swap$ -- 102
+text.length$ -- 397
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 670
+type$ -- 715
 warning$ -- 0
-while$ -- 531
+while$ -- 570
 width$ -- 0
-write$ -- 792
+write$ -- 840
